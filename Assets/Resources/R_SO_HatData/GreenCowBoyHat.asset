@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 158b0613d4ba4ea4d8d6eaaa28a4788f, type: 3}
+  m_Name: GreenCowBoyHat
+  m_EditorClassIdentifier: 
+  goldType: 0
+  isShowHead: 0
+  isBought: 0
+  isEquip: 0
+  hatName: GreenCowBoyHat
+  price: 2000
+  gemPrice: 100
+  sideSprite: {fileID: -427072589, guid: a3353e906ef6c974eaa405c9a47f3221, type: 3}
+  frontSprite: {fileID: 1599092377, guid: a3353e906ef6c974eaa405c9a47f3221, type: 3}
+  backSprite: {fileID: 1085266062, guid: a3353e906ef6c974eaa405c9a47f3221, type: 3}
+  goodsSprite: {fileID: 1599092377, guid: a3353e906ef6c974eaa405c9a47f3221, type: 3}

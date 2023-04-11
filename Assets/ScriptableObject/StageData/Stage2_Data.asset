@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9304191be88ccb447b39adfbc274ed97, type: 3}
+  m_Name: Stage2_Data
+  m_EditorClassIdentifier: 
+  level: 0
+  maxLevel: 0
+  price: fa000000e8030000c0120000
+  adWeight:
+  - 20
+  - 100
+  - 250
+  molePrice: 010000000a00000050000000
+  senceName: Game_Stage2

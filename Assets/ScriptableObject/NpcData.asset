@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 996870991a5cde941b362cb6ed0bc604, type: 3}
+  m_Name: NpcData
+  m_EditorClassIdentifier: 
+  defalutMoveSpeed: 2
+  buffSpeed: 0
+  level: 4
+  npcTypeArry:
+  - {fileID: 7108339969198208228, guid: b083f1cb7ec8e2e498ecd0c0b3ff4e7c, type: 3}
+  - {fileID: 7108339969198208228, guid: f952b28804b8b7d41ab4a0417f13b209, type: 3}
+  - {fileID: 7108339969198208228, guid: ff293ba9e4498eb46b45c07504e9e46b, type: 3}
+  - {fileID: 7108339969198208228, guid: defa20890c95e8d4b88c746a14a8c32b, type: 3}
+  - {fileID: 7108339969198208228, guid: 7527f4f1b59e0ab4ea413d65018a5ec5, type: 3}
+  - {fileID: 7108339969198208228, guid: 64d16403c872e034583037f27f7b0415, type: 3}
+  - {fileID: 7108339969198208228, guid: d17c7bcd4529f59459ef6259c3cc7a62, type: 3}
+  - {fileID: 7108339969198208228, guid: 0380c37ba90808e44a803ad852e9cc63, type: 3}
+  - {fileID: 7108339969198208228, guid: d505dfb1484276d498b5cc3eb36e02a4, type: 3}
+  - {fileID: 7108339969198208228, guid: 1e9b0a0a8815abd499e082f386a04253, type: 3}
+  counterSprite: {fileID: -1507895318, guid: 177b096acb5c48949a1d002556c7771d, type: 3}
+  exitSpritesArry:
+  - {fileID: 1834575822, guid: 177b096acb5c48949a1d002556c7771d, type: 3}
+  - {fileID: 1971817786, guid: 177b096acb5c48949a1d002556c7771d, type: 3}
+  - {fileID: 151653903, guid: 177b096acb5c48949a1d002556c7771d, type: 3}
+  - {fileID: -2124302372, guid: 177b096acb5c48949a1d002556c7771d, type: 3}
+  - {fileID: -410278669, guid: 177b096acb5c48949a1d002556c7771d, type: 3}
+  moveSpeed: 2

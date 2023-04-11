@@ -1,0 +1,11 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class SalesArea : TableArea
+{
+    public override void Start()
+    {
+        base.Start();
+    }
+}

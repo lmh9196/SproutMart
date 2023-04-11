@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9304191be88ccb447b39adfbc274ed97, type: 3}
+  m_Name: Stage1_Data
+  m_EditorClassIdentifier: 
+  level: 0
+  maxLevel: 5
+  maxNpcCount: 42
+  price: fa000000e8030000c0120000f0550000a0860100e0930400
+  adWeight:
+  - 20
+  - 100
+  - 250
+  - 800
+  - 2400
+  - 7400
+  molePrice: 010000000a000000500000002c01000084030000d0070000
+  senceName: Game_Stage1

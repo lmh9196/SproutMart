@@ -1,0 +1,5516 @@
+fileFormatVersion: 2
+guid: 177b096acb5c48949a1d002556c7771d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gold
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 325
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8588076668edfc4385ae54582c8e8ad
+      internalID: 337217503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_1
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 293
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d67c80d7c17d3a3468d6995257969b5d
+      internalID: 1242381534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_2
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 723
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 9, z: 8, w: 9}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8285130ce57e9aa49af7b199b62a9513
+      internalID: 2020022880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_3
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 723
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 9, z: 8, w: 9}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b89928b2466314299b97e65f7dfb24
+      internalID: 1605476056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_4
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 723
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 9, z: 8, w: 9}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f1739b737459149ac1324781b233d6
+      internalID: -329042482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_5
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 691
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 9, z: 8, w: 9}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4546b95d3e59f443b8eea316d2db26d
+      internalID: -1631835238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_6
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 691
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 9, z: 8, w: 9}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5331dd1a242ef864399d4728d76f2ed3
+      internalID: 1858630025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_7
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 691
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446c0240dd12d264eb95fc29948989c2
+      internalID: 2042509926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_8
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 122
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 7, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0926ae206d6e04fbf8bb55f354755a
+      internalID: 753569411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_9
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 855
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 9, z: 7, w: 9}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e48adff20c32f4abd15e2c7a69b7f0
+      internalID: -2051906457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_10
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 807
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 9, z: 7, w: 9}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 562d8c9ddeafc0047bfc9b825d1485f7
+      internalID: 308501050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_11
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 759
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 9, z: 7, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1885d11055da2cc479a988be852d0cf7
+      internalID: 863097851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_12
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 761
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 7, z: 7, w: 7}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a968a898a79a1dd48b52700d076f28fb
+      internalID: 1670827008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_13
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 809
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 7, z: 7, w: 7}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d220370afd523c94f894edf351a625dc
+      internalID: -770985016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_14
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 857
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 7, z: 7, w: 7}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55722beefcb52d644bd643747674e892
+      internalID: 1527120109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_15
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 376
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 7, z: 3, w: 5}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96bdf764e9223648a0dbcc77f44054c
+      internalID: -180451812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_16
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 715
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 3, z: 3, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27ff6849ff74f5438d020b657f539e4
+      internalID: 1714090773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_17
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 468
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 6, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f943c77f6ba8f4549ba04bd85ca2262e
+      internalID: -722280643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_18
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 244
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 6, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 199f7d394b8c8744b91e3175b7bda448
+      internalID: -353566323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_19
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 244
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 6, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd90a3ce2231464fb15e74159bbdbcc
+      internalID: 1282324843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_20
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 244
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adaf48dc38d5f804fbfb75d1b2cc6c96
+      internalID: -1495669295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_21
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 244
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b0c9366b234ad40a0610c3a70193db
+      internalID: 1492163327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_22
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 468
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da25dda049402cb438d3b9b744552e7b
+      internalID: 278349750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_23
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 468
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 6, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3305061e1f2a64e96fe6ef7d7fa816
+      internalID: 1321507240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_24
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 468
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3016cf4781182439aff25f9ef97f11
+      internalID: 780492479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_25
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 212
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 6, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b978417ae57344b89d14df7aa7eb4e
+      internalID: 1075512987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_26
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 212
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16debaed2bf32e44ab9a5b4720ee9885
+      internalID: 1772838103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_27
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 839
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02383d3eb6bc6804680fe661aa46d54e
+      internalID: 711711391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_28
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 871
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 035dbb8880eaf96428e2fcc87f8a10aa
+      internalID: 1537525541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_29
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 859
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5093bb775aa0862468ee06730137ddc3
+      internalID: -353948038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_30
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 674
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 0, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fde3d6bc8e86ac940806c8af0e19b999
+      internalID: -530831213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_31
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 811
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d95fb60f2958510449b3b5e6e503175e
+      internalID: 1740427105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_32
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 674
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 0, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c61d90737fc4b40b90a38e587163ff
+      internalID: 1204433602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_33
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 674
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 0, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c0719251e4e88b4bbea383a9bb2940f
+      internalID: -2012220472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_34
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 857
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23641a73c66cccf449d1e1d44e9e6edd
+      internalID: 2117496854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_35
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 344
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 11, y: 4, z: 3, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd85b8dcff52734189f920b1dcfe572
+      internalID: 1822790900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_36
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 276
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 7, z: 5, w: 5}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3b1b18e66ea81a46a6476eb619a7f50
+      internalID: 1995971512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_37
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 276
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 5, z: 5, w: 5}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529f6aaf9eae24c47b9d3945d9d1ae77
+      internalID: 1320774606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_38
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 321
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af15207d4553cf54ea051b2cfc4d3c45
+      internalID: 2090153423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_39
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 148
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 7, z: 4, w: 5}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8eff5d747d214418cca7de95eae69c
+      internalID: -2105902383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayBGM_0
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 276
+        width: 22
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 5, y: 6, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4bd37ac0e2ef00409e3a16f898ea1e2
+      internalID: -376287826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuteBGM_0
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 244
+        width: 22
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 5, y: 6, z: 5, w: 5}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638748d148f42734c9a6915de3df5d20
+      internalID: 139606184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_42
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 148
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 7, z: 4, w: 5}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae7f0c75a656c0c489275059e9de08fd
+      internalID: 15978542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_43
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 123
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 6, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f8b7581a7f7117419a20d391cfb3dae
+      internalID: 1022881849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_44
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 561
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660d5126e01a3b8489e44f3975a99488
+      internalID: 349524623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_45
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 561
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754cdd007caa8094aab259b7fbab1e1c
+      internalID: 1965023521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_46
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 561
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73cb7ac99e5c4d84ca8df8fb878352eb
+      internalID: 1815129062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_47
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 561
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a807cc39a8972f4bb119e4a5b25136b
+      internalID: 1682089666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_48
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 561
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5051c776226c85a43a35becc84c9e44c
+      internalID: 732754716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_49
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 561
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e5f3b16570ae54ab26ddd4fa9be9db
+      internalID: -1503833327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_50
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 561
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b531f54281daf4441ae3ff1b321740dd
+      internalID: -781280495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_51
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 545
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5139386e27e57a34fa2cf951b0de684d
+      internalID: 1619133059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_52
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 545
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0cca3ace8ab54744a38e9cb74b0107e
+      internalID: 127254318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_53
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 545
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa83e2596a3982469f5217ee2a145e8
+      internalID: 1645369295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_54
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 545
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c9085a585f29445b281ce17bcd6aaa
+      internalID: 1526630501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_55
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 545
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d95bf70654d56a644b3407865490edb0
+      internalID: 464413469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_56
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 545
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d31a7c60fd3eae4b90d8d04d2ab31b1
+      internalID: -1639389446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_57
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 545
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e0a5f03660c27847aed42ca14fa1063
+      internalID: 1238094478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_58
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 529
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8b394a63ed75240bf744242e18a4d1
+      internalID: -848910019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_59
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 529
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9132287aef1fe0d4095fc679052af5c9
+      internalID: 335994611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_60
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 529
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e711fd7ced4964e9dbdd9d5034046f
+      internalID: -419886134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_61
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 529
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b419cd0c412270c41acc97f61865f354
+      internalID: 630683687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_62
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 529
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85929808eabe9904e84c6435eb74560a
+      internalID: 2022040238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_63
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 529
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6225a7e0dac2582448fef46de27450ea
+      internalID: -394281303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_64
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 529
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64db0dde7dc87844181404443e5ad6a0
+      internalID: -2043324585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_65
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 513
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c488620ebb4b0449f96b200b6479fb
+      internalID: 1675727818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_66
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 513
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5d72e0b82545f409ae5058b4a1c9e7
+      internalID: -2010045941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_67
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 513
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7402c168e04389c42ba523e7231c9df1
+      internalID: -57139339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_68
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 513
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14d556e9756d9754f9cbcbc577af1713
+      internalID: 1694793246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_69
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 513
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f7051e395fe3d64b981285b4c7481d1
+      internalID: -190681890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_70
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 513
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe1c75eed1095bc4da0f864289e0e202
+      internalID: 1548761239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_71
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 513
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8371d3073196ba444995eb8cb429b090
+      internalID: 162643540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_72
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 497
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a34256db0f5c949a7e4b216c306a19
+      internalID: -458811879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_73
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 497
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95f5bc0194891464885fd06e1db2d51e
+      internalID: 748913301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_74
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 497
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38037a1b6fa8031489146b867f2efff7
+      internalID: 1933421750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_75
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 497
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef43d8ed4ed655448bbd006753fc36d6
+      internalID: -265126897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_76
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 497
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9caca96dc389d4c9eed59a5665e7b1
+      internalID: 905920404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_77
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 497
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f22182b7ce7ed04b8ef3c8b31b5b38c
+      internalID: -1568805169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_78
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 497
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c98dfc5a568cf042bbb662f178a28cb
+      internalID: -154643156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_79
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 481
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 686f3484432d41b449482b84e2cf0a19
+      internalID: -979543872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolTime_Lv5
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 481
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eec4f079507c844d85f560f1e84fdf3
+      internalID: 835505397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolTime_Lv2
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 481
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3b1a265758ed84b96b0598d575fd77
+      internalID: -249737299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_82
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 271
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98989e864cf075749bc19e8de31c89e6
+      internalID: -1860207926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_83
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 472
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06549f2ebc2a9f3418ae8c07988ce46e
+      internalID: 726977247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_84
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 291
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dbea602191b7b346b8b3f8e4ea41dfc
+      internalID: 1674510618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_85
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 186
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948aebab61945d047ad01005d11473b0
+      internalID: -332248195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Counter
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 164
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31d2a595e0875d4b91ef157623e330c
+      internalID: -1507895318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_87
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 241
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b861de4c2c6d79c4eaa2eaba6bd5b8e7
+      internalID: -1553341139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_88
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 241
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1aaeced35511af4b8ebf7785bd29e48
+      internalID: -929147014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_0
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 287
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 7, z: 3, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c191218b5547e7f45b41b4fc90b7fb2b
+      internalID: -309263975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_90
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 389
+        width: 26
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 0, z: 3, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91cdab01a66af37468f82b61257fa013
+      internalID: -398469005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_91
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 641
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 3, z: 3, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6a4453d74e00f4a9053d7a3b603e4d
+      internalID: 1992421491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_92
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 859
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5488b53bf2b119f46a2974011e6897a3
+      internalID: -247870511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_93
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 467
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724c1412cf93a054baa4db092baccffa
+      internalID: -1630381438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_94
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 451
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d9cb510bf650a4ebc1f77417e6b699
+      internalID: -1101858699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_95
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 594
+        width: 35
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 3, z: 3, w: 2}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b989f52309b415f4d81f9a8125103771
+      internalID: -1248411548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_96
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 597
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 3, z: 0, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2250e846daa4f1543936be92486a7f35
+      internalID: 1118839132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_97
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 386
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9337dee6146c204baa0b734ad07f980
+      internalID: -567932366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_98
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 353
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79688f19e1f549e4e93c08d5fe36e6fb
+      internalID: 1793746572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_99
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 353
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a952ee90903144340a26290afb0224ba
+      internalID: 163772940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_100
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 165
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf7d806e95c0b745a955a20d415ca16
+      internalID: 1664576088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_101
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 196
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34aca9b76f38fb54c8539f3f6c9431ab
+      internalID: -907513637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_102
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 670
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9db15f60d62c046ae4da4c3a64c8f5
+      internalID: -711714352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_103
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 625
+        width: 99
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 3, z: 3, w: 2}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a004ad7de446a34abf0a295ab6a37ab
+      internalID: -154698744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_104
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 240
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe6be37c97f9194fbee526a3836846a
+      internalID: 952796167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_105
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 214
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa8e88ddfe199648bb69be5595a7895
+      internalID: 1020925909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_106
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 231
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43939d0c64d9d56428c09000c8dc5512
+      internalID: -810143980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Emote2
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 434
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d72f2a60604bba34d91d7631ccc328d6
+      internalID: 1971817786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Emote1
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 434
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfcea348cfef5aa408da3e3e5f5e6895
+      internalID: 1834575822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Emote3
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 434
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd5d80550c728d3439cb552efc977a2c
+      internalID: 151653903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Emote4
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 434
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14a905a611d30754a9f3eb742ee8c14e
+      internalID: -2124302372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Emote5
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 434
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c638632f25a9f48b4a1f5f8cf67d2b
+      internalID: -410278669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_112
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 240
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9af57efa8754f43b0bcfe78866335f
+      internalID: 803534177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_113
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 214
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de714a9e1582394cbe7aea6b69dc8c6
+      internalID: 884194259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_114
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 160
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d709fdf52e7884683eb50fb4bd71bd
+      internalID: -1015218355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_115
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 583
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 2, z: 0, w: 2}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5492a2507e13fc24aa3e0524682fee8f
+      internalID: 288969394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_116
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 641
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 3, z: 3, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81a40a771432714397a483a819670e2
+      internalID: -1302612478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_117
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 777
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 2, z: 2, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ede974886fd8d429cde8503520b7a4
+      internalID: -1498366931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_118
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 777
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 2, z: 2, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a5e29e2c6027d4eb0472bc991fcec8
+      internalID: -767249219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_119
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 871
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87dce97e129f551488299398223a3e16
+      internalID: 1245389995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_120
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 148
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 5, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd8b11fc16791944929740329099852
+      internalID: -949730023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_121
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 148
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 5, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5b5f5830935725418b43ade42cf51e4
+      internalID: -199587702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaySFX_0
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 180
+        width: 22
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 4, y: 7, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91197113fdc83f44ba73ed60455da561
+      internalID: -514425999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaySFX_1
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 180
+        width: 22
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 420739ade957df14680a99b1391cffbf
+      internalID: 1104770279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuteSFX_0
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 180
+        width: 22
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 4, y: 7, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f7c969c4dca0443820676a6aa2680d
+      internalID: 1371485916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuteSFX_1
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 180
+        width: 22
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 4, y: 5, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faaba27b873c5a64aaf49df5e1891665
+      internalID: -129529489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_126
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 534
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd95f88aad9173749863a221028dee75
+      internalID: 615534230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_127
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 534
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf734fc3cc575f049b46ad0f8d20864a
+      internalID: -1778217923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_128
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 534
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc31b046167a5264288173ca99279504
+      internalID: -2094090623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_129
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 534
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86262d0338fff5c40b60436de2fd6179
+      internalID: 2014032861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayVibe_0
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 116
+        width: 22
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c30ac9917a555442969f9642cc44fdf
+      internalID: 654090715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuteVibe_0
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 115
+        width: 22
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2024595366185b9418ca38ee44cc93a1
+      internalID: 1981395373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayVibe_1
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 116
+        width: 22
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea94f2cf26bedd141b738406d0f55154
+      internalID: -886007524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuteVibe_1
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 115
+        width: 22
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984e6a5d2364ea04c905d3e1e0e3dd2b
+      internalID: 116091733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_134
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 610
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fdb918221eb9dd46a0cf2b9e0989082
+      internalID: -1702786699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_135
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 610
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c01b440a6047a04495d7d4d6294177e
+      internalID: 1809384115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_136
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 610
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e442d6b28fc77044becc20c50bd7a18
+      internalID: -1288257710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_137
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 610
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55959edd3b47199438f8d341fa2551ae
+      internalID: -675551990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_138
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 610
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7842c3fd95d2e734096402d40852dd67
+      internalID: 1484536450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_139
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 610
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a92883b2f8ae640848d273d39b07cd
+      internalID: -1727347710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_140
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 436
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 6, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e5e5ee4b159d84cb532717605712e6
+      internalID: 641597534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_141
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 436
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e4fa872463a4645aecbeeff8dfec3b
+      internalID: -302655348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_142
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 610
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 949866efdf25b1c41abd89e7b134682d
+      internalID: 2001707630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_143
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 610
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 968953e468146a447b210a217fb4ed6c
+      internalID: 523379447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_144
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 529
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 6, z: 4, w: 6}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c2d9d38b6b48c4dab11bf322e6aff4
+      internalID: -2032909428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_145
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 19
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc93e0dd29620040b41626d7e688c90
+      internalID: -957588317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_146
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 19
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88fc9efd78630974a962681d4a9e2e26
+      internalID: -1525496255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_147
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 51
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2546d8bd0df4ab44b90e69e93ca64b85
+      internalID: -1280792490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_148
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 51
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96655271dfa33484fa55c304680a9d6c
+      internalID: 1407058813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_149
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 514
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4cccc4f0093d34a96a390e6d8bafee
+      internalID: -109148368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_150
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 498
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5592509fcf95c8446b56ee5fde193d24
+      internalID: 533388830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_151
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 483
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a383bfdc75444142ad1e0b4fa6b3e5b
+      internalID: -240117735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BurrowSign_Idle_Right
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 118
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a33d1044748cdf44ba8ca25e86e7afa
+      internalID: -68247863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BurrowSign_Idle_Left
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 118
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bebcab526776ba5418de61de25750a41
+      internalID: -1798878426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BurrowSign_Idle_Up
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 150
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ad2f8fdcafe664084d916962ab27ac
+      internalID: 601075025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BurrowSign_Idle_Down
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 176
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b4b95917d16724e90185e68b370a04
+      internalID: 718652474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Emot6
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 434
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7505bfc046df0f4ea97ce402abee5a3
+      internalID: 898938850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_157
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 516
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26fb900ce622fe3408ca8580fed8867f
+      internalID: -1584718117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_158
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 214
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e0990aa892057f4288389ef67901df3
+      internalID: -1098173458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_159
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 214
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7be1c37774c500409da90b0e6774aae
+      internalID: 1796742842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_160
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 262
+        width: 17
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c23f32b38f0bbaf458f68c392e57ee80
+      internalID: -861414945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_161
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 262
+        width: 17
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03a5faad3d1fad458a650d17934616d
+      internalID: 1401084575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_162
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 201
+        width: 17
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a397729c1ecf0b4ebbd5079e27c19c6
+      internalID: 1748770913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_163
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 201
+        width: 17
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c180e4baa13b4fd46b6c75f6eeafb97b
+      internalID: -1820244666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 325
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a9cbf06190ee9419c97cc5faf08ef0
+      internalID: 269695656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_165
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 563
+        width: 90
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 6, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f638c2cdd8f8147a22e3fd49d0cfc8
+      internalID: -1732794434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_166
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 563
+        width: 90
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 6, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70413e20e2015f743a9fb0991c6ea1a5
+      internalID: 401076715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_167
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 323
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825e3740787276743ba09fcd5801d302
+      internalID: 649277493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_168
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 325
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc936182fc44ca4ebf54fb68b2f7fc1
+      internalID: -1221944205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_170
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 244
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a494f2eac56b2234c9cd5c26d72a9b6e
+      internalID: 95454895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_171
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 244
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4708aaaab3903074db85427922d86c50
+      internalID: 1520807092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_169
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 277
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 755c5fdb67d463241bb8f71e9a296fb9
+      internalID: 1801440500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_172
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 54
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1634e962f35914c8c739b051402499
+      internalID: 819064571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_173
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 268
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e70f44824a580441a145506d89844c9
+      internalID: 1558165591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_174
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 516
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c415b3bfbd8b4a489d61516fa726f5a
+      internalID: -943919107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_175
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 548
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 6, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e90a19eb083754988219d41b14b134
+      internalID: -1036214625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_176
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 548
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 3, z: 3, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7d569c1c684b34c883abf49de34c12
+      internalID: -1636784020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_177
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 273
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f9cc5f1df687c46a9a136b10dcf4ee
+      internalID: -65790977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_178
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 320
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c65aed02985fb0744b7f22e46d0bb951
+      internalID: 858292951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_179
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 562
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5449a8eec30e07642bb52502f9f9ea41
+      internalID: -1023579344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_180
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 336
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0557d762ba9506c40b40781547f49b43
+      internalID: 499321079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_181
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 472
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293503143c653de42b12fc53510054e3
+      internalID: -1408038162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelectBox_Right
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 645
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 9, z: 8, w: 9}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d1e3d2bd5f7554dbdaf819708bb213
+      internalID: -1571750578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelectBox_Wrong
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 644
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 9, z: 8, w: 9}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093a1982e05ed3c40ab5c73833747e2c
+      internalID: -1930517987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_182
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 6
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59f36344ee817743bb38c9e557862dc
+      internalID: 530892682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_183
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 6
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29fca6cc1a60c44389e6f8005fd505d
+      internalID: -149493664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_184
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 6
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6a534724f128842b248ff18bb65699
+      internalID: -2114202862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_185
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 6
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2071df4819e0c37449358669739dd857
+      internalID: 1535354088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_186
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 454
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab58421ebc02d9041beaccd985ef81ed
+      internalID: -2069988068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_187
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 454
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd0ab49618540b46b613a552f64d2cd
+      internalID: 513698419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReturnStatueBtn
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 713
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 5, z: 3, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23acedbdd9406d468e78b06c8e56f7a
+      internalID: 671928598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReturnStatueBtn_Press
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 715
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 3, z: 3, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3bc9fa84a611644eb9bb4be68b37c75
+      internalID: -1175168686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_188
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 644
+        width: 13
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5fef71a6bdf80447893d2d31339f56b
+      internalID: -321223841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_189
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 729
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b3fdb891279a7409b8e480652498de
+      internalID: -100781742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_190
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 164
+        width: 22
+        height: 24
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d7d8b51502ae647a6fcb95de173972
+      internalID: 1567116378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_191
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 164
+        width: 22
+        height: 22
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1074b5b62d5c44e43975d9cb75f949cb
+      internalID: 1598960535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_192
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 193
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f34be8cabab75e41bed1884bd49a448
+      internalID: 1431157972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_193
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 193
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a775181f2996b0145b57090edb065367
+      internalID: 773535660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_194
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 763
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bfc6a0173655b146b475b0b62a67667
+      internalID: 962969195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_195
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 763
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a08abc364866610488a3fb7136b9b33c
+      internalID: -762878867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_196
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 811
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfdc0da712371274590a0d3a2e5f9b97
+      internalID: 628198805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BurrowSign_Press_Down
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 176
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1664a7947123543972e4353e607a85
+      internalID: 1483718280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BurrowSign_Press_Up
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 150
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff993492f25dc24a8e1b047df287757
+      internalID: -252574598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BurrowSign_Press_Right
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 133
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9846ddedcd9c30741a53afbf7b744f7f
+      internalID: -1428217197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BurrowSign_Press_Left
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 133
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13aed49f0544e248ba1829b97e7cc3c
+      internalID: -1895764623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_86
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 502
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73d4df5290510c4a891e94b7d503d11
+      internalID: 2052020054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_107
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 135
+        width: 38
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 6, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7b133fcfb55e44186f0fc13b518cf3
+      internalID: -590640547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_108
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 256
+        width: 6
+        height: 16
+      alignment: 9
+      pivot: {x: 0.48008218, y: 0.45080388}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d7d5327d0515441a34c14bf8057305
+      internalID: 1120774092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_109
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 194
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d569a2b7bbd1c8e49995d1f63168eb4d
+      internalID: 1331130292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_110
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 114
+        width: 38
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 6, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c041b8d543439964e988c310ff88408f
+      internalID: -707041055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuestionMark
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 352
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e01c2f3ed074aa489c4e61d9d78726e
+      internalID: -107167535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_152
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 352
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dfa7f696ab0d1341b9ab8e852bd4202
+      internalID: 1807253934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirSign_Right
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 192
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 6, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205bf5a810abbaa498f90851f823b7e7
+      internalID: -1169164335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirSign_Left
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 176
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b921b0515e5c3ff4bb497345cbb3572f
+      internalID: -1174468343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirSign_Up
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 161
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fe6d44b984e4e648b03b574bae9636e
+      internalID: -997181046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirSign_Down
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 145
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91019653f9631df4f9d36c02864f34f0
+      internalID: -643504575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StaffTimer_0
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 544
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1e94f3883f83d49b59e01c43cfd374
+      internalID: 521979444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StaffTimer_1
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 528
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37161dfa409e9d048ade1ac6a6e2f158
+      internalID: 881297785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_153
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 477
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7bef6c37b3a37c4094bef5835fca0b5
+      internalID: -1354862800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExclamationMark
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 368
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5b71d2830a705469dcb914903a7535
+      internalID: -921230456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolTime_Lv3
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 481
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c741401b2a816438f5ee51088ea5c9
+      internalID: 1574158808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolTime_Lv4
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 481
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2fef3e1fb4af2d46bf5777ee69b6d6b
+      internalID: 1018013500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolTime_Lv1
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 481
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ec2900f0968524e84f84d7e5b33670
+      internalID: 643673135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloatDir
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 165
+        width: 14
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f064dcd7b2a11b144b55ca3a9cae934d
+      internalID: 1956673797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldPaper_0
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 834
+        width: 22
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92add3c3216df0a4897eb9349e723523
+      internalID: -674768242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldPaper_1
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 834
+        width: 22
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a635a3431b9659e47bd07a11ab1a67d0
+      internalID: -2113776838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boost_0
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 500
+        width: 22
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97693e28add19d4988bfd259dde6b45
+      internalID: 1369918887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoostGauge
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 663
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6cbf6bee119614f8d321eaec73140f
+      internalID: -1329153407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_0
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 164
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dfe96cbfd3da2d428ffbbda18ba448f
+      internalID: -281577647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boost_1
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 500
+        width: 22
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950c7a76acaabef4889e3e0c77742ba3
+      internalID: 115292408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuteBGM_1
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 244
+        width: 22
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 5, y: 6, z: 5, w: 5}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45814600eb68ab548aeeb6433cd6075e
+      internalID: 937228433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayBGM_1
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 276
+        width: 22
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 5, y: 6, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83eaddec4010fd34fa0f72ab737d86d2
+      internalID: 1535194640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuIcon_0
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 82
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e75b85cd43df040a32845bfbe016ac
+      internalID: -1213081015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuIcon_1
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 82
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae42abc82fb9142419757c23b54fb76e
+      internalID: -1534603626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_40
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 70
+        width: 104
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 8, z: 6, w: 9}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 071829e2c09e2ca439050fd293c97b2f
+      internalID: -518738390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueTab
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 761
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 0, z: 5, w: 5}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17b2e464058bcf64fa62610163daaf5b
+      internalID: -1575316648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_41
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 641
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 5, z: 3, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd2ee5efa4c6ab4f8f64d65d8431b2b
+      internalID: -796254475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_80
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 563
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 1, z: 1, w: 1}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a5b15bcd50366545810fc9b0f7ecc3c
+      internalID: -1577876010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lockCover
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 644
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 5, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03537456db93c5849b8949533705fa9a
+      internalID: 1096402288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineTab
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 644
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 6, z: 7, w: 6}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56d63fe1fc441b4986b61ab56cd0b17
+      internalID: 1282233590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_81
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 679
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 3, z: 3, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39907d2743f23034dadcfbab2f1810f8
+      internalID: -492495696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_1
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 267
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 3, z: 4, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325301a6b33df644dbc6b625e2f83b46
+      internalID: 1995494035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenBtn_0
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 178
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 3, y: 4, z: 3, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62e159d205120042984eddc4d4bb7f4
+      internalID: -1267175222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenBtn_1
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 159
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 3, y: 4, z: 3, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4dda068fd2e35c47b987d6df9ce67d8
+      internalID: -2123952320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ALL UI ASSETS on one sheet_88: -929147014
+      ALL UI ASSETS on one sheet_118: -767249219
+      ALL UI ASSETS on one sheet_37: 1320774606
+      CoolTime_Lv5: 835505397
+      MuteBGM_1: 937228433
+      ALL UI ASSETS on one sheet_113: 884194259
+      ALL UI ASSETS on one sheet_60: -419886134
+      BurrowSign_Idle_Down: 718652474
+      ALL UI ASSETS on one sheet_171: 1520807092
+      DirSign_Down: -643504575
+      ALL UI ASSETS on one sheet_136: -1288257710
+      BurrowSign_Idle_Up: 601075025
+      ALL UI ASSETS on one sheet_30: -530831213
+      ALL UI ASSETS on one sheet_82: -1860207926
+      ALL UI ASSETS on one sheet_142: 2001707630
+      ALL UI ASSETS on one sheet_92: -247870511
+      ALL UI ASSETS on one sheet_188: -321223841
+      ALL UI ASSETS on one sheet_141: -302655348
+      ALL UI ASSETS on one sheet_169: 1801440500
+      ALL UI ASSETS on one sheet_41: -796254475
+      SelectBox_Right: -1571750578
+      CoolTime_Lv2: -249737299
+      ALL UI ASSETS on one sheet_69: -190681890
+      DirSign_Left: -1174468343
+      ALL UI ASSETS on one sheet_150: 533388830
+      FloatDir: 1956673797
+      BurrowSign_Idle_Left: -1798878426
+      ALL UI ASSETS on one sheet_87: -1553341139
+      ALL UI ASSETS on one sheet_23: 1321507240
+      ALL UI ASSETS on one sheet_144: -2032909428
+      ALL UI ASSETS on one sheet_110: -707041055
+      ALL UI ASSETS on one sheet_195: -762878867
+      ALL UI ASSETS on one sheet_65: 1675727818
+      PlayBGM_1: 1535194640
+      ALL UI ASSETS on one sheet_101: -907513637
+      ALL UI ASSETS on one sheet_75: -265126897
+      ALL UI ASSETS on one sheet_185: 1535354088
+      ALL UI ASSETS on one sheet_6: 1858630025
+      ALL UI ASSETS on one sheet_138: 1484536450
+      ALL UI ASSETS on one sheet_43: 1022881849
+      ALL UI ASSETS on one sheet_17: -722280643
+      ALL UI ASSETS on one sheet_98: 1793746572
+      ALL UI ASSETS on one sheet_180: 499321079
+      StaffTimer_1: 881297785
+      ALL UI ASSETS on one sheet_119: 1245389995
+      ALL UI ASSETS on one sheet_158: -1098173458
+      GreenBtn_0: -1267175222
+      BurrowSign_Idle_Right: -68247863
+      ALL UI ASSETS on one sheet_126: 615534230
+      BurrowSign_Press_Left: -1895764623
+      ALL UI ASSETS on one sheet_51: 1619133059
+      ALL UI ASSETS on one sheet_78: -154643156
+      ReturnStatueBtn_Press: -1175168686
+      ALL UI ASSETS on one sheet_19: 1282324843
+      ALL UI ASSETS on one sheet_190: 1567116378
+      Counter: -1507895318
+      ALL UI ASSETS on one sheet_61: 630683687
+      ALL UI ASSETS on one sheet_22: 278349750
+      Emote5: -410278669
+      ALL UI ASSETS on one sheet_192: 1431157972
+      ALL UI ASSETS on one sheet_193: 773535660
+      ALL UI ASSETS on one sheet_35: 1822790900
+      ALL UI ASSETS on one sheet_148: 1407058813
+      ALL UI ASSETS on one sheet_177: -65790977
+      ALL UI ASSETS on one sheet_47: 1682089666
+      ALL UI ASSETS on one sheet_14: 1527120109
+      ALL UI ASSETS on one sheet_96: 1118839132
+      MuteVibe_0: 1981395373
+      ALL UI ASSETS on one sheet_50: -781280495
+      MuteBGM_0: 139606184
+      ALL UI ASSETS on one sheet_166: 401076715
+      ALL UI ASSETS on one sheet_191: 1598960535
+      ALL UI ASSETS on one sheet_143: 523379447
+      ALL UI ASSETS on one sheet_106: -810143980
+      Background_1: 1995494035
+      ALL UI ASSETS on one sheet_121: -199587702
+      ALL UI ASSETS on one sheet_145: -957588317
+      ALL UI ASSETS on one sheet_63: -394281303
+      ALL UI ASSETS on one sheet_10: 308501050
+      ALL UI ASSETS on one sheet_46: 1815129062
+      ALL UI ASSETS on one sheet_129: 2014032861
+      ALL UI ASSETS on one sheet_83: 726977247
+      StatueTab: -1575316648
+      ALL UI ASSETS on one sheet_1: 1242381534
+      Emot6: 898938850
+      ALL UI ASSETS on one sheet_187: 513698419
+      ALL UI ASSETS on one sheet_2: 2020022880
+      ALL UI ASSETS on one sheet_184: -2114202862
+      BurrowSign_Press_Down: 1483718280
+      ALL UI ASSETS on one sheet_9: -2051906457
+      ALL UI ASSETS on one sheet_52: 127254318
+      ALL UI ASSETS on one sheet_170: 95454895
+      Emote3: 151653903
+      ALL UI ASSETS on one sheet_0: -281577647
+      ALL UI ASSETS on one sheet_80: -1577876010
+      ALL UI ASSETS on one sheet_38: 2090153423
+      ALL UI ASSETS on one sheet_159: 1796742842
+      Gem: 269695656
+      ALL UI ASSETS on one sheet_33: -2012220472
+      ALL UI ASSETS on one sheet_140: 641597534
+      ALL UI ASSETS on one sheet_7: 2042509926
+      ALL UI ASSETS on one sheet_147: -1280792490
+      ALL UI ASSETS on one sheet_149: -109148368
+      ALL UI ASSETS on one sheet_15: -180451812
+      ALL UI ASSETS on one sheet_48: 732754716
+      GreenBtn_1: -2123952320
+      ALL UI ASSETS on one sheet_54: 1526630501
+      ALL UI ASSETS on one sheet_16: 1714090773
+      ALL UI ASSETS on one sheet_5: -1631835238
+      ALL UI ASSETS on one sheet_167: 649277493
+      ALL UI ASSETS on one sheet_3: 1605476056
+      ALL UI ASSETS on one sheet_25: 1075512987
+      CoolTime_Lv1: 643673135
+      ReturnStatueBtn: 671928598
+      ALL UI ASSETS on one sheet_67: -57139339
+      ALL UI ASSETS on one sheet_178: 858292951
+      ALL UI ASSETS on one sheet_12: 1670827008
+      ALL UI ASSETS on one sheet_34: 2117496854
+      ALL UI ASSETS on one sheet_108: 1120774092
+      ALL UI ASSETS on one sheet_160: -861414945
+      ALL UI ASSETS on one sheet_114: -1015218355
+      ALL UI ASSETS on one sheet_93: -1630381438
+      ALL UI ASSETS on one sheet_168: -1221944205
+      ALL UI ASSETS on one sheet_135: 1809384115
+      ALL UI ASSETS on one sheet_194: 962969195
+      MuteVibe_1: 116091733
+      ALL UI ASSETS on one sheet_174: -943919107
+      ALL UI ASSETS on one sheet_71: 162643540
+      CoolTime_Lv3: 1574158808
+      ALL UI ASSETS on one sheet_8: 753569411
+      ALL UI ASSETS on one sheet_91: 1992421491
+      PlayVibe_1: -886007524
+      ALL UI ASSETS on one sheet_24: 780492479
+      ALL UI ASSETS on one sheet_99: 163772940
+      ALL UI ASSETS on one sheet_73: 748913301
+      ALL UI ASSETS on one sheet_59: 335994611
+      PlaySFX_1: 1104770279
+      ALL UI ASSETS on one sheet_189: -100781742
+      ALL UI ASSETS on one sheet_104: 952796167
+      ALL UI ASSETS on one sheet_115: 288969394
+      ALL UI ASSETS on one sheet_76: 905920404
+      SelectBox_Wrong: -1930517987
+      WorldPaper_0: -674768242
+      ALL UI ASSETS on one sheet_90: -398469005
+      ALL UI ASSETS on one sheet_77: -1568805169
+      ALL UI ASSETS on one sheet_157: -1584718117
+      PlayBGM_0: -376287826
+      ALL UI ASSETS on one sheet_18: -353566323
+      ALL UI ASSETS on one sheet_28: 1537525541
+      ALL UI ASSETS on one sheet_134: -1702786699
+      ALL UI ASSETS on one sheet_196: 628198805
+      Background_0: -309263975
+      ALL UI ASSETS on one sheet_62: 2022040238
+      Emote4: -2124302372
+      ALL UI ASSETS on one sheet_26: 1772838103
+      ALL UI ASSETS on one sheet_186: -2069988068
+      MachineTab: 1282233590
+      ALL UI ASSETS on one sheet_66: -2010045941
+      QuestionMark: -107167535
+      CoolTime_Lv4: 1018013500
+      ALL UI ASSETS on one sheet_45: 1965023521
+      ALL UI ASSETS on one sheet_120: -949730023
+      ALL UI ASSETS on one sheet_153: -1354862800
+      ALL UI ASSETS on one sheet_109: 1331130292
+      ALL UI ASSETS on one sheet_85: -332248195
+      ALL UI ASSETS on one sheet_137: -675551990
+      ALL UI ASSETS on one sheet_95: -1248411548
+      ALL UI ASSETS on one sheet_72: -458811879
+      ALL UI ASSETS on one sheet_182: 530892682
+      ALL UI ASSETS on one sheet_102: -711714352
+      ALL UI ASSETS on one sheet_64: -2043324585
+      ALL UI ASSETS on one sheet_84: 1674510618
+      ALL UI ASSETS on one sheet_146: -1525496255
+      BoostGauge: -1329153407
+      ALL UI ASSETS on one sheet_116: -1302612478
+      ALL UI ASSETS on one sheet_81: -492495696
+      ALL UI ASSETS on one sheet_112: 803534177
+      BurrowSign_Press_Right: -1428217197
+      ALL UI ASSETS on one sheet_49: -1503833327
+      ALL UI ASSETS on one sheet_94: -1101858699
+      ALL UI ASSETS on one sheet_42: 15978542
+      ALL UI ASSETS on one sheet_21: 1492163327
+      ALL UI ASSETS on one sheet_27: 711711391
+      ALL UI ASSETS on one sheet_176: -1636784020
+      Gold: 337217503
+      ALL UI ASSETS on one sheet_68: 1694793246
+      ALL UI ASSETS on one sheet_103: -154698744
+      ALL UI ASSETS on one sheet_32: 1204433602
+      ALL UI ASSETS on one sheet_179: -1023579344
+      MuteSFX_1: -129529489
+      ALL UI ASSETS on one sheet_56: -1639389446
+      ALL UI ASSETS on one sheet_183: -149493664
+      ALL UI ASSETS on one sheet_97: -567932366
+      DirSign_Right: -1169164335
+      ALL UI ASSETS on one sheet_31: 1740427105
+      ALL UI ASSETS on one sheet_53: 1645369295
+      BurrowSign_Press_Up: -252574598
+      ALL UI ASSETS on one sheet_4: -329042482
+      ALL UI ASSETS on one sheet_11: 863097851
+      Emote1: 1834575822
+      ALL UI ASSETS on one sheet_79: -979543872
+      ALL UI ASSETS on one sheet_127: -1778217923
+      ALL UI ASSETS on one sheet_74: 1933421750
+      Emote2: 1971817786
+      ALL UI ASSETS on one sheet_86: 2052020054
+      StaffTimer_0: 521979444
+      ALL UI ASSETS on one sheet_165: -1732794434
+      ALL UI ASSETS on one sheet_20: -1495669295
+      ExclamationMark: -921230456
+      ALL UI ASSETS on one sheet_13: -770985016
+      ALL UI ASSETS on one sheet_162: 1748770913
+      lockCover: 1096402288
+      WorldPaper_1: -2113776838
+      DirSign_Up: -997181046
+      MenuIcon_1: -1534603626
+      ALL UI ASSETS on one sheet_29: -353948038
+      ALL UI ASSETS on one sheet_70: 1548761239
+      ALL UI ASSETS on one sheet_175: -1036214625
+      Boost_1: 115292408
+      ALL UI ASSETS on one sheet_139: -1727347710
+      ALL UI ASSETS on one sheet_107: -590640547
+      MenuIcon_0: -1213081015
+      ALL UI ASSETS on one sheet_105: 1020925909
+      ALL UI ASSETS on one sheet_181: -1408038162
+      PlayVibe_0: 654090715
+      ALL UI ASSETS on one sheet_161: 1401084575
+      ALL UI ASSETS on one sheet_152: 1807253934
+      PlaySFX_0: -514425999
+      ALL UI ASSETS on one sheet_100: 1664576088
+      ALL UI ASSETS on one sheet_172: 819064571
+      ALL UI ASSETS on one sheet_58: -848910019
+      BoostBtn: -2128058599
+      Boost_0: 1369918887
+      ALL UI ASSETS on one sheet_39: -2105902383
+      ALL UI ASSETS on one sheet_163: -1820244666
+      ALL UI ASSETS on one sheet_36: 1995971512
+      ALL UI ASSETS on one sheet_44: 349524623
+      ALL UI ASSETS on one sheet_173: 1558165591
+      ALL UI ASSETS on one sheet_55: 464413469
+      ALL UI ASSETS on one sheet_57: 1238094478
+      ALL UI ASSETS on one sheet_128: -2094090623
+      ALL UI ASSETS on one sheet_151: -240117735
+      ALL UI ASSETS on one sheet_117: -1498366931
+      MuteSFX_0: 1371485916
+      ALL UI ASSETS on one sheet_40: -518738390
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

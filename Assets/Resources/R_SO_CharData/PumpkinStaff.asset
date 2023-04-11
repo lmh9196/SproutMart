@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a799387bef5e7cb4ebf6334d92ba48d2, type: 3}
+  m_Name: PumpkinStaff
+  m_EditorClassIdentifier: 
+  ID: PumpkinStaff
+  buyPrice: 50000
+  isAchiveTrigger: 0
+  defalutMaxHandsCount: 2
+  defalutCoolTime: 5
+  defalutMoveSpeed: 3
+  timerImageArray:
+  - {fileID: 643673135, guid: 177b096acb5c48949a1d002556c7771d, type: 3}
+  - {fileID: -249737299, guid: 177b096acb5c48949a1d002556c7771d, type: 3}
+  - {fileID: 1574158808, guid: 177b096acb5c48949a1d002556c7771d, type: 3}
+  - {fileID: 1018013500, guid: 177b096acb5c48949a1d002556c7771d, type: 3}
+  - {fileID: 835505397, guid: 177b096acb5c48949a1d002556c7771d, type: 3}
+  achiveList: []
+  controller: {fileID: 0}
+  maxHandsCount: 6
+  coolTime: 0.5
+  buffMoveSpeed: 0
+  buffCoolTime: 0.5
+  stat:
+  - menuType: 0
+    level: 0
+    maxLevel: 1
+    price: 50c30000c80000002c0100002c0100002c010000
+  - menuType: 2
+    level: 0
+    maxLevel: 4
+    price: a861000050c30000f8240100a086010048e80100
+  - menuType: 1
+    level: 0
+    maxLevel: 4
+    price: a861000050c30000f8240100a086010048e80100

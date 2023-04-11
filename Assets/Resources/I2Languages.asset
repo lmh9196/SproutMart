@@ -1,0 +1,469 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0b0c553be8edd4682e9180fdd13e37, type: 3}
+  m_Name: I2Languages
+  m_EditorClassIdentifier: 
+  mSource:
+    UserAgreesToHaveItOnTheScene: 0
+    UserAgreesToHaveItInsideThePluginsFolder: 0
+    GoogleLiveSyncIsUptoDate: 1
+    mTerms:
+    - Term: "\uBC30\uACBD\uC74C"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uBC30\uACBD\uC74C"
+      - BGM
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uD6A8\uACFC\uC74C"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uD6A8\uACFC\uC74C"
+      - SFX
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uC74C\uC545 \uBCC0\uACBD"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC74C\uC545 \uBCC0\uACBD"
+      - Change Music
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uC74C\uC545"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC74C\uC545"
+      - Music
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uC9C4\uB3D9"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC9C4\uB3D9"
+      - Vib
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uD55C\uAD6D\uC5B4"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uD55C\uAD6D\uC5B4"
+      - English
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uC5B8\uC5B4"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC5B8\uC5B4"
+      - Lang
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uD655\uC7A5"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uD655\uC7A5"
+      - Expand
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uC190\uB2D8"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC190\uB2D8"
+      - Customer
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uACE0\uC6A9"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uACE0\uC6A9"
+      - Buy
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uC774\uB3D9 \uC18D\uB3C4"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uB300\uAE30 \uC2DC\uAC04"
+      - CooTime
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uC81C\uC791 \uC18D\uB3C4"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC18C\uC694 \uC2DC\uAC04"
+      - Making Time
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uCD5C\uB300 \uAC1C\uC218"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uCD5C\uB300 \uAC1C\uC218"
+      - Stack
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uC785\uC7A5 \uC778\uC6D0"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC785\uC7A5 \uC778\uC6D0"
+      - Count
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uC900\uBE44\uC911"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC900\uBE44\uC911. . ."
+      - Ready. . .
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uC6B0\uC720 \uC77C\uAFBC"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC6B0\uC720 \uC77C\uAFBC"
+      - Milk
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uBC00\uAC00\uB8E8"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uBC00\uAC00\uB8E8"
+      - Flour
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uCD08\uCF5C\uB9BF"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uCD08\uCF5C\uB9BF"
+      - Chocolate
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uCE58\uC988"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uCE58\uC988"
+      - Cheese
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uAE30\uACC4"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC0DD\uC0B0"
+      - Machine
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uAC74\uAC15 \uC96C\uC2A4"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uAC74\uAC15 \uC96C\uC2A4"
+      - HP Juice
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uACC4\uC0B0\uC6D0"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uACC4\uC0B0\uC6D0"
+      - Cashier
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uBCF5\uC22D\uC544 \uC77C\uAFBC"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uBCF5\uC22D\uC544 \uC77C\uAFBC"
+      - Peach
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uC624\uB80C\uC9C0 \uC77C\uAFBC"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC624\uB80C\uC9C0 \uC77C\uAFBC"
+      - Orange
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uCD08\uCF54\uC6B0\uC720 \uC77C\uAFBC"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uCD08\uCF54\uC6B0\uC720 \uC77C\uAFBC"
+      - Choco Milk
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uC124\uD0D5 \uC77C\uAFBC"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC124\uD0D5 \uC77C\uAFBC"
+      - Sugar
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uC0AC\uD0D5\uC218\uC218 \uC77C\uAFBC"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC0AC\uD0D5\uC218\uC218 \uC77C\uAFBC"
+      - Sugar Cane
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uBC00\uAC00\uB8E8 \uC77C\uAFBC"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uBC00\uAC00\uB8E8 \uC77C\uAFBC"
+      - Flour
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uBC00 \uC77C\uAFBC"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uBC00 \uC77C\uAFBC"
+      - Flour
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uC0AC\uD0D5 \uC218\uC218"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC0AC\uD0D5 \uC218\uC218"
+      - Sugar Cane
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uD50C\uB808\uC774\uC5B4"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uD50C\uB808\uC774\uC5B4"
+      - Player
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uD1A0\uB9C8\uD1A0 \uC77C\uAFBC"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uD1A0\uB9C8\uD1A0 \uC77C\uAFBC"
+      - Tomato
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uC624\uB80C\uC9C0 \uC96C\uC2A4"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC624\uB80C\uC9C0 \uC96C\uC2A4"
+      - Orange Juice
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uBE75"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uBE75"
+      - Bread
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uCD08\uCF5C\uB9BF \uBE75"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uCD08\uCF5C\uB9BF \uBE75"
+      - Choco Bread
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uC624\uB80C\uC9C0 \uCE94\uB514"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC624\uB80C\uC9C0 \uCE94\uB514"
+      - Orange Candy
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uBCF5\uC22D\uC544 \uC96C\uC2A4"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uBCF5\uC22D\uC544 \uC7BC\t"
+      - Peach Jam
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uD1A0\uB9C8\uD1A0 \uC96C\uC2A4"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uD1A0\uB9C8\uD1A0 \uC96C\uC2A4"
+      - Tomato Juice
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uC77C\uAFBC"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC77C\uAFBC"
+      - Staff
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uD638\uBC15 \uB9C8\uC2A4\uD06C"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uD638\uBC15 \uB9C8\uC2A4\uD06C"
+      - Pumpkin Mask
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uD638\uBC15"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uD638\uBC15"
+      - Pumpkin
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uD638\uBC15 \uC77C\uAFBC"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uD638\uBC15 \uC77C\uAFBC"
+      - Pumpkin
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uACE0\uC6A9 \uC778\uC6D0"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uACE0\uC6A9 \uC778\uC6D0"
+      - Count
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uB300\uAE30 \uC2DC\uAC04"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uB300\uAE30 \uC2DC\uAC04"
+      - CoolTime
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Guide_Destroy_Select
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uD30C\uAD34\uD560 \uC7A5\uC2DD\uBB3C\uC744 \uC120\uD0DD\uD558\uC138\uC694!"
+      - Choose which Statue to destroy!
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Guide_Build_Choice
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC6D0\uD558\uB294 \uC704\uCE58\uC5D0 \uC124\uCE58\uD558\uC138\uC694!"
+      - Place  wherever you want!
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Guide_Move_Choice
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC774\uB3D9\uC2DC\uD0AC \uC7A5\uC2DD\uBB3C\uC744 \uC120\uD0DD\uD558\uC138\uC694!"
+      - Choose which statue to move!
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Guide_Buuild_Crash
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uADF8\uACF3\uC5D4 \uB193\uC744 \uC218 \uC5C6\uC5B4\uC694!"
+      - "\rCan't put it there!"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Guide_Destroy_NotEnough
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC120\uD0DD\uB41C \uC7A5\uC2DD\uBB3C\uC774 \uC5C6\uC5B4\uC694!"
+      - No Statue selected!
+      Flags: 0000
+      Languages_Touch: []
+    - Term: NotEnoughGold
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uB3C8\uC774 \uBD80\uC871\uD574\uC694!"
+      - Short of money!
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uB9C8\uD2B8"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uB9C8\uD2B8"
+      - Mart
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uB2E8\uACC4"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uB2E8\uACC4"
+      - Step
+      Flags: 0000
+      Languages_Touch: []
+    - Term: "\uB9C8\uD2B8 \uC774\uB3D9"
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uB9C8\uD2B8 \uC774\uB3D9"
+      - Move
+      Flags: 0000
+      Languages_Touch: []
+    CaseInsensitiveTerms: 0
+    OnMissingTranslation: 1
+    mTerm_AppName: 
+    mLanguages:
+    - Name: Korean
+      Code: ko
+      Flags: 0
+    - Name: English
+      Code: en
+      Flags: 0
+    IgnoreDeviceLanguage: 0
+    _AllowUnloadingLanguages: 0
+    Google_WebServiceURL: https://script.google.com/macros/s/AKfycbyTmilGkoX8zvYvhYUQF5cPrFn--N3mtqmpdh71eDU52IidDKqoiZNKt_9wVbRWZQ-A/exec
+    Google_SpreadsheetKey: 1TlWuw3-Dd4Pl_fCXx3bcrHxzPM64nU2m527zYc-KBrU
+    Google_SpreadsheetName: I2Loc Sprout Localization
+    Google_LastUpdatedVersion: 
+    Google_Password: 846307
+    GoogleUpdateFrequency: 3
+    GoogleInEditorCheckFrequency: 2
+    GoogleUpdateSynchronization: 1
+    GoogleUpdateDelay: 0
+    Assets: []
+    Spreadsheet_LocalFileName: Localization.csv
+    Spreadsheet_LocalCSVSeparator: ','
+    Spreadsheet_LocalCSVEncoding: utf-8
+    Spreadsheet_SpecializationAsRows: 1

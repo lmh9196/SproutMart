@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - GameController
+  - Set
+  - Sale
+  - Npc
+  - Counter
+  - Staff
+  - Get
+  - Effects
+  - Exit
+  - Gem
+  - PackingBox
+  - Delivery
+  - Drunken
+  - FxTemporaire
+  - Factory
+  - SalesFactory
+  - Statue
+  - StatueArea
+  - SelectBox
+  - JoyStick
+  - Tomato
+  - Orange
+  - Flour
+  - Wheat
+  - ChocoMilk
+  - SugarCane
+  - Peach
+  - Milk
+  - Sugar
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Player
+  - Water
+  - UI
+  - Statue
+  - Npc
+  - Obj
+  - Staff
+  - Wall
+  - IgnorePlayer
+  - Item
+  - Char
+  - Ground
+  - SaleArea
+  - StatueDetectArea
+  - InvisibleUI
+  - Floor
+  - StatueDetectSquare
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Item
+    uniqueID: 4264387543
+    locked: 0

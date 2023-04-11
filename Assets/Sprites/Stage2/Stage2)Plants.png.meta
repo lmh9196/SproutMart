@@ -1,0 +1,852 @@
+fileFormatVersion: 2
+guid: d8f0f16dd6db9104f8e9cf4c385a8bd3
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Crab
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 276
+        width: 19
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f8578bcee0c0734cb26a08bbcc775fa
+      internalID: 681194418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 276
+        width: 19
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b84414fcbd2d21c49b1ceef16d372c16
+      internalID: 887661967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 276
+        width: 19
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4804320d26eb66547a3934525fa22bb6
+      internalID: 234808144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishCase
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 504
+        width: 18
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e393f19a06488c4daf23c7d11942cde
+      internalID: -1772115569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishCase_Cover
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 505
+        width: 18
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9de8dec6efcb69478ebc3fa67d86762
+      internalID: -1390732979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishFry_Cook
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 473
+        width: 25
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5771acdca66e371468162e8706e1af85
+      internalID: 41498213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishPot
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 448
+        width: 21
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5cd8f9ae8ca07438be2b7e0e8a8768
+      internalID: -1695751362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage2)16_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 413
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3fec61433df961428ce1067ae4f6d71
+      internalID: 569995753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage2)16_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 386
+        width: 20
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a451ca828d27af46bca63172e84e8c9
+      internalID: -703598797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thresher_0
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 504
+        width: 28
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 706bd499ccfc4e6468489989465acbdd
+      internalID: -525839699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thresher_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 504
+        width: 28
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260656978c611bb43bd653b0e39bac21
+      internalID: 143358555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thresher_2
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 504
+        width: 28
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba75ef9cf3524b4f9057d3f4a40db47
+      internalID: -1682385388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thresher_3
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 505
+        width: 28
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d054f8d890634e44e9c9bf7bc9bb0af7
+      internalID: 136859578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thresher_4
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 466
+        width: 28
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef18b941c642374796cba54c63622a3
+      internalID: -1001977450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thresher_5
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 466
+        width: 28
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed75c8730c987f5429b9bec3f0e9b170
+      internalID: -734851421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thresher_6
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 466
+        width: 28
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e6461cc355eda4596183e438264f90
+      internalID: -630891817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thresher_7
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 467
+        width: 28
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0843d8c7b277c374cb22a2ebaf3a3652
+      internalID: -1926029299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thresher_8
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 427
+        width: 28
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6452cedc0bb3fba45929ba805cb3656b
+      internalID: -143865262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thresher_9
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 427
+        width: 28
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df0094a032196f498218fda64add94b
+      internalID: -1574190120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thresher_10
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 427
+        width: 28
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9970bec2e5f33de4f8e00333b06d3299
+      internalID: 1435351067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thresher_11
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 428
+        width: 28
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12012c71c6e3cb84e8aa588b2e8602d8
+      internalID: -1044694523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thresher_12
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 389
+        width: 28
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42992023eaff174282cd1b4cd343ba0
+      internalID: 321760427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thresher_13
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 389
+        width: 28
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db5fe28d6b998143beed70ce4dc4929
+      internalID: 1998354531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thresher_14
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 389
+        width: 28
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add7e803901ea4749b836a7e2a5fc3d9
+      internalID: 205758604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thresher_15
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 390
+        width: 28
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e26b7b1f683a849a6ce086f4a63be8
+      internalID: -1001812062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage2)16_2
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 524
+        width: 15
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4467527e49f025147a0107326b35f278
+      internalID: 1127585837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Crab: 681194418
+      TomatoMixer_8: -21518581
+      MixMixer: -312400340
+      Sushi: -935677404
+      OrangeMixer_12: 675335983
+      OrangeJuice_S: 868041120
+      Crab_0: 887661967
+      OrangeJuice_F: -1500870032
+      MixJuice_F: -1930267192
+      Centrifuge_7: -1428596290
+      OrangeMixer_11: -927643783
+      ChocoBread_B: -379645741
+      25_77: 1707852799
+      TomatoMixer_9: 141847096
+      FishCase_Cover: -1390732979
+      Thresher_14: 205758604
+      PumpkinMachine_3: -1718665255
+      Thresher_5: -734851421
+      25_37: 1788592275
+      CalmMask_goods: 941933999
+      25_106: -1938891802
+      OrangeMixer_13: -17770557
+      25_53: 1247864485
+      Coconut: 1828845999
+      25_76: -1784918865
+      CookCalm: 1578757365
+      Thresher_13: 1998354531
+      25_81: -1899083512
+      Thresher_0: -525839699
+      PumpkinMachine: 585885580
+      25_90: -1543038785
+      MixMixer_6: -1156266597
+      Pumpkin_B: 1857335341
+      OrangeMixer_7: 328789217
+      ChocoMilk_S: 190768414
+      OrangeMixer_8: -340041136
+      Rice: 1048711385
+      TomatoMixer_12: -1191864428
+      FishPot: -1695751362
+      25_78: -2075284488
+      Thresher_10: 1435351067
+      MixMixer_3: 1831087564
+      25_45: -1751610857
+      25_107: -885270105
+      Flour_B: -421113240
+      25_27: 930505960
+      Centrifuge_8: -538321701
+      Stage2)16_2: 1127585837
+      25_52: 1496238777
+      OrangeMixer_4: -1502787689
+      MixMixer_5: 1968182180
+      Stage2)16_1: -703598797
+      Thresher_8: -143865262
+      MixMixer_13: 1256906821
+      MixMixer_11: 984552095
+      OrangeMixer_9: -1248052590
+      OrangeMixer_1: -64672293
+      Centrifuge_1: 1787559520
+      Thresher_2: -1682385388
+      CoconutMilk_Right: 1078897891
+      Butter_F: -1184786019
+      Centrifuge_6: 1414460118
+      25_12: 1411272527
+      Stage2)16_0: 569995753
+      Wheat_F: 1239001319
+      TomatoMixer_4: 1854505290
+      MixMixer_9: 1666170803
+      25_28: -1424663393
+      PumpkinMachine_1: 788114967
+      25_25: -1241390627
+      25_48: -2082941383
+      25_75: -2130553706
+      TomatoMixer_10: -1896034658
+      TomatoMixer_13: -1223435891
+      Centrifuge_4: -498589864
+      TomatoMixer_3: -911995165
+      Centrifuge_0: 658888912
+      Thresher_15: -1001812062
+      Milk_F: 960204693
+      25_83: 1805869160
+      CoconutMilk_Left: -1072626685
+      FishCase: -1772115569
+      25_44: -1530601294
+      25_2: 215370159
+      25_17: 2014844249
+      Centrifuge_2: -45213619
+      25_29: -1308007289
+      25_11: 495138996
+      25_20: 42965909
+      Thresher_9: -1574190120
+      Thresher_1: 143358555
+      OrangeMixer_0: -2091417422
+      TomatoMixer_11: 1559304674
+      25_1: -1997153604
+      MangoSushi: 1055938289
+      Fish_Stick: -562721524
+      25_50: -529441217
+      TomatoMixer_0: -685992449
+      Thresher_4: -1001977450
+      Pizza_B: -208348871
+      OrangeMixer_5: 1056623034
+      PumpkinMachine_4: 1286789889
+      TomatoJuice_S: -1655715358
+      Centrifuge_5: -648293116
+      Crab_1: 234808144
+      25_42: 1493730142
+      OrangeMixer_6: 2130574207
+      MixMixer_2: 515151622
+      ChocoMilk_F: -2050174169
+      OrangeMixer_2: 934817834
+      Clam: -1572865220
+      25_47: 1133605344
+      Radish_S: 2008861718
+      Centrifuge_3: -1836864576
+      Orange_B: 1253991523
+      Thresher_11: -1044694523
+      TomatoMixer_6: -35619867
+      Chocolate_B: 1613229508
+      MixMixer_1: -679436311
+      25_85: -1336394044
+      Thresher_6: -630891817
+      25_46: -850202306
+      Mango: -1691502200
+      MixMixer_12: -1531849874
+      25_105: -1499405274
+      Butter_S: 1329788641
+      OrangeMixer_3: -410508371
+      25_79: 73611915
+      Coconut_ball: -755934944
+      MangoJuice: -2061793022
+      TomatoMixer_1: 891105445
+      Thresher_12: 321760427
+      MixMixer_7: -674437191
+      25_26: -950121087
+      25_30: -512899986
+      25_49: 404162266
+      25_80: 232440917
+      FishFry_Cook: 41498213
+      PumpkinMachine_2: 1216898932
+      MixMixer_10: -985064120
+      PumpkinMask_B: 1480353415
+      25_21: 1130722658
+      25_82: 1286583269
+      25_86: -386227516
+      PumpkinMachine_7: 1022256263
+      TomatoMixer_2: 2039207483
+      25_51: 931809980
+      PumpkinMachine_5: 2061682439
+      TomatoMixer_5: -407813118
+      PumpkinMachine_6: 663268802
+      Thresher_7: -1926029299
+      Thresher_3: 136859578
+      OrangeMixer_10: 1508821012
+      TomatoMixer_7: 1192840421
+      MixJuice_S: -1517470876
+      25_13: 70334475
+      MixMixer_4: -2013935889
+      MixMixer_8: -1699726581
+      25_84: 961573975
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

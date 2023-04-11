@@ -1,0 +1,3083 @@
+fileFormatVersion: 2
+guid: 97e8a784d54618345a42f4c7b4fe3822
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_0
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1448
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f515470c9dc0c49b7374e8799e41f0
+      internalID: 391362742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1318
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7c4d2eb00e7f04f8781187532326a2
+      internalID: -1806870451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_2
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1318
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed72f12db78876a4a91da3c22a3827f5
+      internalID: -1946795259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_3
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1318
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a413f8ed239a1a64c8c7c26b2386ddd0
+      internalID: 1654940094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_4
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1318
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4256ba15a5228c649ba6603d4beef34d
+      internalID: 739549047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_5
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1318
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33fc4481b4f58514fb2b4ce9e4710432
+      internalID: 1900857657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1286
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59897d1859a368d49b7d4925ddf4325c
+      internalID: 386992628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_7
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1286
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfaa47cc9dc510d4ab932719055f8e7a
+      internalID: 1517716564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_8
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1286
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4433ae8d0a7a0e48914ef1ad0b7f83d
+      internalID: 1049413458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_9
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1286
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7cb7a414d15c54ab300b8e1607d592
+      internalID: 624847851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_10
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1254
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c77b01acc5f992042b8e8d4234be5121
+      internalID: 1300697273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_11
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1254
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fffd4424454a1d8408cadbba53f7ff04
+      internalID: 309633034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_12
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1254
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ace5f37e01ace44aa49647acfdd7644
+      internalID: -1589796572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_13
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1254
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85da3bfb97b3e0478a04174ef1ca4d4
+      internalID: -842929449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_14
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 1444
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531adb618fa8a88438a66c87088defeb
+      internalID: -1957956290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_15
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1444
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e252355e50540674c801c123c14db72a
+      internalID: 1126757475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_16
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1446
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c37f79a906ddc45a261720ac8d5768
+      internalID: 434486173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_17
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1446
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2d49d53bd9b7e4b8ba884868745f16
+      internalID: 1768842463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_18
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1414
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f19d5e4fe31ec46bbf1f6c6ddffe65
+      internalID: -1401538589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_19
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1414
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb27def992d4df4d831b55634c8bed4
+      internalID: 1999912441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_20
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1413
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4a6cce03a21784d959d6c33fc4b478
+      internalID: 662649651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_21
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1416
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f927931f0628e4ba880ed6d860acb9
+      internalID: -1338721117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_22
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1416
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b007b8472b087a5419e77c7eaa972f77
+      internalID: 947033922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_23
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1412
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f666d466c8c5894bb556625241bd36f
+      internalID: 1202355385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_24
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1158
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f5788d521c9183478e91dd41bf74b60
+      internalID: -504411355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_25
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1158
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044dc8c2175db164f862127e8e0470d7
+      internalID: -471529694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_26
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1158
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73354456a2385304e8d1d0e917782d38
+      internalID: 766727030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_27
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1158
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ec0cf66caf923a48956d4aca3f822ef
+      internalID: 1844190074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_28
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1158
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39421fea22021e4ab8d9c94b26b23ec
+      internalID: -1408186767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_29
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1126
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0aa24f64c016a4a88d5cefb6c52093
+      internalID: -803574124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_30
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1126
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a56fbcc69d2de4894c35b64572483a
+      internalID: -732356104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_31
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1126
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77b5bb1e8335ab4cbf6472ad128abb7
+      internalID: -198168211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_32
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1126
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff1d2f03a8154741bc335f01bde3a45
+      internalID: -2030964537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_33
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1126
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b430878487f9b341b3a04a3032b8fd2
+      internalID: 506942128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_34
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 966
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913abba8aad2b34459085e1cd83c014d
+      internalID: 866309555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_35
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 965
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34d3d763f82a384b8146a3c7000b699
+      internalID: -842571703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_36
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 967
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106434458c1a4b04db162de69adfcc2e
+      internalID: -70926811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_37
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 968
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac07f0b53ff4fc489d4ab40698d1e0f
+      internalID: 1975653637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_38
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 967
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4023114c592db6049beba75d931245b6
+      internalID: -810448579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_39
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 965
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1347265c62900d64a89883aacfcbe849
+      internalID: -393808787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_40
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 966
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e4ddae35065954a96e0bd9eb202ba4
+      internalID: -446238642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_41
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 742
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d21477502e60674fb7a81cba3636096
+      internalID: 1417284158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_42
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 742
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90aa42ffa9bd77f42a25450dc52b9fc1
+      internalID: -1594355631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_43
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 742
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dfd2f5e31d3811468d19598cfae4702
+      internalID: -1863712599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_44
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 742
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caaf3adc6f0d0094583b3cdef0ed35b8
+      internalID: -963479276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_45
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 742
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7826e42e935c78e44a6b31e87b40ed35
+      internalID: 1751372913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_46
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 518
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 319746c364cc0f541895ae9ee9846184
+      internalID: -1820073228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_47
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 517
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55cc5c0d59b564447a401ee97ea53366
+      internalID: -679323952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_48
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 518
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4f562997035784298d1f19414497e3
+      internalID: -460578913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_49
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 519
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85dac8dd3b6d0b041b0d07a7d3ad470c
+      internalID: 1344446043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_50
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 519
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348df5df391158b47a14c0b156f3e372
+      internalID: -667021182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_51
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 519
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee17bdf85b3f5974b95e9df1d0c75c65
+      internalID: -1045405023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_52
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 518
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2c2913f8ad27647beb921bfe3ba22c
+      internalID: 835307239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_53
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 517
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04126bb78698c3429818b0a3f039352
+      internalID: -874596217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_54
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 517
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a68b746c5ecb945905d6eaa5fec8a2
+      internalID: -636139550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_55
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 518
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fcfa3730d527f84a93a45ded13cc339
+      internalID: -11662628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_56
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 518
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7649b337c466da43961d5a6b1e3f5e5
+      internalID: -1976118902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_57
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 259
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 319b58123fefe0441938f41128694d51
+      internalID: 92311267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_58
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 259
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 397b0c756c6f96342b685d3d58dd78c5
+      internalID: -1629444602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_59
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 259
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9ca1f3c8bf99c4fbb42b71318be025
+      internalID: 1982600521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_60
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 259
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9911c2fd7cd86c84fad5fc15f60327b9
+      internalID: -261912738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_61
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 259
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ef1de91b415324a968d6e78c84f496
+      internalID: 1112277160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_62
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 259
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f2df34cc4bf974195b17a519a9b05d
+      internalID: 609415315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_63
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 259
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebee7d70b99ef1347801fce2c1e14a7e
+      internalID: -197951590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_64
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 259
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a2a0f6a4008714a8e9830cbba5e4f8
+      internalID: 1350971489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_65
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 678
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c2d8df28a350e469da55905628a445
+      internalID: -1716181174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_66
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 677
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb79bb600cb71c945ab76de8da325873
+      internalID: -426379998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_67
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 678
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f65995ad9657641a97051d60cc6aba
+      internalID: 213150117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_68
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 678
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7cc183c4ee90d4da9832011eb46a96
+      internalID: -973820145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_69
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 677
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65d14e6792194342adc07714ce9c76b
+      internalID: 461676915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_70
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 678
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8c544c1ab74ae42a2ae8123df41c9e
+      internalID: 1698744087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_71
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 646
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f2480923704c845b90cc25bc2a8de3
+      internalID: -1851902079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_72
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 646
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d1088fe34559b46a436b5275d80c9a
+      internalID: -654159770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_73
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 614
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865eedc1125e7d341bb139c943e63c30
+      internalID: 1891272480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_74
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 613
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8158aa88aa63333489ba9594b4ce7b5e
+      internalID: 2110427137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_75
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 614
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8fc5d4f4ed4560498116675387e9dcd
+      internalID: 1224350921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_76
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 614
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f203a7958261e3d45982c70c4b5378fe
+      internalID: -311470554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_77
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 613
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32a8376f2a9cdd4f992159566b88189
+      internalID: -1422200060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_78
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 614
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0be1bdc9ceb9e439d76cdf8aebe4d3
+      internalID: 254753277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_79
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1094
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e6138f27e449d429547b8a627d3cc0
+      internalID: 754392050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_80
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1094
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d54d2e57f2392bb4cb31e2f722e0569a
+      internalID: -318447848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_81
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1061
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1f955bed3847e4990a144b8d87704b
+      internalID: 1495534125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_82
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1061
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df92d626a4a91764082cb2e533620ec1
+      internalID: 436262712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_83
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1030
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5370f9db300b5534d9068e85553a821b
+      internalID: 1946891006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_84
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1030
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c3dd3e1e2a604a4f8e3b54a5589e2bd
+      internalID: -931518605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_85
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1030
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1845b2d673ac0f449a3c7429ba25085
+      internalID: 74811319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_86
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1030
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5514bb159c77c4947985d6d620452d9f
+      internalID: -1480264863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_87
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 996
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf476a1a6fe0ff41964e376bb0e5416
+      internalID: 1169904854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_88
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 135
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3543072729216945bf49dac8e38a783
+      internalID: -1092795974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_89
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 130
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc178520989852438e6043ee00b2942
+      internalID: -491757373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_90
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 131
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c55cd61786ee3942a0c9fad49304ff4
+      internalID: -1113501493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_91
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 131
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000a58c2178026940a233e968daad92d
+      internalID: -1880580447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_92
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 131
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ed679922ee9f540a7b206e077b5f69
+      internalID: -1836532596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_93
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 131
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 062b7c87fa0c8c94cbd946004801a9f6
+      internalID: 1802897975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_94
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 131
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524ca1b0728b581419381d9b7b00eea2
+      internalID: 1055856292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_95
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 131
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 141c385f41f6fb143b0e5650db417af3
+      internalID: 146097411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_96
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 131
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6512068781a5442b177f9010a6d7bd
+      internalID: 1177732747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_97
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 131
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec42c0d8904d39b4487f47879e486d3d
+      internalID: -301546398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_98
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 99
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff843fb12b42e640b8391ba143b446b
+      internalID: -1348050121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_99
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 99
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d0778e463fdd841b292b426ae48fcc
+      internalID: 1668737749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_100
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 99
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04151f7679d78b345ad1b5b7c581495c
+      internalID: -313678294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_101
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 99
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7dd7d3843d5054baa0e1054994ef86
+      internalID: -1133035896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_102
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 99
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d21abc5d5582bf4ebdbb8fe6f280fd9
+      internalID: -614270344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_103
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 99
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ae54e17947bb042bd42ee6662210c7
+      internalID: 1546640325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_104
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 99
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7b54cd1016f7f48becbe4931e47062
+      internalID: 1202352237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_105
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 99
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79e6ea6e9d91684da0ae49c81c93325
+      internalID: 1627973528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_106
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 99
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be34e44c8b9d114a98ed6d5be6e9096
+      internalID: 41882984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_107
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 99
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c73c8e0356c3c604fb6973f43628df25
+      internalID: 814000961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_108
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 99
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32be636479c154448269ae22c1e115e
+      internalID: 459397965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_109
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 99
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 794346a5a3c74064790ce09f46efecc4
+      internalID: 305099558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_110
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 99
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21afa5b2ba0aa10469ad966964855ac5
+      internalID: -1661468583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_111
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 67
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f269ecad7a0348243aace637eb2c1023
+      internalID: 1766470869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_112
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 67
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11fa75e6b01b74f4ebef57279d69e317
+      internalID: -1695549255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_113
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 67
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a0b6d10e75306488892945db7e54be
+      internalID: 874544691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_114
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 67
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ccea17eeb28c6f4a81dbbfdbe97c117
+      internalID: -2042569511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_115
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 67
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf434eaea2698348841b0684bcb9474
+      internalID: 1793109237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_116
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 67
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a292a390a693448bc9e11a0e80fe35
+      internalID: 442477985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_117
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 67
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f504f9353942b694cb918509a9f4ab6f
+      internalID: -951466282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_118
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 67
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26a9c3b7466f3b449828905379f7a5a1
+      internalID: -1141628844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_119
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 67
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b9e9aa60e7e704a9f0cbce92c3ccf6
+      internalID: -1228790703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_120
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 67
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61bd78ae85704f7459699b193fd890a2
+      internalID: 565422124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_121
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 67
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5ada4cb3169f14d998011ce841e521
+      internalID: -1957086890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_122
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 67
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd41d2b9cfc1f844873bbdfee96728c
+      internalID: 2050921878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_123
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 67
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e917e7d92c367e47868b6851d273e26
+      internalID: -568704549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_124
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 35
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477a592173ff5cc48892e5aefefa3f0c
+      internalID: -1842102564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_125
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 35
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 924fc11ab3bdd50449a63e5fd3c3b694
+      internalID: -1122708121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_126
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 35
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d49e3aa4e221a3b4ab90cdc1134e3049
+      internalID: -1518864740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_127
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 35
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae36513bb8c94e48bd13e339d82101c
+      internalID: 1900736065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_128
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 35
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00eb2fa924059f640b3cebbcf968df72
+      internalID: -807115907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_129
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 35
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4345a99a44dc8443afe5668db0758f9
+      internalID: 567249138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_130
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 34
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd87e6f36c4a1dd4aa94466f008b532a
+      internalID: -586451544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_131
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 33
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55640ea091bf5849ac9743d8308a0d7
+      internalID: 215914062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_132
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 33
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6452aca6e35f984bb74a9a693afd469
+      internalID: -553801009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo premium emote animations sprite sheet-export_133
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 33
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf03803a617ed3f4aaf8db5b1b7aded2
+      internalID: 1632200706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Teemo premium emote animations sprite sheet-export_1: -1806870451
+      Teemo premium emote animations sprite sheet-export_35: -842571703
+      Teemo premium emote animations sprite sheet-export_44: -963479276
+      Teemo premium emote animations sprite sheet-export_33: 506942128
+      Teemo premium emote animations sprite sheet-export_16: 434486173
+      Teemo premium emote animations sprite sheet-export_26: 766727030
+      Teemo premium emote animations sprite sheet-export_104: 1202352237
+      Teemo premium emote animations sprite sheet-export_66: -426379998
+      Teemo premium emote animations sprite sheet-export_23: 1202355385
+      Teemo premium emote animations sprite sheet-export_96: 1177732747
+      Teemo premium emote animations sprite sheet-export_25: -471529694
+      Teemo premium emote animations sprite sheet-export_15: 1126757475
+      Teemo premium emote animations sprite sheet-export_42: -1594355631
+      Teemo premium emote animations sprite sheet-export_18: -1401538589
+      Teemo premium emote animations sprite sheet-export_77: -1422200060
+      Teemo premium emote animations sprite sheet-export_109: 305099558
+      Teemo premium emote animations sprite sheet-export_122: 2050921878
+      Teemo premium emote animations sprite sheet-export_92: -1836532596
+      Teemo premium emote animations sprite sheet-export_31: -198168211
+      Teemo premium emote animations sprite sheet-export_64: 1350971489
+      Teemo premium emote animations sprite sheet-export_88: -1092795974
+      Teemo premium emote animations sprite sheet-export_90: -1113501493
+      Teemo premium emote animations sprite sheet-export_19: 1999912441
+      Teemo premium emote animations sprite sheet-export_71: -1851902079
+      Teemo premium emote animations sprite sheet-export_89: -491757373
+      Teemo premium emote animations sprite sheet-export_93: 1802897975
+      Teemo premium emote animations sprite sheet-export_60: -261912738
+      Teemo premium emote animations sprite sheet-export_28: -1408186767
+      Teemo premium emote animations sprite sheet-export_63: -197951590
+      Teemo premium emote animations sprite sheet-export_112: -1695549255
+      Teemo premium emote animations sprite sheet-export_2: -1946795259
+      Teemo premium emote animations sprite sheet-export_129: 567249138
+      Teemo premium emote animations sprite sheet-export_29: -803574124
+      Teemo premium emote animations sprite sheet-export_120: 565422124
+      Teemo premium emote animations sprite sheet-export_5: 1900857657
+      Teemo premium emote animations sprite sheet-export_56: -1976118902
+      Teemo premium emote animations sprite sheet-export_49: 1344446043
+      Teemo premium emote animations sprite sheet-export_50: -667021182
+      Teemo premium emote animations sprite sheet-export_87: 1169904854
+      Teemo premium emote animations sprite sheet-export_10: 1300697273
+      Teemo premium emote animations sprite sheet-export_85: 74811319
+      Teemo premium emote animations sprite sheet-export_58: -1629444602
+      Teemo premium emote animations sprite sheet-export_0: 391362742
+      Teemo premium emote animations sprite sheet-export_130: -586451544
+      Teemo premium emote animations sprite sheet-export_128: -807115907
+      Teemo premium emote animations sprite sheet-export_39: -393808787
+      Teemo premium emote animations sprite sheet-export_102: -614270344
+      Teemo premium emote animations sprite sheet-export_124: -1842102564
+      Teemo premium emote animations sprite sheet-export_133: 1632200706
+      Teemo premium emote animations sprite sheet-export_9: 624847851
+      Teemo premium emote animations sprite sheet-export_55: -11662628
+      Teemo premium emote animations sprite sheet-export_91: -1880580447
+      Teemo premium emote animations sprite sheet-export_98: -1348050121
+      Teemo premium emote animations sprite sheet-export_114: -2042569511
+      Teemo premium emote animations sprite sheet-export_126: -1518864740
+      Teemo premium emote animations sprite sheet-export_13: -842929449
+      Teemo premium emote animations sprite sheet-export_59: 1982600521
+      Teemo premium emote animations sprite sheet-export_65: -1716181174
+      Teemo premium emote animations sprite sheet-export_27: 1844190074
+      Teemo premium emote animations sprite sheet-export_67: 213150117
+      Teemo premium emote animations sprite sheet-export_107: 814000961
+      Teemo premium emote animations sprite sheet-export_69: 461676915
+      Teemo premium emote animations sprite sheet-export_22: 947033922
+      Teemo premium emote animations sprite sheet-export_17: 1768842463
+      Teemo premium emote animations sprite sheet-export_41: 1417284158
+      Teemo premium emote animations sprite sheet-export_21: -1338721117
+      Teemo premium emote animations sprite sheet-export_70: 1698744087
+      Teemo premium emote animations sprite sheet-export_99: 1668737749
+      Teemo premium emote animations sprite sheet-export_45: 1751372913
+      Teemo premium emote animations sprite sheet-export_86: -1480264863
+      Teemo premium emote animations sprite sheet-export_30: -732356104
+      Teemo premium emote animations sprite sheet-export_125: -1122708121
+      Teemo premium emote animations sprite sheet-export_43: -1863712599
+      Teemo premium emote animations sprite sheet-export_106: 41882984
+      Teemo premium emote animations sprite sheet-export_52: 835307239
+      Teemo premium emote animations sprite sheet-export_103: 1546640325
+      Teemo premium emote animations sprite sheet-export_61: 1112277160
+      Teemo premium emote animations sprite sheet-export_36: -70926811
+      Teemo premium emote animations sprite sheet-export_111: 1766470869
+      Teemo premium emote animations sprite sheet-export_8: 1049413458
+      Teemo premium emote animations sprite sheet-export_132: -553801009
+      Teemo premium emote animations sprite sheet-export_97: -301546398
+      Teemo premium emote animations sprite sheet-export_3: 1654940094
+      Teemo premium emote animations sprite sheet-export_84: -931518605
+      Teemo premium emote animations sprite sheet-export_94: 1055856292
+      Teemo premium emote animations sprite sheet-export_127: 1900736065
+      Teemo premium emote animations sprite sheet-export_117: -951466282
+      Teemo premium emote animations sprite sheet-export_115: 1793109237
+      Teemo premium emote animations sprite sheet-export_82: 436262712
+      Teemo premium emote animations sprite sheet-export_113: 874544691
+      Teemo premium emote animations sprite sheet-export_12: -1589796572
+      Teemo premium emote animations sprite sheet-export_24: -504411355
+      Teemo premium emote animations sprite sheet-export_131: 215914062
+      Teemo premium emote animations sprite sheet-export_68: -973820145
+      Teemo premium emote animations sprite sheet-export_40: -446238642
+      Teemo premium emote animations sprite sheet-export_76: -311470554
+      Teemo premium emote animations sprite sheet-export_4: 739549047
+      Teemo premium emote animations sprite sheet-export_34: 866309555
+      Teemo premium emote animations sprite sheet-export_100: -313678294
+      Teemo premium emote animations sprite sheet-export_72: -654159770
+      Teemo premium emote animations sprite sheet-export_83: 1946891006
+      Teemo premium emote animations sprite sheet-export_47: -679323952
+      Teemo premium emote animations sprite sheet-export_105: 1627973528
+      Teemo premium emote animations sprite sheet-export_51: -1045405023
+      Teemo premium emote animations sprite sheet-export_95: 146097411
+      Teemo premium emote animations sprite sheet-export_57: 92311267
+      Teemo premium emote animations sprite sheet-export_110: -1661468583
+      Teemo premium emote animations sprite sheet-export_78: 254753277
+      Teemo premium emote animations sprite sheet-export_116: 442477985
+      Teemo premium emote animations sprite sheet-export_46: -1820073228
+      Teemo premium emote animations sprite sheet-export_14: -1957956290
+      Teemo premium emote animations sprite sheet-export_81: 1495534125
+      Teemo premium emote animations sprite sheet-export_119: -1228790703
+      Teemo premium emote animations sprite sheet-export_20: 662649651
+      Teemo premium emote animations sprite sheet-export_54: -636139550
+      Teemo premium emote animations sprite sheet-export_7: 1517716564
+      Teemo premium emote animations sprite sheet-export_48: -460578913
+      Teemo premium emote animations sprite sheet-export_53: -874596217
+      Teemo premium emote animations sprite sheet-export_75: 1224350921
+      Teemo premium emote animations sprite sheet-export_38: -810448579
+      Teemo premium emote animations sprite sheet-export_118: -1141628844
+      Teemo premium emote animations sprite sheet-export_73: 1891272480
+      Teemo premium emote animations sprite sheet-export_123: -568704549
+      Teemo premium emote animations sprite sheet-export_79: 754392050
+      Teemo premium emote animations sprite sheet-export_108: 459397965
+      Teemo premium emote animations sprite sheet-export_32: -2030964537
+      Teemo premium emote animations sprite sheet-export_101: -1133035896
+      Teemo premium emote animations sprite sheet-export_6: 386992628
+      Teemo premium emote animations sprite sheet-export_37: 1975653637
+      Teemo premium emote animations sprite sheet-export_62: 609415315
+      Teemo premium emote animations sprite sheet-export_80: -318447848
+      Teemo premium emote animations sprite sheet-export_121: -1957086890
+      Teemo premium emote animations sprite sheet-export_11: 309633034
+      Teemo premium emote animations sprite sheet-export_74: 2110427137
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

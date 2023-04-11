@@ -434,7 +434,7 @@ public class Statues
 
             statueCategories[value].categoryBtn.enabled = false;
             statueCategories[value].categoryBtn.image.sprite = statueCategories[value].selectImage;
-            statueCategories[value].categoryBtn.transform.position = statueCategories[value].defalutPos;
+            statueCategories[value].categoryBtn.transform.localPosition = statueCategories[value].defalutPos;
             for (int i = 0; i < statueCategories.Length; i++)
             {
                 if(i != value)
@@ -478,11 +478,10 @@ public class Statues
 
         for (int i = 0; i < statueCategories.Length; i++)
         {
-            statueCategories[i].defalutPos =  statueCategories[i].categoryBtn.transform.position;
+            statueCategories[i].defalutPos =  statueCategories[i].categoryBtn.transform.localPosition;
         }
 
 
-        SelectBtnIndx = 0;
 
         moveBtn.onClick.AddListener(MoveStatue);
         destroyBtn.onClick.AddListener(DestroyStatue);

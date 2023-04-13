@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using System.Threading.Tasks;
-using System.Threading;
+
 public class LoadingManager : MonoBehaviour
 {
     public static LoadingManager instance = null;

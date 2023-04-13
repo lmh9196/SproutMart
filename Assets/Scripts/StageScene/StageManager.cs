@@ -28,10 +28,13 @@ public class StageManager : MonoBehaviour
 
     public Spawner spawner;
 
+    public Table counterTable;
+    public Table exitTable;
+
     public List<GameObject> stageList = new List<GameObject>();
     public List<TableParent> areaParentList = new List<TableParent>();
-    public List<Table> allTable = new List<Table>();
-    public List<Table> salesUnLockTableList = new List<Table>();
+    [HideInInspector] public List<Table> allTable = new List<Table>();
+    [HideInInspector] public List<Table> salesUnLockTableList = new List<Table>();
 
     [System.Serializable]
     public struct StageAutoUnlockController { public Table[] autoUnlockTable; }

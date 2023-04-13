@@ -1015,9 +1015,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 113
-        y: 880
+        y: 879
         width: 14
-        height: 16
+        height: 17
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1036,9 +1036,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 161
-        y: 880
+        y: 879
         width: 14
-        height: 16
+        height: 17
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1099,9 +1099,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 305
-        y: 880
+        y: 879
         width: 14
-        height: 16
+        height: 17
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1120,9 +1120,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 353
-        y: 880
+        y: 879
         width: 14
-        height: 16
+        height: 17
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1483,7 +1483,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Npc1_23: -1813309718
+      Npc1_3: -471086611
       Npc1_55: -1885175969
       Npc1_29: 960423339
       Npc1_27: -1504597302
@@ -1551,7 +1551,7 @@ TextureImporter:
       Npc1_28: 860083238
       Npc1_11: 957266484
       Npc1_57: 1544313894
-      Npc1_3: -471086611
+      Npc1_23: -1813309718
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

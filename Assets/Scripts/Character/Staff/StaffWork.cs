@@ -1,10 +1,7 @@
 using Pathfinding;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Tilemaps;
 using UnityEngine.UI;
 
 public class StaffWork
@@ -41,16 +38,16 @@ public class StaffWork
     {
         if (!isHarvest) { Harvest(itemBox, charData); }
         else if (!isWaiting) { WaitCoolTime(isCheckArrival, charData); }
-        else  { CarryCrops(itemBox, isCheckArrival); }
+        else { CarryCrops(itemBox, isCheckArrival); }
     }
 
     void Harvest(Transform itemBox, CharData charData)
     {
-        if (itemBox.childCount == charData.maxHandsCount) 
+        if (itemBox.childCount == charData.maxHandsCount)
         {
             target = waitingPos;
             crtGetArea = null;
-            isHarvest = true; return; 
+            isHarvest = true; return;
         }
         else
         {
@@ -67,7 +64,7 @@ public class StaffWork
         {
             arrivalTimer += Time.deltaTime;
 
-            if(arrivalTimer > 0.33f)
+            if (arrivalTimer > 0.33f)
             {
                 timerImage.transform.parent.gameObject.SetActive(true);
 
@@ -106,11 +103,27 @@ public class StaffWork
         isHarvest = false;
         isWaiting = false;
     }
+    List<T> ListShuffle<T>(List<T> list)
+    {
+        int random;
+        T temp;
+        for (int i = 0; i < list.Count; ++i)
+        {
+            random = Random.Range(0, list.Count);
+
+            temp = list[i];
+            list[i] = list[random];
+            list[random] = temp;
+        }
+
+        return list;
+    }
     void FindLessSetArea(System.Action WaitingFinishAct)
     {
         actArea = null;
-
         List<TableArea> ableTableAreaList = new();
+
+        ListShuffle(setList);
 
         for (int i = 0; i < setList.Count; i++)
         {
@@ -124,8 +137,8 @@ public class StaffWork
                     for (int j = 0; j < ableTableAreaList.Count; j++)
                     {
                         if (j == 0) { actArea = ableTableAreaList[j]; }
-                        else { actArea = ableTableAreaList[j].GetCountRatio() < ableTableAreaList[j - 1].GetCountRatio() ? ableTableAreaList[j] : ableTableAreaList[j - 1]; }
-
+                        else if (GetCountRatio(ableTableAreaList[j]) < GetCountRatio(actArea)) { actArea = ableTableAreaList[j]; }
+                   
                         if (ableTableAreaList.Count - 1 == j)
                         {
                             if (actArea == null) { StateReset(); return; }
@@ -144,6 +157,8 @@ public class StaffWork
     {
         float tempDis = 0;
         TableArea tempGetArea = null;
+
+
 
         for (int i = 0; i < getList.Count; i++)
         {
@@ -174,5 +189,25 @@ public class StaffWork
                 }
             }
         }
+    }
+
+    float GetCountRatio(TableArea setArea)
+    {
+        int maxCount = setArea.maxCount;
+        int currentCount = setArea.itemBox.childCount;
+
+        if (setArea.parentTable is CraftSalesTable craftSalesTable) 
+        {
+            maxCount += craftSalesTable.finishArea.maxCount;
+            currentCount += craftSalesTable.finishArea.itemBox.childCount;
+        }
+        else if (setArea.parentTable is CraftGetTable craftGetTable) 
+        {
+            maxCount += craftGetTable.finishArea.maxCount;
+            currentCount += craftGetTable.finishArea.itemBox.childCount;
+        }
+
+
+        return (float)currentCount / (float)maxCount;
     }
 }

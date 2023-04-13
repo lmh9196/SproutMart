@@ -11,14 +11,23 @@ public class ThiefEvent : MonoBehaviour
     [SerializeField] int timerMaxRange;
 
     public GameObject noticeBtnPrefabs;
-    GameObject noticeBtn;
+    [HideInInspector] public EventBtn thiefEventBtn;
 
     public GameObject thief;
 
     [SerializeField] StageManager stageManager;
 
-    bool isSpawn;
+    bool thiefState;
+    public bool ThiefState
+    {
+        get { return thiefState; }
+        set
+        {
+            if (thiefState && !value) { GameEventManager.instance.DisableBtn(thiefEventBtn); }
 
+            thiefState = value;
+        }
+    }
     void Start()
     {
         int rand = Random.Range(timerMinRange, timerMaxRange);
@@ -27,22 +36,21 @@ public class ThiefEvent : MonoBehaviour
 
     void Update()
     {
-      
-        if (!thief.activeSelf)
+        ThiefState = thief.gameObject.activeSelf;
+
+        if (!ThiefState)
         {
             timer -= Time.deltaTime;
 
-            if (noticeBtn != null) { GameEventManager.instance.DisableBtn(noticeBtn.transform); }
+            if (timer < 0 && GameManager.instance.checkList.IsTutorialEnd 
+                && GameManager.instance.SelectGold(GameManager.GoldType.BOXGOLD)>0) { Spawn(); }
         }
-        else if (noticeBtn == null) { noticeBtn = GameEventManager.instance.SpawnRegistBtn(noticeBtnPrefabs, () => MainCamera.instance.CamEventBtn(thief), false); }
-    
-
-        if (timer < 0 && GameManager.instance.CheckTutorial(GameManager.instance.SelectGold(GameManager.GoldType.BOXGOLD) > 0)) { Spawn(); } 
     }
 
     public void Spawn()
     {
         GameEventManager.instance.SpawnEvent(thief.transform, stageManager.spawner.SelectSpawner());
+        thiefEventBtn = GameEventManager.instance.SpawnEventBtn(noticeBtnPrefabs, false, (() => { MainCamera.instance.CamEventBtn(thief.gameObject); }));
 
         int rand = Random.Range(timerMinRange, timerMaxRange);
         timer = rand;

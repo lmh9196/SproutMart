@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -13,10 +14,12 @@ public class GameEventManager : MonoBehaviour
     public struct EventBtnPoints
     {
         public Transform eventBtnPoint;
-        public GameObject noticeObj;
+
         public Image timer;
+    
         public bool btnPointFullCheck;
     }
+
     public EventBtnPoints[] eventBtnPoints;
 
 
@@ -26,11 +29,7 @@ public class GameEventManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
     }
-
-    private void Update()
-    {
-        NoticeDisable();
-    }
+  
 
     public void SpawnEvent(Transform spawnTarget ,Vector3 spawnPoint)
     {
@@ -38,52 +37,35 @@ public class GameEventManager : MonoBehaviour
         spawnTarget.gameObject.SetActive(true);
     }
 
-    public GameObject SpawnRegistBtn(GameObject btnPrefabs, Action btnAddContent, bool isNotice)
+  
+    public EventBtn SpawnEventBtn(GameObject btnPrefabs, bool isNotice, Action ClickAct, float maxDuration = 0)
     {
         for (int i = 0; i < eventBtnPoints.Length; i++)
         {
             if (!eventBtnPoints[i].btnPointFullCheck)
             {
-                GameObject btn = Instantiate(btnPrefabs.gameObject, eventBtnPoints[i].eventBtnPoint);
-                btn.transform.position = eventBtnPoints[i].eventBtnPoint.position;
-
-                btn.transform.SetAsFirstSibling();
-
-                btn.GetComponent<Button>().onClick.AddListener(() => btnAddContent());
-
                 eventBtnPoints[i].btnPointFullCheck = true;
 
-                if (isNotice) { eventBtnPoints[i].noticeObj.SetActive(true); }
+                GameObject btn = Instantiate(btnPrefabs.gameObject, eventBtnPoints[i].eventBtnPoint);
 
-                return btn;
+                EventBtn eventBtn = btn.GetComponent<EventBtn>();
+                eventBtn.Init(isNotice, maxDuration, ClickAct);
+
+                return eventBtn;
             }
         }
         return null;
     }
 
-    public void DisableBtn(Transform noticeBtn)
-    {
-        eventBtnPoints[FindPointIndex(noticeBtn)].btnPointFullCheck = false;
-
-        Destroy(noticeBtn.gameObject);
-    }
-
-
-    public void NoticeDisable()
-    {
-        if(EventSystem.current.currentSelectedGameObject != null)
-        {
-            eventBtnPoints[FindPointIndex(EventSystem.current.currentSelectedGameObject.transform)].noticeObj.SetActive(false);
-        }
-    }
-
-    public int FindPointIndex(Transform noticeBtn)
+    public void DisableBtn(EventBtn eventBtn)
     {
         for (int i = 0; i < eventBtnPoints.Length; i++)
         {
-            if (eventBtnPoints[i].eventBtnPoint == noticeBtn.parent) { return i; }
+            if (eventBtnPoints[i].eventBtnPoint == eventBtn.transform.parent) { eventBtnPoints[i].btnPointFullCheck = false; break; }
         }
 
-        return 0;
+        Destroy(eventBtn.gameObject);
     }
+
+
 }

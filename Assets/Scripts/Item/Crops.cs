@@ -61,16 +61,7 @@ public class Crops : MonoBehaviour
         switch (type)
         {
             case ParentsType.CHAR:
-                parentRenderer = transform.parent.GetComponent<SpriteRenderer>();
-
-                //spriteRenderer.sortingOrder = 0;
-                /* if (Mathf.Abs(crops.spriteRenderer.transform.parent.GetComponent<ItemBox>().animDir.lookDir.x)
-                     > Mathf.Abs(crops.spriteRenderer.transform.parent.GetComponent<ItemBox>().animDir.lookDir.y))
-                     crops.spriteRenderer.sprite = sideSprite;
-                 else
-                     crops.spriteRenderer.sprite = frontSprite;*/
-                break;
-
+                parentRenderer = transform.parent.GetComponent<SpriteRenderer>(); break;
             case ParentsType.TABLE:
                 spriteRenderer.sprite = cropsData.frontSprite;
                 spriteRenderer.sortingOrder = -10;
@@ -78,6 +69,4 @@ public class Crops : MonoBehaviour
         }
         anim.SetTrigger("ChangeParent");
     }
-
-
 }

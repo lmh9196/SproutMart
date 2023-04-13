@@ -166,7 +166,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1509577595, guid: 4a6d56bdbc9b43e4ea8a0e7ed0e8e0a2, type: 3}
+  m_Sprite: {fileID: 21986248, guid: 4a6d56bdbc9b43e4ea8a0e7ed0e8e0a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -243,15 +243,15 @@ MonoBehaviour:
   itemBoxCover: {fileID: 901281749331249534}
   buffeffect: {fileID: 2882711880470575260}
   packingBox: {fileID: 9030278508433710765}
-  counterTable: {fileID: 0}
-  exitTable: {fileID: 0}
-  shoppingList: []
   aiLerp: {fileID: -7367584085004958934}
   aiDest: {fileID: 4688191107214149135}
   isFind: 0
   isActive: 0
   shoppingKindLimitCount: 4
   handsLimitCount: 3
+  counterTable: {fileID: 0}
+  exitTable: {fileID: 0}
+  shoppingList: []
   maxHandsCount: 0
   currentHandsCount: 0
 --- !u!114 &7420572185747633553

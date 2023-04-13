@@ -20,19 +20,12 @@ public class Customer : MonoBehaviour
     public Transform itemBoxCover;
     SpriteRenderer coverSpriteRenderer;
     public ParticleSystem buffeffect;
+
     [Space(20f)]
-
-
     public GameObject packingBox;
-    public Table counterTable;
-    public Table exitTable;
+   
+   
 
-    public CharacterAnimDir animDir = new();
-
-    public CustomerShopping customerShopping = new();
-
-
-    public List<Table> shoppingList = new();
 
     public AILerp aiLerp;
     public AIDestinationSetter aiDest;
@@ -43,9 +36,16 @@ public class Customer : MonoBehaviour
     public int shoppingKindLimitCount;
 
     public int handsLimitCount;
+    [HideInInspector] public Table counterTable;
+    [HideInInspector] public Table exitTable;
+    [HideInInspector] public List<Table> shoppingList = new();
+
     [HideInInspector] public int maxHandsCount;
     [HideInInspector] public int currentHandsCount;
 
+
+    public CharacterAnimDir animDir = new();
+    public CustomerShopping customerShopping = new();
     CapsuleCollider2D capsuleCollider;
     protected virtual void Awake()
     {
@@ -55,6 +55,8 @@ public class Customer : MonoBehaviour
         animDir.anim = GetComponent<Animator>();
         aiLerp = GetComponent<AILerp>();
         aiDest = GetComponent<AIDestinationSetter>();
+        counterTable = StageManager.instance.counterTable;
+        exitTable = StageManager.instance.exitTable;
     }
     public virtual void Start()
     {

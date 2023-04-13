@@ -55,7 +55,6 @@ public class Table : MonoBehaviour
 
     public CharData[] staffDatas;
 
-    [Serializable]
     public struct PreTable { public List<Table> preTableList; }
     public PreTable[] preTable;
     public Table[] parentTable;

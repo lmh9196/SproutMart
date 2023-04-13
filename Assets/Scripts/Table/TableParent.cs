@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class TableParent : MonoBehaviour
 {
-    public List<Table> childTable = new();
+    [HideInInspector] public List<Table> childTable = new();
     Dictionary<string, List<Table>> tableDic = new();
 
     [SerializeField] Sprite gemCoinImage;

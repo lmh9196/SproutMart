@@ -24,7 +24,7 @@ public class DrunkenCustomer : Customer
 
     [SerializeField] GameObject questionMark;
     [SerializeField] GameObject exclamationMark;
-    [SerializeField] GameObject effect;
+    public GameObject effect;
 
     Player player;
     DrunkenEvent drunkenEvent;
@@ -39,7 +39,6 @@ public class DrunkenCustomer : Customer
 
     private void FixedUpdate()
     {
-     
         if (IsTouch)
         {
             customerShopping.UpdateTarget(shoppingList, this);
@@ -62,9 +61,6 @@ public class DrunkenCustomer : Customer
         if (!IsTouch) base.Update();
         questionMark.SetActive(GameManager.instance.ConditionCheck(isRight, true));
         exclamationMark.SetActive(GameManager.instance.ConditionCheck(isRight, false));
-
-        timerAct.FillTimerImage(drunkenEvent.touchTimer.transform.parent.gameObject, drunkenEvent.touchTimer, IsTouch
-           , 1 / drunkenEvent.maxDurationTime * Time.deltaTime, ReturnWorngTarget);
     }
 
     protected void OnTriggerEnter2D(Collider2D collision)
@@ -81,6 +77,8 @@ public class DrunkenCustomer : Customer
 
                 SoundManager.instance.PlaySfx("Pop");
                 GameManager.instance.ClickVib();
+
+                drunkenEvent.drunkenEventBtn.IsTimer = true;
             }
         }
 
@@ -108,7 +106,7 @@ public class DrunkenCustomer : Customer
         aiLerp.SearchPath();
     }
 
-    IEnumerator SetWrongTarget()
+    public IEnumerator SetWrongTarget()
     {
         while (true)
         {
@@ -123,6 +121,20 @@ public class DrunkenCustomer : Customer
             yield return null;
         }
     }
+    public void ReturnWorngTarget()
+    {
+        IsTouch = false;
+
+        effect.SetActive(true);
+
+        StartCoroutine(ReturnDelay());
+        StartCoroutine(SetWrongTarget());
+
+        aiLerp.SearchPath();
+        aiLerp.canMove = true;
+
+        GameManager.instance.ClickVib();
+    }
     public void RightTouch(Collider2D _collision)
     {
         if(_collision.TryGetComponent(out DetectArea detect))
@@ -131,12 +143,14 @@ public class DrunkenCustomer : Customer
             {
                 appearance.type = CustomerAppearance.Type.CUSTOMER;
 
+                effect.SetActive(true);
+
                 isRight = true;
                 IsTouch = false;
-                aiLerp.canMove = true;
+                drunkenEvent.drunkenEventBtn.IsTimer = false;
 
-                effect.SetActive(true);
                 aiLerp.SearchPath();
+                aiLerp.canMove = true;
 
                 SoundManager.instance.PlaySfx("RightChoice");
                 GameManager.instance.ClickVib();
@@ -144,24 +158,11 @@ public class DrunkenCustomer : Customer
         }
     }
 
-    void ReturnWorngTarget()
-    {
-        effect.SetActive(true);
-        StartCoroutine(ReturnDelay());
-
-        IsTouch = false;
-
-        StartCoroutine(SetWrongTarget());
-        aiLerp.SearchPath();
-        aiLerp.canMove = true;
-
-        GameManager.instance.ClickVib();
-    }
-    IEnumerator ReturnDelay()
+    public IEnumerator ReturnDelay()
     {
         CapsuleCollider2D coll = GetComponent<CapsuleCollider2D>();
         coll.enabled = false;
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2f);
         coll.enabled = true;
     }
 }

@@ -604,6 +604,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2833842774198513925, guid: da2b8b7b47fd4aa46aae6a7ac4e200db, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833842774198513925, guid: da2b8b7b47fd4aa46aae6a7ac4e200db, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.384
+      objectReference: {fileID: 0}
     - target: {fileID: 2833842774198513930, guid: da2b8b7b47fd4aa46aae6a7ac4e200db, type: 3}
       propertyPath: m_Name
       value: MilkGetArea
@@ -677,8 +685,12 @@ PrefabInstance:
       value: 1.18
       objectReference: {fileID: 0}
     - target: {fileID: 8191642073506028279, guid: da2b8b7b47fd4aa46aae6a7ac4e200db, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8191642073506028279, guid: da2b8b7b47fd4aa46aae6a7ac4e200db, type: 3}
       propertyPath: m_Offset.y
-      value: 0.82
+      value: 0.11
       objectReference: {fileID: 0}
     - target: {fileID: 8191642073506028279, guid: da2b8b7b47fd4aa46aae6a7ac4e200db, type: 3}
       propertyPath: m_Direction

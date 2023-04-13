@@ -60,7 +60,7 @@ public class TableArea : MonoBehaviour
     }
 
     public int SetNeedCount() { return maxCount - itemBox.childCount; }
-    public float GetCountRatio() { return ((float)itemBox.childCount / (float)maxCount); }
+   
 }
 
 

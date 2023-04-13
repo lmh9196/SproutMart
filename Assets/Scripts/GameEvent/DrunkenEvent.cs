@@ -1,4 +1,5 @@
 using Pathfinding;
+using Pathfinding.Ionic.Zlib;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -16,17 +17,27 @@ public class DrunkenEvent : MonoBehaviour
 
 
     public GameObject noticeBtnPrefabs;
-    GameObject noticeBtn;
-
-    public Image touchTimer;
+    [HideInInspector] public EventBtn drunkenEventBtn;
 
     public DrunkenCustomer customer;
+    bool customerState;
+    public bool CustomerState
+    {
+        get { return customerState; }
+        set 
+        {
+            if (customerState && !value) { GameEventManager.instance.DisableBtn(drunkenEventBtn); }
+        
+            customerState = value;
+        }
+    }
 
     [Space(10f)]
     [Header("Tutorial")]
     [SerializeField] VideoClip guideVideoClip;
 
     [SerializeField] StageManager stageManager;
+
 
     void Start()
     {
@@ -35,30 +46,14 @@ public class DrunkenEvent : MonoBehaviour
     }
     void Update()
     {
-        if (!customer.gameObject.activeSelf)
+        CustomerState = customer.gameObject.activeSelf;
+
+        if (GameManager.instance.checkList.IsTutorialEnd && !CustomerState)
         {
             timer -= Time.deltaTime;
-            if (noticeBtn != null)
-            {
-                GameEventManager.instance.DisableBtn(noticeBtn.transform);
-            }
+
+            if (timer < 0) { Spawn(); }
         }
-        else
-        {
-            if (!customer.isRight && noticeBtn == null) 
-            { 
-                noticeBtn = GameEventManager.instance.SpawnRegistBtn(noticeBtnPrefabs, () => MainCamera.instance.CamEventBtn(customer.gameObject),false);
-                touchTimer = GameEventManager.instance.eventBtnPoints[GameEventManager.instance.FindPointIndex(noticeBtn.transform)].timer;
-            }
-
-            if (customer.isRight && noticeBtn != null)
-            {
-                GameEventManager.instance.DisableBtn(noticeBtn.transform);
-            }
-        }
-
-
-        if (timer < 0 && GameManager.instance.CheckTutorial(StageManager.instance.salesUnLockTableList.Count > 1)) { Spawn(); }
 
         if (!GameManager.instance.checkList.IsTutorial_Drunken) { Tutorial(); }
     }
@@ -69,15 +64,17 @@ public class DrunkenEvent : MonoBehaviour
         {
             VideoManager.instance.VideoPlay(guideVideoClip, 0);
             GameManager.instance.checkList.IsTutorial_Drunken = true;
+            drunkenEventBtn.IsNotice = false;
         }
     }
 
     public void Spawn()
     {
         GameEventManager.instance.SpawnEvent(customer.transform, stageManager.spawner.SelectSpawner());
+        drunkenEventBtn =  GameEventManager.instance.SpawnEventBtn(noticeBtnPrefabs, !GameManager.instance.checkList.IsTutorial_Drunken, (()=> { MainCamera.instance.CamEventBtn(customer.gameObject); }),maxDurationTime);
+        drunkenEventBtn.timerFinishAct = customer.ReturnWorngTarget;
 
         int rand = Random.Range(timerMinRange, timerMaxRange);
         timer = rand;
     }
-  
 }

@@ -17,12 +17,13 @@ public class DialogueTerm
     public string term_NotEnoughGold = "NotEnoughGold";
 
     public string termMove_ChoiceObj = "Guide_Move_Choice";
+
+    public string termDrunken_GuideRightWay = "Guide_DrunkenWay";
 }
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager instance = null;
 
-    public DialogueTerm term = new();
 
 
     public Text profileText;
@@ -55,12 +56,15 @@ public class DialogueManager : MonoBehaviour
         if (profileTextParent.gameObject.activeSelf) { profileText.text = tempFixText; }
     }
 
-    public void EnableDialouge(string term)
+    public void EnableDialouge( string term, bool isPop, string addStr = null)
     {
-        profileTextParent.gameObject.SetActive(true);
-        textPop.ResetPop();
-        loc.Term = term;
-        tempFixText = profileText.text;
+        if (!profileTextParent.gameObject.activeSelf) { profileTextParent.gameObject.SetActive(true); }
+
+        if (isPop) { textPop.ResetPop(); }
+
+        if (term != loc.Term) { loc.Term = term; }
+     
+        tempFixText = profileText.text + addStr;
     }
     public void DisableDialogue()
     {
@@ -69,40 +73,35 @@ public class DialogueManager : MonoBehaviour
         profileTextParent.gameObject.SetActive(false);
     }
 
-    public void AlwaysDialogue(Action alwaysPrint) 
-    {
-        if (!isAlwaysTrigger) { isAlwaysTrigger = true; }
-        alwaysPrint();
-    }
-    public void Always_DestroySelect(int selectCount, int totalCount) { profileText.text = tempFixText + " (" + selectCount + "/" + totalCount + ")"; }
-    public void AlwaysPrint() { profileText.text = tempFixText; }
 
-
-
-    public void GuideTrigger(string term) { if (!isTriggerRunning) { StartCoroutine(CoroutineFlashDialogue(term)); } }
+    public void GuideFlashCoroutine(string term) { if (!isTriggerRunning) { StartCoroutine(CoroutineFlashDialogue(term)); } }
     public IEnumerator CoroutineFlashDialogue(string triggerTerm)
     {
         isTriggerRunning = true;
 
         float timeCount = 0;
 
-        EnableDialouge(triggerTerm);
-
         string tempTerm = loc.Term;
 
+        EnableDialouge(triggerTerm, true);
+
+
+        bool isActiving = profileTextParent.gameObject.activeSelf;
 
         profileText.DOKill(true);
         profileText.DOColor(ColorManager.instance.textFailColor, 1.0f).SetEase(Ease.Flash, 8, 0);
 
-        while(true)
+        while (true)
         {
-            if (timeCount > 1.1 || tempTerm != loc.Term) {  profileText.DOKill(true); break; }
+            if (timeCount > 1.1 || triggerTerm != loc.Term) { profileText.DOKill(true); break; }
 
             timeCount += 0.1f;
             yield return new WaitForSeconds(0.1f);
         }
 
-        if (tempTerm == loc.Term) { DisableDialogue(); }
+        if (!isActiving) { DisableDialogue(); }
+        else { EnableDialouge(tempTerm, true); }
+      
         isTriggerRunning = false;
     }
 }

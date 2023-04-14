@@ -441,6 +441,14 @@ MonoBehaviour:
       - Move
       Flags: 0000
       Languages_Touch: []
+    - Term: Guide_DrunkenWay
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC54C\uB9DE\uB294 \uC704\uCE58\uB85C \uC548\uB0B4\uD574\uC8FC\uC138\uC694!"
+      - Please guide me to the right place!
+      Flags: 0000
+      Languages_Touch: []
     CaseInsensitiveTerms: 0
     OnMissingTranslation: 1
     mTerm_AppName: 

@@ -34,7 +34,7 @@ public class SoundManager : MonoBehaviour
 
     private void Update()
     {
-        if (GameManager.instance.CheckTutorial() && !BGMAudioSorceArray[MenuManager.instance.setting.BGMSelectNum].isPlaying) 
+        if (GameManager.instance.checkList.IsTutorialEnd && !BGMAudioSorceArray[MenuManager.instance.setting.BGMSelectNum].isPlaying) 
         { PlayBGM(MenuManager.instance.setting.BGMSelectNum); }
     }
 

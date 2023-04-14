@@ -826,14 +826,13 @@ MonoBehaviour:
   saleWayList: []
   staffDatas:
   - {fileID: 11400000, guid: 8629c9b51a8c8c74a95b2f96c9ab7ddb, type: 2}
-  preTable: []
   parentTable: []
   lockCoinImage: {fileID: 302267204387082051}
   decoParent: {fileID: 3327941099950223359}
   lockArea: {fileID: 0}
   tableObj: {fileID: 560431370998003324}
   getArea: {fileID: 5094160114932418528}
-  respawnTime: 4
+  respawnTime: 6
   readySign: {fileID: 2266614620178694632}
   cowAnim: {fileID: 562966676123663616}
   cowSFX: {fileID: 3498346519604141747}

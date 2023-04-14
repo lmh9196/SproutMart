@@ -416,7 +416,7 @@ public class Upgrade
 public class Statues
 {
     Player player;
-    public StatueManager statueManager;
+    [HideInInspector] public StatueManager statueManager;
 
     public Button moveBtn;
     public Button destroyBtn;
@@ -499,11 +499,7 @@ public class Statues
             SoundManager.instance.PlaySfx("Pop");
             statueManager.InitStatueManager(StatueManager.BuildMode.BUILD, statue);
         }
-        else 
-        {
-            //DialogueManager.instance.EnableDialouge(DialogueManager.instance.term.term_NotEnoughGold);
-            SoundManager.instance.PlaySfx("Fail");
-        }
+        else { SoundManager.instance.PlaySfx("Fail"); }
     }
     void MoveStatue()
     {

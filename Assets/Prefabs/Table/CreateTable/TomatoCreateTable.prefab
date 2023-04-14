@@ -422,7 +422,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8722301461364273912, guid: da2b8b7b47fd4aa46aae6a7ac4e200db, type: 3}
       propertyPath: respawnTime
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8722301461364273912, guid: da2b8b7b47fd4aa46aae6a7ac4e200db, type: 3}
       propertyPath: staffDatas.Array.size

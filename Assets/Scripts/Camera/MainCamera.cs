@@ -67,7 +67,7 @@ public class MainCamera : MonoBehaviour
         DoubleTouchCheck();
         CameraSize();
     }
-
+   
     void DoubleTouchCheck()
     {
         if (Input.touchCount == 2 && !GameManager.instance.checkList.isLookAround)
@@ -193,6 +193,8 @@ public class MainCamera : MonoBehaviour
         }
         else targetForm = player.transform;
     }
+
+   
     public bool TargetCamInCheck(Transform target, float weight)
     {
         Vector3 targetPos = Camera.main.WorldToViewportPoint(target.position);

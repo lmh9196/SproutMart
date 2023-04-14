@@ -55,7 +55,7 @@ public class DrunkenEvent : MonoBehaviour
             if (timer < 0) { Spawn(); }
         }
 
-        if (!GameManager.instance.checkList.IsTutorial_Drunken) { Tutorial(); }
+        //if (!GameManager.instance.checkList.IsTutorial_Drunken) { Tutorial(); }
     }
 
     void Tutorial()

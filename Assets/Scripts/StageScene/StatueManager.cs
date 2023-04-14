@@ -43,6 +43,19 @@ public class StatueManager : MonoBehaviour
     Player player;
     [HideInInspector] public Statue[] statuePrefabs;
 
+    int destroyCount;
+
+    DialogueTerm term = new();
+    public int DestroyCount
+    {
+        get {  return destroyCount; }
+        set
+        {
+            destroyCount = value;
+
+            DialogueManager.instance.EnableDialouge(term.termDestroy_Select, false, " (" + destroyCount + "/" + statueList.Count + ")");
+        }
+    }
     private void Awake() 
     {
         if (instance == null) { instance = this; }
@@ -64,7 +77,12 @@ public class StatueManager : MonoBehaviour
     {
         if (GameManager.instance.checkList.isBuildMode) { UpdateModeAct(); }
 
-        if (buildMode == BuildMode.DESTROY) { UpdateDestroyMod(); }
+        if (buildMode == BuildMode.DESTROY) 
+        {
+            UpdateDestroyMod();
+
+            if (DestroyCount != destroyList.Count) { DestroyCount = destroyList.Count; }
+        }
     }
 
     public void StatueLoad()
@@ -113,26 +131,25 @@ public class StatueManager : MonoBehaviour
             case BuildMode.BUILD:
                 SpawnStatue();
 
-                DialogueManager.instance.EnableDialouge(DialogueManager.instance.term.termBuild_ChoicePos);
+                DialogueManager.instance.EnableDialouge(term.termBuild_ChoicePos, true);
 
                 preAct = NoneExistPre;
                 runningAct += StatueMouseChasing;
-                runningAct += () => DialogueManager.instance.AlwaysDialogue(DialogueManager.instance.AlwaysPrint); //guideDialogue.PrintDialogue;
                 break;
             case BuildMode.MOVE:
 
-                DialogueManager.instance.EnableDialouge(DialogueManager.instance.term.termMove_ChoiceObj);
+                DialogueManager.instance.EnableDialouge(term.termMove_ChoiceObj, true);
                 preAct = MoveModeFindStatue;
                 runningAct = StatueMouseChasing;
                 break;
+
             case BuildMode.DESTROY:
 
                 DestroyModOn(true);
-                DialogueManager.instance.EnableDialouge(DialogueManager.instance.term.termDestroy_Select);
+                DialogueManager.instance.EnableDialouge(term.termDestroy_Select, true, " (" + destroyCount + "/" + statueList.Count + ")");
 
                 preAct = NoneExistPre;
                 runningAct += CollectDestroyStatue;
-                runningAct += () => DialogueManager.instance.AlwaysDialogue(() => DialogueManager.instance.Always_DestroySelect(destroyList.Count, statueList.Count));//guideDialogue.PrintDialogue_Destroy(destroyList.Count, statueList.Count);
                 break;
         }
     }
@@ -172,7 +189,7 @@ public class StatueManager : MonoBehaviour
         switch(buildMode)
         {
             case BuildMode.MOVE:
-                DialogueManager.instance.EnableDialouge(DialogueManager.instance.term.termBuild_ChoicePos); break;
+                DialogueManager.instance.EnableDialouge(term.termBuild_ChoicePos, true); break;
         }
         isPreTrigger = false;
     }
@@ -306,14 +323,14 @@ public class StatueManager : MonoBehaviour
                     if (GameManager.instance.SelectGold(selectStatue.goldType) < selectStatue.data.price) 
                     { 
                         ColorManager.instance.GoldFail(selectStatue.goldType);
-                        DialogueManager.instance.GuideTrigger(DialogueManager.instance.term.term_NotEnoughGold);
+                        DialogueManager.instance.GuideFlashCoroutine(term.term_NotEnoughGold);
 
                         return false; 
                     }
                     else if (isCollTrigger) 
                     {
                         ColorManager.instance.BuildFail(selectStatue.detectSquareList);
-                        DialogueManager.instance.GuideTrigger(DialogueManager.instance.term.termBuild_Crash);
+                        DialogueManager.instance.GuideFlashCoroutine(term.termBuild_Crash);
                         return false; 
                     }
                 }
@@ -325,9 +342,9 @@ public class StatueManager : MonoBehaviour
                     if (isCollTrigger) 
                     {
                         ColorManager.instance.BuildFail(selectStatue.detectSquareList);
-                        DialogueManager.instance.GuideTrigger(DialogueManager.instance.term.termBuild_Crash); return false;
+                        DialogueManager.instance.GuideFlashCoroutine(term.termBuild_Crash); return false;
                     }
-                    else if (selectStatue == null) { DialogueManager.instance.GuideTrigger(DialogueManager.instance.term.termDestroy_NotEnough); return false; }
+                    else if (selectStatue == null) { DialogueManager.instance.GuideFlashCoroutine(term.termDestroy_NotEnough); return false; }
                 }
                 return false;
 
@@ -335,7 +352,7 @@ public class StatueManager : MonoBehaviour
                 if (destroyList.Count > 0) { return true; }
                 else
                 {
-                    DialogueManager.instance.GuideTrigger(DialogueManager.instance.term.termDestroy_NotEnough);
+                    DialogueManager.instance.GuideFlashCoroutine(term.termDestroy_NotEnough);
                     return false;
                 }
 
@@ -378,6 +395,8 @@ public class StatueManager : MonoBehaviour
     }
     void FinishMove()
     {
+        DialogueManager.instance.EnableDialouge(term.termMove_ChoiceObj, true);
+
         GameObject effect = Instantiate(selectStatue.smokeEffect, selectStatue.transform.position, Quaternion.identity);
         effect.SetActive(true);
 

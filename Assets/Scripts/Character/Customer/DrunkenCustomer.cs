@@ -8,15 +8,47 @@ using UnityEngine.UI;
 
 public class DrunkenCustomer : Customer
 {
-    public bool isRight;
-    bool isTouch;
-    public bool IsTouch
+    bool isRight;
+    public bool IsRight
     {
-        get { return isTouch; }
+        get { return isRight; }
         set 
-        { 
-            isTouch = value;
+        {
+            isRight = value;
+
+            if(isRight)
+            {
+                if(!GameManager.instance.checkList.IsTutorial_Drunken)
+                {
+                    DialogueManager.instance.DisableDialogue();
+                    TutorialManger.instance.DiableTargetNoticeArrow();
+                    GameManager.instance.checkList.IsTutorial_Drunken = true;
+                }
+            }
+        }
+    }
+
+    bool isTouch;
+    public bool IsTouch { get { return isTouch; }
+        set 
+        {
+            if(!GameManager.instance.checkList.IsTutorial_Drunken)
+            {
+                if (!isTouch && value)
+                {
+                    DialogueManager.instance.EnableDialouge(term.termDrunken_GuideRightWay, true);
+                    TutorialManger.instance.playerGuideArrow.ChaseOrder(true, shoppingList[1].transform, 0, 0.5f);
+                }
+                else if (isTouch && !value)
+                {
+                    DialogueManager.instance.DisableDialogue();
+                    TutorialManger.instance.playerGuideArrow.ChaseOrder(true, transform, 0, 2f);
+                }
+            }
+
             ResetCollider();
+
+            isTouch = value;
         }
     }
 
@@ -28,6 +60,7 @@ public class DrunkenCustomer : Customer
 
     Player player;
     DrunkenEvent drunkenEvent;
+    DialogueTerm term = new();
     protected override void Awake()
     {
         base.Awake();
@@ -35,7 +68,17 @@ public class DrunkenCustomer : Customer
         drunkenEvent = GetComponentInParent<DrunkenEvent>();
     }
 
-    private void OnEnable() { ResetDrunkenCustomer(); }
+    private void OnEnable() 
+    { 
+        ResetDrunkenCustomer();
+
+        if (!GameManager.instance.checkList.IsTutorial_Drunken)
+        {
+            TutorialManger.instance.ActiveTargetNoticeArrow();
+            TutorialManger.instance.playerGuideArrow.ChaseOrder(true, transform, 0, 2f);
+        }
+    }
+
 
     private void FixedUpdate()
     {
@@ -55,17 +98,27 @@ public class DrunkenCustomer : Customer
         }
     }
 
-    TimerImageAct timerAct = new();
     protected override void Update()
     {
         if (!IsTouch) base.Update();
-        questionMark.SetActive(GameManager.instance.ConditionCheck(isRight, true));
-        exclamationMark.SetActive(GameManager.instance.ConditionCheck(isRight, false));
+        questionMark.SetActive(GameManager.instance.ConditionCheck(IsRight, true));
+        exclamationMark.SetActive(GameManager.instance.ConditionCheck(IsRight, false));
+
+
+        if (!GameManager.instance.checkList.IsTutorial_Drunken) 
+        {
+            if (!IsRight && !IsTouch)
+            {
+                if (MainCamera.instance.TargetCamInCheck(transform, 0.1f)) { drunkenEvent.drunkenEventBtn.IsNotice = false; }
+                else { drunkenEvent.drunkenEventBtn.IsNotice = true; }
+            }
+        }
     }
+  
 
     protected void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!isRight && !IsTouch)
+        if (!IsRight && !IsTouch)
         {
             if (collision.CompareTag("Player"))
             {
@@ -73,7 +126,9 @@ public class DrunkenCustomer : Customer
                 IsTouch = true;
                 effect.SetActive(true);
 
+
                 TargetChagne(shoppingList[0].customerList);
+
 
                 SoundManager.instance.PlaySfx("Pop");
                 GameManager.instance.ClickVib();
@@ -87,7 +142,7 @@ public class DrunkenCustomer : Customer
 
     void ResetDrunkenCustomer()
     {
-        isRight = false;
+        IsRight = false;
         IsTouch = false;
         appearance.Init(hopeImage);
         appearance.type = appearance.RegistAppearance(CustomerAppearance.Type.DRUNKEN, animDir.anim, npcData);
@@ -145,7 +200,7 @@ public class DrunkenCustomer : Customer
 
                 effect.SetActive(true);
 
-                isRight = true;
+                IsRight = true;
                 IsTouch = false;
                 drunkenEvent.drunkenEventBtn.IsTimer = false;
 

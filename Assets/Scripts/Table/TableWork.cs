@@ -134,7 +134,7 @@ public class CreateWork : TableWork
         }
         else { timerCount = 0; }
     }
-    void CreateAct()
+    public void CreateAct()
     {
         for (int i = 0; i < getArea.maxCount; i++)
         {

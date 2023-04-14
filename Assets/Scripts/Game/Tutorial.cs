@@ -52,6 +52,12 @@ public class Tutorial : MonoBehaviour
 
         StartCoroutine(Init());
     }
+
+    IEnumerator TomatoSapwnDelay()
+    {
+        yield return new WaitForSeconds(2f);
+        tomatoCreateLock.GetComponentInParent<CreateTable>().createWork.CreateAct();
+    }
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.E))
@@ -62,7 +68,9 @@ public class Tutorial : MonoBehaviour
 
         switch (stepCount)
         {
-            case 0: CheckAct(ActiveCheck(tomatoCreateLock, false)); break;
+            case 0: CheckAct(ActiveCheck(tomatoCreateLock, false));
+                StartCoroutine(TomatoSapwnDelay());
+                break;
 
             case 1: CheckAct(CountCheck(player.itemBox.childCount
                 , player.charData.maxHandsCount)); break;
@@ -181,10 +189,12 @@ public class Tutorial : MonoBehaviour
     Vector3 targetPos;
     Vector3 viewPos;
     Vector3 worldPos;
-    public bool CheckCameraOut(Transform target, Transform character)
+
+    
+    public bool CheckCameraOut(Transform target, Transform moveCharacter)
     {
         targetPos = Camera.main.WorldToViewportPoint(target.position);
-        viewPos = Camera.main.WorldToViewportPoint(character.position);
+        viewPos = Camera.main.WorldToViewportPoint(moveCharacter.position);
 
         if (targetPos.x < 0.05f) viewPos.x = 0.05f;
 
@@ -202,12 +212,15 @@ targetPos.y >= 0 && targetPos.y <= 1) return false;
         else return true;
     }
 
-    public void LimitCamera(Transform character, Transform player)
+    public void LimitCamera(Transform target, Transform player)
     {
-        character.position = worldPos;
-        float angle = Mathf.Atan2(player.position.y - character.position.y, player.position.x - character.position.x) * Mathf.Rad2Deg;
-        character.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
+        target.position = worldPos;
+        float angle = Mathf.Atan2(player.position.y - target.position.y, player.position.x - target.position.x) * Mathf.Rad2Deg;
+        target.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
     }
+
+
+
 
 
     public bool ActiveCheck(GameObject targetObj, bool boolHope)

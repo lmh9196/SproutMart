@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Rendering.UI;
 using UnityEngine.UI;
 
 
@@ -220,7 +221,7 @@ public class GameManager : MonoBehaviour
     //Tutorial
     public CharData casheirData;
     public GameObject upgradeMneu;
-
+    DialogueTerm term = new();
     private void Awake()
     {
         if (null == instance) 
@@ -249,15 +250,6 @@ public class GameManager : MonoBehaviour
         boxGoldTxt.text = PriceText(data.boxGold,2);
     }
 
-    public bool CheckTutorial(bool condition = true)
-    {
-        if (checkList.IsTutorialEnd)
-        {
-            if (condition) return true;
-            else return false;
-        }
-        else return false;
-    }
 
     public void ClickVib(int time = 50, int strong= 1) 
     {
@@ -319,7 +311,7 @@ public class GameManager : MonoBehaviour
         if (targetGold <= gameGold) { return true; }
         else 
         {
-            if (isGuide) { DialogueManager.instance.GuideTrigger(DialogueManager.instance.term.term_NotEnoughGold); }
+            if (isGuide) { DialogueManager.instance.GuideFlashCoroutine(term.term_NotEnoughGold); }
             return false; 
         }
     }
@@ -334,6 +326,11 @@ public class GameManager : MonoBehaviour
         return 0;
     }
 
+  
+ 
+
+    
+
     public void AssignGold(GoldType goldType, int inputGold)
     {
         switch (goldType)
@@ -344,7 +341,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public int PointerIDCheck()
+    public int PointerIDCheck() //터치 ID 체크
     {
 
         int pointerID = 0;

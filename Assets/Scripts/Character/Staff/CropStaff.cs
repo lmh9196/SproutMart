@@ -70,7 +70,7 @@ public class CropStaff : Staff
         boxData.UpdateBoxSprite(animDir.lookDir, boxSpriteRenderer, coverSpriteRenderer);
         boxData.UpdateCropsPos(itemBox);
 
-        GameManager.instance.checkList.BuffEvent(GameManager.instance.checkList.isCharSPeedBuff, buffeffect);
+        GameManager.instance.checkList.BuffEvent(GameManager.instance.checkList.isCharSpeedBuff, buffeffect);
     }
 
     private void LateUpdate()

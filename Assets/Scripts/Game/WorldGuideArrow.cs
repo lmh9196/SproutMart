@@ -34,7 +34,7 @@ public class WorldGuideArrow : MonoBehaviour
     {
        if(IsChase)
        {
-            if (!MainCamera.instance.TargetCamInCheck(target, 0))
+            if (!MainCamera.instance.TargetCamInCheck(target, 0.05f))
             {
                 transform.localPosition = startLocalPos;
                 TutorialManger.instance.ArrowTargetRotate(target);
@@ -50,7 +50,7 @@ public class WorldGuideArrow : MonoBehaviour
         }
     }
 
-    public void ChaseOrder(bool isChase , Transform target = null, float xWeight = 0,float yWeight = 0)
+    public void InitArrow(bool isChase , Transform target = null, float xWeight = 0,float yWeight = 0)
     {
         IsChase = isChase;
         this.target = target;

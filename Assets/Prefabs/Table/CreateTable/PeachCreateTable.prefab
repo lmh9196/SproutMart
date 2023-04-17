@@ -408,6 +408,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2833842774198513925, guid: da2b8b7b47fd4aa46aae6a7ac4e200db, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2833842774198513930, guid: da2b8b7b47fd4aa46aae6a7ac4e200db, type: 3}
       propertyPath: m_Name
       value: PeachGetArea
@@ -420,6 +424,10 @@ PrefabInstance:
       propertyPath: staffData
       value: 
       objectReference: {fileID: 11400000, guid: 703691309b6d8ea4fa69e62823f9faeb, type: 2}
+    - target: {fileID: 8191642073506028279, guid: da2b8b7b47fd4aa46aae6a7ac4e200db, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 8722301461364273912, guid: da2b8b7b47fd4aa46aae6a7ac4e200db, type: 3}
       propertyPath: data.ID
       value: PeachCreateTable

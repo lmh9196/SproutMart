@@ -34,6 +34,7 @@ public class EventBtn : MonoBehaviour
 
     TimerImageAct timerImageAct = new();
 
+
    
     private void Update()
     {

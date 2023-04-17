@@ -14953,8 +14953,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profileText: {fileID: 821260306}
-  isAlwaysTrigger: 0
   isTriggerRunning: 0
+  termList: []
 --- !u!1 &792363896
 GameObject:
   m_ObjectHideFlags: 0
@@ -17042,12 +17042,11 @@ MonoBehaviour:
     gem: 0
     boxGold: 0
     saveSceneName: 
-    npcData: {fileID: 11400000, guid: dc803b9265c46974fa757c2664b79433, type: 2}
   checkList:
     isBuildMode: 0
     isCamEvent: 0
     isMenuOpen: 0
-    isCharSPeedBuff: 0
+    isCharSpeedBuff: 0
     isCraftSpeedBuff: 0
     isLookAround: 0
   canvasList:
@@ -17062,6 +17061,15 @@ MonoBehaviour:
     videoCanvas: {fileID: 1733335890}
     blockCanvas: {fileID: 1288242834}
     loadingCanvas: {fileID: 1165248279}
+    matchCanvasScalerList:
+    - {fileID: 621744887}
+    - {fileID: 1557459271}
+    - {fileID: 1665874717}
+    - {fileID: 1617719704}
+    - {fileID: 1533585548}
+    - {fileID: 62614255}
+    - {fileID: 1733335893}
+    - {fileID: 1165248278}
   goldTxt: {fileID: 442217807}
   goldSprite: {fileID: 337217503, guid: 177b096acb5c48949a1d002556c7771d, type: 3}
   gemTxt: {fileID: 1708291420}
@@ -17069,8 +17077,6 @@ MonoBehaviour:
   boxGoldTxt: {fileID: 904522656}
   textFailColor: {r: 1, g: 0.50980395, b: 0.50980395, a: 1}
   isItemBoxOff: 0
-  casheirData: {fileID: 11400000, guid: 0759eb231ec0110489a22a66f8ea7f23, type: 2}
-  upgradeMneu: {fileID: 1831121463}
 --- !u!1 &892856151
 GameObject:
   m_ObjectHideFlags: 0
@@ -26491,7 +26497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b6795a09a2505742a43870e7beb4a4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noticeArrow: {fileID: 4713244502574016877}
+  playerGuideArrow: {fileID: 4713244502574016877}
 --- !u!4 &1421607729
 Transform:
   m_ObjectHideFlags: 0
@@ -41347,7 +41353,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floatAnim: {fileID: 364080816704986595}
-  arrowObj: {fileID: 3327463192094893041}
   target: {fileID: 0}
 --- !u!224 &6255152545579353952
 RectTransform:

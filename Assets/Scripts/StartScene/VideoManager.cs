@@ -78,8 +78,4 @@ public class VideoManager : MonoBehaviour
         }
     }
 
-    public void TextFlicker()
-    {
-
-    }
 }

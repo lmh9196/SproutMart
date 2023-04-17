@@ -70,7 +70,6 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z)) { Booster(); }
       
         charData.SetHandsCount();
 
@@ -88,7 +87,7 @@ public class Player : MonoBehaviour
         boxData.UpdateBoxSprite(animDir.lookDir, boxSpriteRenderer, coverSpriteRenderer);
         boxData.UpdateCropsPos(itemBox);
 
-        GameManager.instance.checkList.BuffEvent(GameManager.instance.checkList.isCharSPeedBuff, buffeffect);
+        GameManager.instance.checkList.BuffEvent(GameManager.instance.checkList.isCharSpeedBuff, buffeffect);
 
         if (GameManager.instance.checkList.IsTutorialEnd &&  !GameManager.instance.checkList.IsTutorial_Full && itemBox.childCount == charData.maxHandsCount) 
         {

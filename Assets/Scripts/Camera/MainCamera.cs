@@ -29,7 +29,6 @@ public class MainCamera : MonoBehaviour
     public float yMinLimit;
     public float yMaxLimit;
     public float match;
-    List<CanvasScaler> matchCanvasList;
 
     [Space(10f)]
     [Header("CameraEvent")]
@@ -53,7 +52,6 @@ public class MainCamera : MonoBehaviour
     private void Start()
     {
         SetResolution();
-        matchCanvasList = GameManager.instance.canvasList.MatchCanvasList();
         targetForm = player.transform;
     }
 
@@ -251,14 +249,14 @@ targetPos.y >= 0 + weight && targetPos.y <= 1 - weight) return true;
         if (Screen.orientation == ScreenOrientation.Portrait || Screen.orientation == ScreenOrientation.PortraitUpsideDown)
         {
             Camera.main.orthographicSize = data.camSize;
-            for (int i = 0; i < matchCanvasList.Count; i++) { matchCanvasList[i].matchWidthOrHeight = 0; }
+            for (int i = 0; i < GameManager.instance.canvasList.matchCanvasScalerList.Count; i++) { GameManager.instance.canvasList.matchCanvasScalerList[i].matchWidthOrHeight = 0; }
         }
         else 
         {
             Camera.main.orthographicSize = data.camSize * resoultionWeight;
 
             if (match == 0) { match = FindMatch(); }
-            for (int i = 0; i < matchCanvasList.Count; i++) { matchCanvasList[i].matchWidthOrHeight = match; }
+            for (int i = 0; i < GameManager.instance.canvasList.matchCanvasScalerList.Count; i++) { GameManager.instance.canvasList.matchCanvasScalerList[i].matchWidthOrHeight = match; }
         }
     }
 

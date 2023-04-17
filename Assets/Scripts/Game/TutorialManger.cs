@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,10 +14,12 @@ public class TutorialManger : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
     }
+
+  
     public void ActiveTargetNoticeArrow() { playerGuideArrow.gameObject.SetActive(true); }
     public void DiableTargetNoticeArrow() 
     {
-        playerGuideArrow.ChaseOrder(false);
+        playerGuideArrow.InitArrow(false);
         playerGuideArrow.gameObject.SetActive(false);
     }
     public void ArrowTargetRotate(Transform target)
@@ -34,5 +37,11 @@ public class TutorialManger : MonoBehaviour
         transformPos.y = Mathf.Clamp(transformPos.y, 0.1f, 0.9f);
 
         transform.transform.position = Camera.main.ViewportToWorldPoint(transformPos);
+    }
+
+    public void DistanceTutorial(bool isIf, Transform target ,float weight, Action act)
+    {
+        if (!isIf) { return; }
+        else if (MainCamera.instance.TargetCamInCheck(target, weight)) { act?.Invoke(); }
     }
 }

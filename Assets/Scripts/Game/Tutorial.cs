@@ -60,16 +60,12 @@ public class Tutorial : MonoBehaviour
     }
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E))
-        {
-            StartCoroutine(End());
-        }
+       
         tempCount = stepCount;
 
         switch (stepCount)
         {
             case 0: CheckAct(ActiveCheck(tomatoCreateLock, false));
-                StartCoroutine(TomatoSapwnDelay());
                 break;
 
             case 1: CheckAct(CountCheck(player.itemBox.childCount
@@ -143,6 +139,8 @@ public class Tutorial : MonoBehaviour
         StartCoroutine(DirDelay());
         switch(_stepCount)
         {
+            case 0: StartCoroutine(TomatoSapwnDelay()); break;
+
             case 1: tomatoSalesLock.transform.parent.gameObject.SetActive(true); break;
 
             case 3: npcManager.Spawn(1); break;
@@ -155,7 +153,7 @@ public class Tutorial : MonoBehaviour
         }
     }
 
-    IEnumerator End()
+    public IEnumerator End()
     {
         dirCanvas.SetActive(false);
         yield return new WaitForSeconds(1.5f);

@@ -75,7 +75,7 @@ public class Customer : MonoBehaviour
         boxData.UpdateCropsPos(itemBox);
         packingBox.transform.position = itemBox.transform.position;
 
-        GameManager.instance.checkList.BuffEvent(GameManager.instance.checkList.isCharSPeedBuff, buffeffect);
+        GameManager.instance.checkList.BuffEvent(GameManager.instance.checkList.isCharSpeedBuff, buffeffect);
     }
 
     public void OnDisable() { DisableCustomer(); }

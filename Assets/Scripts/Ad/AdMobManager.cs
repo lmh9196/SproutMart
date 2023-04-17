@@ -225,7 +225,7 @@ public class AdMobManager : MonoBehaviour
 
         StartCoroutine(CharBuffDelay(charDatas));
 
-        GameManager.instance.checkList.isCharSPeedBuff = true;
+        GameManager.instance.checkList.isCharSpeedBuff = true;
     }
     IEnumerator CharBuffDelay(CharData[] charDatas)
     {
@@ -238,6 +238,6 @@ public class AdMobManager : MonoBehaviour
         }
         npcData.buffSpeed = 0;
         CompareRewardActiving(Buff.CHAR, false);
-        GameManager.instance.checkList.isCharSPeedBuff = false;
+        GameManager.instance.checkList.isCharSpeedBuff = false;
     }
 }

@@ -449,6 +449,14 @@ MonoBehaviour:
       - Please guide me to the right place!
       Flags: 0000
       Languages_Touch: []
+    - Term: Guide_FirstNotice
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uAE38\uC744 \uC783\uC740 \uC190\uB2D8\uC774 \uC788\uC5B4\uC694!"
+      - There's a lost customer!
+      Flags: 0000
+      Languages_Touch: []
     CaseInsensitiveTerms: 0
     OnMissingTranslation: 1
     mTerm_AppName: 

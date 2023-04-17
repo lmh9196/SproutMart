@@ -81,7 +81,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Ready. . .
+  m_Text: "\uC900\uBE44\uC911. . ."
 --- !u!114 &7485924836511983946
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,6 +9,8 @@ using UnityEngine.Video;
 
 public class DrunkenEvent : MonoBehaviour
 {
+    DialogueTerm term = new();
+
     [SerializeField] float timer;
     public float maxDurationTime;
 
@@ -55,24 +57,25 @@ public class DrunkenEvent : MonoBehaviour
             if (timer < 0) { Spawn(); }
         }
 
-        //if (!GameManager.instance.checkList.IsTutorial_Drunken) { Tutorial(); }
-    }
 
-    void Tutorial()
-    {
-        if(MainCamera.instance.TargetCamInCheck(customer.transform, 0.2f))
+        TutorialManger.instance.DistanceTutorial(!GameManager.instance.checkList.IsTutorial_Drunken, customer.transform, 0.2f, (() =>
         {
-            VideoManager.instance.VideoPlay(guideVideoClip, 0);
-            GameManager.instance.checkList.IsTutorial_Drunken = true;
-            drunkenEventBtn.IsNotice = false;
-        }
+            if (drunkenEventBtn != null) { drunkenEventBtn.IsNotice = false; }
+        }));
     }
 
     public void Spawn()
     {
         GameEventManager.instance.SpawnEvent(customer.transform, stageManager.spawner.SelectSpawner());
-        drunkenEventBtn =  GameEventManager.instance.SpawnEventBtn(noticeBtnPrefabs, !GameManager.instance.checkList.IsTutorial_Drunken, (()=> { MainCamera.instance.CamEventBtn(customer.gameObject); }),maxDurationTime);
+
+
+        drunkenEventBtn =  GameEventManager.instance.SpawnEventBtn(noticeBtnPrefabs, false, 
+            (()=> { MainCamera.instance.CamEventBtn(customer.gameObject); }),maxDurationTime);
+
         drunkenEventBtn.timerFinishAct = customer.ReturnWorngTarget;
+
+        if (!GameManager.instance.checkList.IsTutorial_Drunken) { DialogueManager.instance.EnableDialouge(term.termDrunken_FirstNotice, false, true); }
+
 
         int rand = Random.Range(timerMinRange, timerMaxRange);
         timer = rand;

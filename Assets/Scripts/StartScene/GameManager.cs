@@ -17,16 +17,6 @@ public class Game_Data
     public int boxGold;
 
     public string saveSceneName;
-
-    public NpcData npcData;
-
-    public Dictionary<string, Game_Data> dicSaveGameData;
-    public Game_Data(int gold, int gem, int boxGold)
-    {
-        this.gold = gold;
-        this.gem = gem;
-        this.boxGold = boxGold;
-    }
 }
 
 [Serializable]
@@ -69,7 +59,7 @@ public class CheckList
     public bool isBuildMode;
     public bool isCamEvent;
     public bool isMenuOpen;
-    public bool isCharSPeedBuff;
+    public bool isCharSpeedBuff;
     public bool isCraftSpeedBuff;
     public bool isLookAround;
 
@@ -102,6 +92,8 @@ public class CanvasList
     public Canvas videoCanvas;
     public Canvas blockCanvas;
     public Canvas loadingCanvas;
+
+    public List<CanvasScaler> matchCanvasScalerList = new();
     public void Init() 
     { 
         blockCanvas.enabled = false;
@@ -112,21 +104,6 @@ public class CanvasList
         burrowCanvas.enabled = true;
         menuCanvas.enabled = true;
         videoCanvas.enabled = true;
-    }
-    public List<CanvasScaler> MatchCanvasList()
-    {
-        List<CanvasScaler> canvasList = new();
-
-        canvasList.Add(mainCanvas.GetComponent<CanvasScaler>());
-        canvasList.Add(inputCanvas.GetComponent<CanvasScaler>());
-        canvasList.Add(burrowCanvas.GetComponent<CanvasScaler>());
-        canvasList.Add(menuCanvas.GetComponent<CanvasScaler>());
-        canvasList.Add(lookCanvas.GetComponent<CanvasScaler>());
-        canvasList.Add(statueCanvas.GetComponent<CanvasScaler>());
-        canvasList.Add(videoCanvas.GetComponent<CanvasScaler>());
-        canvasList.Add(loadingCanvas.GetComponent<CanvasScaler>());
-
-        return canvasList;
     }
 
     public bool UpdateMenuOpenCheck()
@@ -218,9 +195,6 @@ public class GameManager : MonoBehaviour
 
 
 
-    //Tutorial
-    public CharData casheirData;
-    public GameObject upgradeMneu;
     DialogueTerm term = new();
     private void Awake()
     {
@@ -236,20 +210,59 @@ public class GameManager : MonoBehaviour
         Screen.SetResolution(1080, 1920, true);
         Application.targetFrameRate = 60;
 
-        Screen.orientation = ScreenOrientation.Portrait;
-        Screen.orientation = ScreenOrientation.AutoRotation;
+        Screen.orientation = ScreenOrientation.Portrait;//게임 시작시 세로고정
+        Screen.orientation = ScreenOrientation.AutoRotation; 
     }
 
-  
+    float timer;
+    bool isCheckStart;
+    bool isCheckDone;
+    float touchCount;
+    IEnumerator CheckTouch() //테스트용 튜토리얼 스킵
+    {
+        isCheckStart = true;
+
+        while(true)
+        {
+            timer += Time.deltaTime;
+
+            if (timer > 0.5f) 
+            {
+                touchCount = 0;
+                timer = 0;
+                break; }
+            else 
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    timer = 0;
+                    touchCount++;
+                }
+            }
+            if (touchCount > 4) {
+                StartCoroutine(Tutorial.instance.End()); 
+                isCheckDone = true; break; }
+            yield return null;
+        }
+
+        isCheckStart = false;
+    }
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Z)) { Player.instance.Booster(); }
+        if (!isCheckStart && !isCheckDone 
+            && !checkList.IsTutorialEnd &&
+            Input.GetMouseButtonDown(0)) { StartCoroutine(CheckTouch()); }
+
+
+
+
         checkList.isMenuOpen = canvasList.UpdateMenuOpenCheck();
 
         goldTxt.text = PriceText(data.gold,2);
         gemTxt.text = PriceText(data.gem,2);
         boxGoldTxt.text = PriceText(data.boxGold,2);
     }
-
 
     public void ClickVib(int time = 50, int strong= 1) 
     {
@@ -341,7 +354,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public int PointerIDCheck() //터치 ID 체크
+    public int PointerIDCheck() //터치 기기 체크
     {
 
         int pointerID = 0;

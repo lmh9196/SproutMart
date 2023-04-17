@@ -36,13 +36,15 @@ public class DrunkenCustomer : Customer
             {
                 if (!isTouch && value)
                 {
-                    DialogueManager.instance.EnableDialouge(term.termDrunken_GuideRightWay, true);
-                    TutorialManger.instance.playerGuideArrow.ChaseOrder(true, shoppingList[1].transform, 0, 0.5f);
+                    DialogueManager.instance.DisableDialogue();
+                    DialogueManager.instance.EnableDialouge(term.termDrunken_GuideRightWay, true, false);
+                    TutorialManger.instance.playerGuideArrow.InitArrow(true, shoppingList[1].transform, 0, 0.5f);
                 }
                 else if (isTouch && !value)
                 {
                     DialogueManager.instance.DisableDialogue();
-                    TutorialManger.instance.playerGuideArrow.ChaseOrder(true, transform, 0, 2f);
+                    DialogueManager.instance.EnableDialouge(term.termDrunken_FirstNotice, true, true);
+                    TutorialManger.instance.playerGuideArrow.InitArrow(true, transform, 0, 2f);
                 }
             }
 
@@ -75,7 +77,7 @@ public class DrunkenCustomer : Customer
         if (!GameManager.instance.checkList.IsTutorial_Drunken)
         {
             TutorialManger.instance.ActiveTargetNoticeArrow();
-            TutorialManger.instance.playerGuideArrow.ChaseOrder(true, transform, 0, 2f);
+            TutorialManger.instance.playerGuideArrow.InitArrow(true, transform, 0, 2f);
         }
     }
 
@@ -103,16 +105,6 @@ public class DrunkenCustomer : Customer
         if (!IsTouch) base.Update();
         questionMark.SetActive(GameManager.instance.ConditionCheck(IsRight, true));
         exclamationMark.SetActive(GameManager.instance.ConditionCheck(IsRight, false));
-
-
-        if (!GameManager.instance.checkList.IsTutorial_Drunken) 
-        {
-            if (!IsRight && !IsTouch)
-            {
-                if (MainCamera.instance.TargetCamInCheck(transform, 0.1f)) { drunkenEvent.drunkenEventBtn.IsNotice = false; }
-                else { drunkenEvent.drunkenEventBtn.IsNotice = true; }
-            }
-        }
     }
   
 

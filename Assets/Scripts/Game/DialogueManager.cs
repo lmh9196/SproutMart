@@ -4,6 +4,7 @@ using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,23 +20,20 @@ public class DialogueTerm
     public string termMove_ChoiceObj = "Guide_Move_Choice";
 
     public string termDrunken_GuideRightWay = "Guide_DrunkenWay";
+    public string termDrunken_FirstNotice = "Guide_FirstNotice";
 }
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager instance = null;
-
-
 
     public Text profileText;
     Transform profileTextParent;
     Localize loc;
     CreatePopUp textPop;
 
-
-    public bool isAlwaysTrigger;
-
     public bool isTriggerRunning;
-    string tempFixText;
+
+    [SerializeField] List<string> termList = new();
 
     private void Awake()
     {
@@ -53,24 +51,33 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        if (profileTextParent.gameObject.activeSelf) { profileText.text = tempFixText; }
+        if (termList.Count > 0) { profileText.text = termList[termList.Count - 1]; }
     }
 
-    public void EnableDialouge( string term, bool isPop, string addStr = null)
+    public void EnableDialouge(string term, bool isPop, bool isInsert, string addStr = null)
     {
-        if (!profileTextParent.gameObject.activeSelf) { profileTextParent.gameObject.SetActive(true); }
+        if (termList.Count == 0) { profileTextParent.gameObject.SetActive(true); }
 
         if (isPop) { textPop.ResetPop(); }
 
-        if (term != loc.Term) { loc.Term = term; }
-     
-        tempFixText = profileText.text + addStr;
+        loc.SetTerm(term);
+
+        if (!isInsert) { termList.Add(profileText.text + addStr); }
+        else { termList.Insert(0, profileText.text + addStr); }
     }
+
+
     public void DisableDialogue()
     {
-        isAlwaysTrigger = false;
         loc.Term = null;
-        profileTextParent.gameObject.SetActive(false);
+
+        if (termList.Count != 0) 
+        {
+            termList.Remove(termList.Last());
+            textPop.ResetPop();
+        }
+    
+        if (termList.Count == 0) { profileTextParent.gameObject.SetActive(false); }
     }
 
 
@@ -81,12 +88,8 @@ public class DialogueManager : MonoBehaviour
 
         float timeCount = 0;
 
-        string tempTerm = loc.Term;
+        EnableDialouge(triggerTerm, true, false);
 
-        EnableDialouge(triggerTerm, true);
-
-
-        bool isActiving = profileTextParent.gameObject.activeSelf;
 
         profileText.DOKill(true);
         profileText.DOColor(ColorManager.instance.textFailColor, 1.0f).SetEase(Ease.Flash, 8, 0);
@@ -98,10 +101,8 @@ public class DialogueManager : MonoBehaviour
             timeCount += 0.1f;
             yield return new WaitForSeconds(0.1f);
         }
-
-        if (!isActiving) { DisableDialogue(); }
-        else { EnableDialouge(tempTerm, true); }
-      
+       
+        DisableDialogue();
         isTriggerRunning = false;
     }
 }

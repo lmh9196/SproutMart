@@ -7,7 +7,7 @@ public class WorldGuideArrow : MonoBehaviour
     public FloatAnimation floatAnim;
     float yWeight;
     float xWeight;
-    public Transform target;
+    [HideInInspector] public Transform target;
 
     bool isChase;
     public bool IsChase

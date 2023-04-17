@@ -12,7 +12,6 @@ public class VideoManager : MonoBehaviour
 
     public VideoPlayer videoPlayer;
     public GameObject videoCanvas;
-    public Text filckText;
 
     public float touchDelay;
 

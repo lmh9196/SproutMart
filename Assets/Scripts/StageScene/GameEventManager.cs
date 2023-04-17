@@ -15,7 +15,6 @@ public class GameEventManager : MonoBehaviour
     {
         public Transform eventBtnPoint;
 
-        public Image timer;
     
         public bool btnPointFullCheck;
     }

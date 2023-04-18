@@ -39,7 +39,7 @@ public class UpgradeChar : MonoBehaviour
     {
         if (buyCover != null)
         {
-            buyCover.SetActive(GameManager.instance.ConditionCheck(charData.SetMenuType(CharData.MenuType.COUNT).Level > 0, true));
+            buyCover.SetActive(!(charData.SetMenuType(CharData.MenuType.COUNT).Level > 0));
             buyPriceText.text = GameManager.instance.PriceText(charData.buyPrice,2);
         }
     }

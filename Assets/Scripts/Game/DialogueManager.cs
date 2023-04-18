@@ -31,7 +31,7 @@ public class DialogueManager : MonoBehaviour
     Localize loc;
     CreatePopUp textPop;
 
-    public bool isTriggerRunning;
+    bool isTriggerRunning;
 
     [SerializeField] List<string> termList = new();
 

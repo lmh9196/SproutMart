@@ -122,7 +122,7 @@ public class Player : MonoBehaviour
         if (itemBox.childCount > 0) { animDir.CheckHaveItem(true); }
         else { animDir.CheckHaveItem(false); }
 
-        if (GameManager.instance.isItemBoxOff || !animDir.anim.GetBool("isHave"))
+        if (GameManager.instance.checkList.isItemBoxOff || !animDir.anim.GetBool("isHave"))
         {
             itemBox.gameObject.SetActive(false);
             itemBoxCover.gameObject.SetActive(false);
@@ -158,7 +158,7 @@ public class Player : MonoBehaviour
     public void BurrowDown()
     {
         GameManager.instance.ClickVib();
-        GameManager.instance.isItemBoxOff = true;
+        GameManager.instance.checkList.isItemBoxOff = true;
         StartCoroutine(burrow.BurrowDownAct());
     }
     public void BurrowMove(string dir) { burrow.BurrowMoveBtn(dir); }
@@ -322,7 +322,7 @@ public class Burrow
 
     public IEnumerator BurrowDownAct()
     {
-        GameManager.instance.canvasList.SetBurrowCanvas(false);
+        GameManager.instance.canvasList.ActiveBurrowCanvas(true);
         player.playerMove.isStop = true;
         player.animDir.lookDir = Vector3.down;
         burrowDownBtn.gameObject.SetActive(false);
@@ -368,14 +368,14 @@ public class Burrow
         player.animDir.lookDir = Vector3.down;
 
         yield return new WaitForSeconds(0.5f);
-        GameManager.instance.isItemBoxOff = false;
+        GameManager.instance.checkList.isItemBoxOff = false;
         currentBurrow.GetComponent<Animator>().SetBool("isOpen", false);
 
         SoundManager.instance.PlaySfx("CloseBurrow");
 
         yield return new WaitForSeconds(0.3f);
         player.playerMove.isStop = false;
-        GameManager.instance.canvasList.SetBurrowCanvas(true);
+        GameManager.instance.canvasList.ActiveBurrowCanvas(false);
 
         player.GetComponent<Collider2D>().enabled = true;
         rigid.gravityScale = 0;
@@ -498,7 +498,7 @@ public class Attack
         targetPos = _targetPos;
 
         player.capsuleCollider.enabled = false;
-        GameManager.instance.isItemBoxOff = true;
+        GameManager.instance.checkList.isItemBoxOff = true;
         player.playerMove.isStop = true;
 
         player.rigid.velocity = Vector3.zero;
@@ -513,7 +513,7 @@ public class Attack
     {
         player.rigid.velocity = Vector3.zero;
         player.capsuleCollider.enabled = true;
-        GameManager.instance.isItemBoxOff = false;
+        GameManager.instance.checkList.isItemBoxOff = false;
         player.playerMove.isStop = false;
 
         player.animDir.anim.SetBool("isAttack", false);

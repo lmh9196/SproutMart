@@ -101,7 +101,7 @@ public class Tutorial : MonoBehaviour
         MainCamera.instance.transform.position = new Vector3(5, -1, -10);
         Screen.orientation = ScreenOrientation.Portrait;
         Camera.main.orthographicSize = 10;
-        GameManager.instance.canvasList.SetTutorial(false);
+        GameManager.instance.canvasList.ActiveTutorialCanvas(true);
         GameManager.instance.data.gold = 50;
         tomatoSalesLock.transform.parent.gameObject.SetActive(false);
 
@@ -165,7 +165,7 @@ public class Tutorial : MonoBehaviour
         for (int i = 0; i < stage1Table.Length; i++) stage1Table[i].SetActive(true);
         yield return new WaitForSeconds(2f);
         MenuManager.instance.CallNotice(MenuManager.instance.noticeArrow.registNoticeBtnList[1]);
-        GameManager.instance.canvasList.SetTutorial(true);
+        GameManager.instance.canvasList.ActiveTutorialCanvas(false);
 
         GameManager.instance.checkList.IsTutorialEnd = true;
 

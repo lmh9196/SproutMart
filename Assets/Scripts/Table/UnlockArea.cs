@@ -26,17 +26,17 @@ public class UnlockArea : MonoBehaviour
    
     private void Start()
     {
-        RegistPriceText(parentTable.data.unlockDefaultCount);
+        InitPriceText(parentTable.data.unlockDefaultCount);
     }
 
     private void Update()
     {
-        UpdateCurrentText();
+        goldText.text = GameManager.instance.PriceText(parentTable.data.unlockNeedCount, 0);
 
         if (isTouch)
         {
             touchTimer += Time.deltaTime;
-            if (touchTimer >= 0.5f && !UnlockManager.instance.isAct) 
+            if (touchTimer >= 0.5f && !UnlockManager.instance.IsAct) 
             {
                 UnlockManager.instance.CheckUnlockType(parentTable); 
             }
@@ -57,9 +57,6 @@ public class UnlockArea : MonoBehaviour
         if (collision.collider.TryGetComponent(out Player player)) { CollisionExitPlayer(); }
     }
 
-
-    public void UpdateCurrentText() { goldText.text = GameManager.instance.PriceText(parentTable.data.unlockNeedCount, 0); }
-
     void CollisionEnterPlayer()
     {
         GameManager.instance.ClickVib();
@@ -70,7 +67,7 @@ public class UnlockArea : MonoBehaviour
     {
         touchTimer = 0;
         isTouch = false;
-        UnlockManager.instance.ResetRegist();
+        UnlockManager.instance.IsAct = false;
         anim.SetBool("isEnter", false);
     }
   
@@ -88,7 +85,7 @@ public class UnlockArea : MonoBehaviour
         GameManager.instance.AstarScanDelay();
     }
 
-    public void RegistPriceText(int defalutUnlockCount)
+    public void InitPriceText(int defalutUnlockCount)
     {
         RectTransform textParent = goldText.transform.parent.GetComponent<RectTransform>();
 

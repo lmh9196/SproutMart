@@ -26,11 +26,11 @@ public class PopFlicker : MonoBehaviour
     {
         if (startDelay <= 0)
         {
-            if (count < flickTime) count += Time.unscaledDeltaTime;
+            if (count < flickTime) { count += Time.unscaledDeltaTime; }
             else
             {
                 count = 0;
-                childObj.SetActive(GameManager.instance.ConditionCheck(childObj.activeSelf, true));
+                childObj.SetActive(!childObj.activeSelf);
             }
         }
         else startDelay -= Time.unscaledDeltaTime;

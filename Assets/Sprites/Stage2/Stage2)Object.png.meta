@@ -779,6 +779,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Stage2)Object_0
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 277
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb37c1b843ca3c4398cb7e950e3f09a
+      internalID: 118970451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -891,6 +912,7 @@ TextureImporter:
       25_50: -529441217
       Stage2)CounterRoff_Back: 572858505
       TomatoMixer_0: -685992449
+      Stage2)Object_0: 118970451
       Thresher_4: -1001977450
       Pizza_B: -208348871
       OrangeMixer_5: 1056623034

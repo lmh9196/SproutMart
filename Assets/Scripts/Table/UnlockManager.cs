@@ -1,16 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
 public class UnlockManager : MonoBehaviour
 {
     public static UnlockManager instance;
 
-    public bool isAct;
+    bool isGem;
+    public bool IsGem
+    { 
+        get { return isGem; }
+        set {
+
+            if (value) { unlockCheckGemBtn.SetActive(true); }
+            else { unlockCheckGemBtn.SetActive(false); }
+
+            isGem = value; 
+        }
+    }
+    bool isAct;
+    public bool IsAct
+    {
+        get { return isAct; }
+        set
+        {
+            if (!value) { actTable = null; }
+            isAct = value;
+        }
+    }
     Table actTable;
     public StageData stageData;
     public GameObject unlockCheckGemBtn;
@@ -22,21 +39,20 @@ public class UnlockManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
     }
-    private void Start()
-    {
-        ResetRegist();
-    }
+
     private void Update()
     {
-        if (actTable != null && isAct) { Unlocking(); }
+        if(isAct)
+        {
+            if (actTable != null) { Unlocking(); }
+        }
     }
 
     public void UnlockBtnCheck() 
     { 
         isAct = true;
-        unlockCheckGemBtn.gameObject.SetActive(false);
+        IsGem = false;
     }
-
 
     public void CheckUnlockType(Table table)
     {
@@ -44,7 +60,7 @@ public class UnlockManager : MonoBehaviour
         {
             switch (table.data.goldType)
             {
-                case GameManager.GoldType.GEM: unlockCheckGemBtn.SetActive(true); break;
+                case GameManager.GoldType.GEM: IsGem = true; break;
                 default: isAct = true; break;
             }
             actTable = table;
@@ -86,12 +102,4 @@ public class UnlockManager : MonoBehaviour
         if (GameManager.instance.SelectGold(actTable.data.goldType) < calGold) {return GameManager.instance.SelectGold(actTable.data.goldType); }
         else { return calGold; }
     }
-
-    public void ResetRegist()
-    {
-        actTable = null;
-        isAct = false;
-        unlockCheckGemBtn.gameObject.SetActive(false);
-    }
-
 }

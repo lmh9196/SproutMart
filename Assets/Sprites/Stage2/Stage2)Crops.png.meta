@@ -695,6 +695,279 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Fish_Stick_01
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 442
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d704adac88576714abd3cb079242ab28
+      internalID: -1152594862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish_Stick_02
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 442
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01301118fe7718c4baf95aeb71176381
+      internalID: 1477390895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish_Stick_03
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 442
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6fee398c2c39224688519957b8a41cc
+      internalID: 1678939091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish_Stick_04
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 442
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9513773afcee19a4195b4c162aaa9ec8
+      internalID: 2101931157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish_Stick_05
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 442
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177875417e1fb9c4ebb4795c04816405
+      internalID: 454821116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish_Stick_06
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 442
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca5a4845a5503f42b0ef2b8e92a6b78
+      internalID: 799139305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish_Stick_08
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 442
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c5d97ecf1cc7c458e8c2838da1a295
+      internalID: -2042175912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish_Stick_09
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 442
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc420d229ce9914d9a5fe4a27c6a93d
+      internalID: 1121232010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish_Stick_10
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 442
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3950f7433d731b4bb6da95392e075d4
+      internalID: 377768940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish_Stick_12
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 442
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 101de51781203904aa46613dc0798714
+      internalID: -144049165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish_Stick_013
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 442
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1696c3f7ed5034c85b4d24ba56c0f3
+      internalID: 1294817541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish_Stick_014
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 442
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad425a6df4653a408e4c862db9bb723
+      internalID: -480367891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish_Stick_15
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 442
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee6f6b5125fe46d41bdb48fb3700a3ae
+      internalID: -1615858190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -711,7 +984,7 @@ TextureImporter:
       MixMixer: -312400340
       Sushi: -935677404
       OrangeMixer_12: 675335983
-      25_37: 1788592275
+      25_84: 961573975
       Crab_0: 887661967
       OrangeJuice_F: -1500870032
       MixJuice_F: -1930267192
@@ -721,6 +994,7 @@ TextureImporter:
       25_77: 1707852799
       TomatoMixer_9: 141847096
       PumpkinMachine_3: -1718665255
+      Fish_Stick_01: -1152594862
       CalmMask_goods: 941933999
       25_106: -1938891802
       OrangeMixer_13: -17770557
@@ -731,6 +1005,7 @@ TextureImporter:
       25_81: -1899083512
       PumpkinMachine: 585885580
       25_90: -1543038785
+      Fish_Stick_05: 454821116
       MixMixer_6: -1156266597
       Pumpkin_B: 1857335341
       OrangeMixer_7: 328789217
@@ -749,6 +1024,7 @@ TextureImporter:
       OrangeMixer_4: -1502787689
       MixMixer_5: 1968182180
       MixMixer_13: 1256906821
+      Fish_Stick_09: 1121232010
       MixMixer_11: 984552095
       Fish_Catch_1: -1241626441
       OrangeMixer_9: -1248052590
@@ -765,18 +1041,21 @@ TextureImporter:
       TomatoMixer_4: 1854505290
       MixMixer_9: 1666170803
       25_28: -1424663393
-      PumpkinMachine_1: 788114967
       25_25: -1241390627
+      Fish_Stick_12: -144049165
       25_48: -2082941383
       25_75: -2130553706
-      TomatoMixer_10: -1896034658
       TomatoMixer_13: -1223435891
+      Fish_Stick_06: 799139305
+      Fish_Stick_10: 377768940
       Centrifuge_4: -498589864
       TomatoMixer_3: -911995165
       Centrifuge_0: 658888912
+      PumpkinMachine_1: 788114967
       Milk_F: 960204693
       25_83: 1805869160
       CoconutMilk_Left: -1072626685
+      Fish_Stick_013: 1294817541
       25_44: -1530601294
       25_2: 215370159
       25_17: 2014844249
@@ -784,11 +1063,13 @@ TextureImporter:
       25_29: -1308007289
       25_11: 495138996
       25_20: 42965909
+      TomatoMixer_10: -1896034658
       OrangeMixer_0: -2091417422
       TomatoMixer_11: 1559304674
       25_1: -1997153604
       MangoSushi: 1055938289
       Fish_Stick: -562721524
+      Fish_Stick_03: 1678939091
       avocado_Oil: 831530040
       25_50: -529441217
       OrangeFish_Fry: -1213478321
@@ -809,6 +1090,7 @@ TextureImporter:
       Radish_S: 2008861718
       Centrifuge_3: -1836864576
       Orange_B: 1253991523
+      Fish_Stick_014: -480367891
       TomatoMixer_6: -35619867
       Chocolate_B: 1613229508
       MixMixer_1: -679436311
@@ -827,6 +1109,8 @@ TextureImporter:
       TomatoMixer_1: 891105445
       MixMixer_7: -674437191
       25_26: -950121087
+      Fish_Stick_04: 2101931157
+      Fish_Stick_15: -1615858190
       25_30: -512899986
       25_49: 404162266
       25_80: 232440917
@@ -846,13 +1130,15 @@ TextureImporter:
       Crab_Fry: 251282849
       OrangeFish_Dry: 505749344
       OrangeMixer_10: 1508821012
+      Fish_Stick_02: 1477390895
       Abocado_Fry: 625903219
       MixJuice_S: -1517470876
       25_13: 70334475
       TomatoMixer_7: 1192840421
       MixMixer_4: -2013935889
+      Fish_Stick_08: -2042175912
       MixMixer_8: -1699726581
-      25_84: 961573975
+      25_37: 1788592275
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

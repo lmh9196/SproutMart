@@ -72,11 +72,11 @@ public class MainCamera : MonoBehaviour
         {
             if (EventSystem.current.currentSelectedGameObject == null && GameManager.instance.checkList.CheckDoubleTabZoom())
             {
-                GameManager.instance.canvasList.SetJoystick(false);
+                GameManager.instance.canvasList.ActiveJoystickCanvas(false);
                 data.camSize = cameraTouchAct.TouchDragZoom(data.camSize, zoomMaxSize, zoomMinSize);
             }
         }
-        else { GameManager.instance.canvasList.SetJoystick(true); }
+        else { GameManager.instance.canvasList.ActiveJoystickCanvas(true); }
     }
     float FindMatch()
     {
@@ -117,7 +117,7 @@ public class MainCamera : MonoBehaviour
         GameManager.instance.checkList.isCamEvent = true;
 
 
-        if (!isSimple) { GameManager.instance.canvasList.SetCameraEvent(false); }
+        if (!isSimple) { GameManager.instance.canvasList.ActiveCameraEventCanvas(true); }
 
 
         player.GetComponent<CapsuleCollider2D>().enabled = false;
@@ -147,7 +147,7 @@ public class MainCamera : MonoBehaviour
         player.GetComponent<CapsuleCollider2D>().enabled = true;
         player.playerMove.isStop = false;
 
-        GameManager.instance.canvasList.SetCameraEvent(true);
+        GameManager.instance.canvasList.ActiveCameraEventCanvas(false);
 
         StartCoroutine(WaitReturn());
     }

@@ -29,7 +29,7 @@ public class LoadingManager : MonoBehaviour
 
     public void StartLoading(string targetScene)
     {
-        GameManager.instance.canvasList.SetLoadingCanvas();
+        GameManager.instance.canvasList.ActiveLoadingCanvas();
 
         StartCoroutine(LoadAsynSceneCoroutine(targetScene));
     }

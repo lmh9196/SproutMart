@@ -40,7 +40,7 @@ public class LookAroundCamera : MonoBehaviour
         zoomMinSize = MainCamera.instance.zoomMinSize + zoomWeight;
         camSize = zoomMaxSize;
 
-        GameManager.instance.canvasList.SetLookAround(true);
+        GameManager.instance.canvasList.ActiveLookAroundCanvas(true);
         Player player = GameObject.FindObjectOfType<Player>();
         Vector3 startPos = new Vector3(player.transform.position.x, player.transform.position.y, -10);
         GameManager.instance.checkList.isLookAround = true;
@@ -52,7 +52,7 @@ public class LookAroundCamera : MonoBehaviour
     {
         MainCamera.instance.ChangeCamTarget(false);
 
-        GameManager.instance.canvasList.SetLookAround(false);
+        GameManager.instance.canvasList.ActiveLookAroundCanvas(false);
 
         GameManager.instance.checkList.isLookAround = false;
 

@@ -14,9 +14,10 @@ public class DrunkenCustomer : Customer
         get { return isRight; }
         set 
         {
-            isRight = value;
-
-            if(isRight)
+            questionMark.SetActive(!value);
+            exclamationMark.SetActive(value);
+         
+            if (value)
             {
                 if(!GameManager.instance.checkList.IsTutorial_Drunken)
                 {
@@ -25,6 +26,8 @@ public class DrunkenCustomer : Customer
                     GameManager.instance.checkList.IsTutorial_Drunken = true;
                 }
             }
+
+            isRight = value;
         }
     }
 
@@ -103,8 +106,9 @@ public class DrunkenCustomer : Customer
     protected override void Update()
     {
         if (!IsTouch) base.Update();
-        questionMark.SetActive(GameManager.instance.ConditionCheck(IsRight, true));
-        exclamationMark.SetActive(GameManager.instance.ConditionCheck(IsRight, false));
+
+        questionMark.SetActive(!IsRight);
+        exclamationMark.SetActive(IsRight);
     }
   
 

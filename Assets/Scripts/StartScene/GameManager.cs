@@ -5,7 +5,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.Rendering.UI;
 using UnityEngine.UI;
 
 
@@ -22,8 +21,6 @@ public class Game_Data
 [Serializable]
 public class CheckList
 {
-    public Action<string, bool> RegistSaveDic;
-
     [Space(10f)]
     bool isTutorialEnd;
     public bool IsTutorialEnd { get { return isTutorialEnd; }
@@ -62,13 +59,13 @@ public class CheckList
     public bool isCharSpeedBuff;
     public bool isCraftSpeedBuff;
     public bool isLookAround;
+    public bool isItemBoxOff;
 
     public bool CheckDoubleTabZoom()
     {
         if (isTutorialEnd && !isBuildMode && !isMenuOpen) { return true; }
         else { return false; }
     }
-
     public void BuffEvent(bool isCheck, ParticleSystem buffeffect)
     {
         if(buffeffect != null)
@@ -114,36 +111,35 @@ public class CanvasList
         }
         return false;
     }
-    public void SetJoystick(bool isState) { joyCanvas.gameObject.SetActive(isState); }
-    public void SetBurrowCanvas(bool isState)
+    public void ActiveJoystickCanvas(bool isState) { joyCanvas.gameObject.SetActive(isState); }
+    public void ActiveBurrowCanvas(bool isState)
     {
-        menuCanvas.enabled = isState;
-        inputCanvas.GetComponent<GraphicRaycaster>().enabled = isState;
+        menuCanvas.enabled = !isState;
+        inputCanvas.GetComponent<GraphicRaycaster>().enabled = !isState;
     }
-    public void SetLookAround(bool isState) 
+    public void ActiveLookAroundCanvas(bool isState) 
     { 
         lookCanvas.enabled = isState;
-
         menuCanvas.enabled = !isState;
         joyCanvas.enabled = !isState;
         inputCanvas.enabled = !isState;
         burrowCanvas.enabled = !isState;
         mainCanvas.enabled = !isState;
     }
-    public void SetCameraEvent(bool isState)
+    public void ActiveCameraEventCanvas(bool isState)
     {
-        menuCanvas.enabled = isState;
-        joyCanvas.enabled = isState;
-        inputCanvas.enabled = isState;
-        burrowCanvas.enabled = isState;
-        mainCanvas.enabled = isState;
+        menuCanvas.enabled = !isState;
+        joyCanvas.enabled = !isState;
+        inputCanvas.enabled = !isState;
+        burrowCanvas.enabled = !isState;
+        mainCanvas.enabled = !isState;
     }
-    public void SetTutorial(bool isState)
+    public void ActiveTutorialCanvas(bool isState)
     {
-        menuCanvas.enabled = isState;
-        inputCanvas.enabled = isState;
-        burrowCanvas.enabled = isState;
-        mainCanvas.enabled = isState;
+        menuCanvas.enabled = !isState;
+        inputCanvas.enabled = !isState;
+        burrowCanvas.enabled = !isState;
+        mainCanvas.enabled = !isState;
     }
     public void BuildModeCanvas(bool isState)
     {
@@ -154,7 +150,7 @@ public class CanvasList
         inputCanvas.enabled = !isState;
         burrowCanvas.enabled = !isState;
     }
-    public void SetLoadingCanvas()
+    public void ActiveLoadingCanvas()
     {
         Canvas[] allUI = UiParent.GetComponentsInChildren<Canvas>(true);
 
@@ -171,15 +167,11 @@ public class GameManager : MonoBehaviour
     public static GameManager instance = null;
 
     public Game_Data data;
-
     public CheckList checkList;
-
     public CanvasList canvasList;
 
+
     public enum GoldType { GOLD, GEM, BOXGOLD}
-
-    public Action SceneAct;
-
 
     [Header("GameInfo")]
     public Text goldTxt;
@@ -189,11 +181,6 @@ public class GameManager : MonoBehaviour
     public Text boxGoldTxt;
 
     public Color textFailColor;
-
-    [Space(10f)]
-    public bool isItemBoxOff;
-
-
 
     DialogueTerm term = new();
     private void Awake()
@@ -214,23 +201,20 @@ public class GameManager : MonoBehaviour
         Screen.orientation = ScreenOrientation.AutoRotation; 
     }
 
-    float timer;
     bool isCheckStart;
     bool isCheckDone;
-    float touchCount;
     IEnumerator CheckTouch() //테스트용 튜토리얼 스킵
     {
         isCheckStart = true;
 
-        while(true)
+        float touchCount = 0;
+        float timer = 0;
+
+        while (true)
         {
             timer += Time.deltaTime;
 
-            if (timer > 0.5f) 
-            {
-                touchCount = 0;
-                timer = 0;
-                break; }
+            if (timer > 0.5f) { break; }
             else 
             {
                 if (Input.GetMouseButtonDown(0))
@@ -249,12 +233,11 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z)) { Player.instance.Booster(); }
+        //테스트용
+        if (Input.GetKeyDown(KeyCode.Z)) { Player.instance.Booster(); } 
         if (!isCheckStart && !isCheckDone 
             && !checkList.IsTutorialEnd &&
             Input.GetMouseButtonDown(0)) { StartCoroutine(CheckTouch()); }
-
-
 
 
         checkList.isMenuOpen = canvasList.UpdateMenuOpenCheck();
@@ -268,13 +251,6 @@ public class GameManager : MonoBehaviour
     {
         if (MenuManager.instance.setting.vibSelectNum > 0) { Vibration.Vibrate(time, MenuManager.instance.setting.vibIntensity * strong); }
         else { return; }
-    }
-
-
-    public bool ConditionCheck(bool condition ,bool isReverse)
-    {
-        if (!isReverse) return condition;
-        else return !condition;
     }
 
     public Tuple<int, int, int> CalKPrice(int _num)
@@ -307,7 +283,7 @@ public class GameManager : MonoBehaviour
     IEnumerator AstarScan() 
     {
         yield return new WaitForSeconds(1f);
-        AstarPath.active.Scan(); 
+        AstarPath.active.Scan();
     }
 
     public void CalGold(GoldType goldType, int inputGold)

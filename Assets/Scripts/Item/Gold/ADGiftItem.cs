@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,17 +21,17 @@ public class ADGiftItem : GoldItem
     }
     IEnumerator Act()
     {
-        float playerYpos = GameObject.FindObjectOfType<Player>().transform.position.y;
+        float playerYpos = Player.instance.transform.position.y;
 
         while (true)
         {
-            if(playerYpos >= transform.position.y)
+            if((transform.position.y - playerYpos) < 0.1f)
             {
                 rigid.constraints = RigidbodyConstraints2D.FreezeAll;
                 SoundManager.instance.PlaySfx("Land");
                 dustEffect.Play();
 
-                yield return new WaitForSeconds(0.5f);
+                yield return null;
                 GetComponent<CircleCollider2D>().enabled = true;
                 break;
             }

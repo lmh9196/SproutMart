@@ -11,15 +11,8 @@ public class CraftData : ScriptableObject
     public bool IsAchiveTrigger
     {
         get { return isAchiveTrigger; }
-        set 
-        { 
-            isAchiveTrigger = value;
-            MenuLockCoverAct?.Invoke();
-        }
+        set { isAchiveTrigger = value; }
     }
-
-    public Action MenuLockCoverAct;
-
 
     [Header("Table")]
     public float defalutMakingTime;

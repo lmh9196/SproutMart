@@ -28,11 +28,11 @@ public class UpgradeCraft : MonoBehaviour
     private void Start()
     {
         RenewalInfo();
+    }
 
-        if (lockCover != null && craftData.MenuLockCoverAct == null)
-        {
-            craftData.MenuLockCoverAct = () => { lockCover.SetActive(!craftData.IsAchiveTrigger); };
-        }
+    private void Update()
+    {
+        if (lockCover != null) { lockCover.SetActive(!craftData.IsAchiveTrigger); }
     }
 
 

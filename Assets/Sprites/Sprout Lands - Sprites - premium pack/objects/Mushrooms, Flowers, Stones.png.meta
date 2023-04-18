@@ -347,7 +347,7 @@ TextureImporter:
         width: 22
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -355,6 +355,48 @@ TextureImporter:
       bones: []
       spriteID: beec303a07841de438b4bdc895b2f315
       internalID: 2018184969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushrooms, Flowers, Stones_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 72
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306e713b9b52e6b4682df1811b678e78
+      internalID: 1704458673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushrooms, Flowers, Stones_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 65
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7b820804d11b84884af03f0d3fcd4d
+      internalID: -1444607311
       vertices: []
       indices: 
       edges: []
@@ -376,8 +418,10 @@ TextureImporter:
       Grass1: -1081562803
       Flower5: -1429541944
       Flower9: 511900985
+      Mushrooms, Flowers, Stones_2: -1444607311
       Rock: 1267904618
       Grass3: -768788325
+      Mushrooms, Flowers, Stones_1: 1704458673
       Flower: -1625552076
       Mushrooms, Flowers, Stones_0: 2018184969
       Grass2: -1081562803

@@ -64,6 +64,11 @@ public class CraftGetTable : Table
 
         if(craftWork.CheckArea() && data.IsUnlock) { craftWork.Work(); }
 
+        if (!craftData.IsAchiveTrigger)
+        {
+            if (transform.parent.gameObject.activeSelf && data.IsUnlock) { craftData.IsAchiveTrigger = true; }
+        }
+
         GameManager.instance.checkList.BuffEvent(GameManager.instance.checkList.isCraftSpeedBuff, speedBuffEffect);
     }
 

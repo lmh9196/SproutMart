@@ -88,8 +88,10 @@ public class CraftSalesTable : Table
     {
         base.LateUpdate();
 
-        if (transform.parent.gameObject.activeSelf && data.IsUnlock) { craftData.IsAchiveTrigger = true; }
-        else { craftData.IsAchiveTrigger = false;}
+        if (!craftData.IsAchiveTrigger)
+        {
+            if (transform.parent.gameObject.activeSelf && data.IsUnlock) { craftData.IsAchiveTrigger = true; }
+        }
     }
 
 

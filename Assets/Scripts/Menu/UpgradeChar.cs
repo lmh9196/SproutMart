@@ -29,14 +29,11 @@ public class UpgradeChar : MonoBehaviour
     private void OnEnable() 
     {
         RenewalInfo();
-
-        if (lockCover != null && charData.MenuLockCoverAct == null)
-        {
-            charData.MenuLockCoverAct = () => { lockCover.SetActive(!charData.IsAchiveTrigger); };
-        }
     }
     private void Update()
     {
+        if (lockCover != null) { lockCover.SetActive(!charData.IsAchiveTrigger); }
+
         if (buyCover != null)
         {
             buyCover.SetActive(!(charData.SetMenuType(CharData.MenuType.COUNT).Level > 0));
@@ -44,10 +41,9 @@ public class UpgradeChar : MonoBehaviour
         }
     }
 
-  
-
     void RenewalInfo()
     {
+
         for (int i = 0; i < charData.stat.Length; i++)
         {
             for (int j = 0; j < menu.Length; j++)

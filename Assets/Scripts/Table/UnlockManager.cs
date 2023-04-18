@@ -28,6 +28,7 @@ public class UnlockManager : MonoBehaviour
             isAct = value;
         }
     }
+
     Table actTable;
     public StageData stageData;
     public GameObject unlockCheckGemBtn;

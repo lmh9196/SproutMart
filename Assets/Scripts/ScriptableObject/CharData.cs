@@ -17,13 +17,8 @@ public class CharData : ScriptableObject
     public bool IsAchiveTrigger
     {
         get { return isAchiveTrigger; }
-        set 
-        {
-            isAchiveTrigger = value;
-            MenuLockCoverAct?.Invoke();
-        }
+        set { isAchiveTrigger = value; }
     }
-    public Action MenuLockCoverAct;
 
     [Space(10f)]
     public int defalutMaxHandsCount;

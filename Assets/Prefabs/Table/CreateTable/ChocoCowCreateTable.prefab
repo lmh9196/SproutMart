@@ -536,6 +536,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: (6) ChocoMilkCreateTable
       objectReference: {fileID: 0}
+    - target: {fileID: 3420385812064773107, guid: da2b8b7b47fd4aa46aae6a7ac4e200db, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3420385812065271763, guid: da2b8b7b47fd4aa46aae6a7ac4e200db, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3420385812065271763, guid: da2b8b7b47fd4aa46aae6a7ac4e200db, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 3420385812065271763, guid: da2b8b7b47fd4aa46aae6a7ac4e200db, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3511544399728555126, guid: da2b8b7b47fd4aa46aae6a7ac4e200db, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3511544399728555126, guid: da2b8b7b47fd4aa46aae6a7ac4e200db, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 0.5882353
+      objectReference: {fileID: 0}
     - target: {fileID: 3638869259741782038, guid: da2b8b7b47fd4aa46aae6a7ac4e200db, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -618,7 +642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8280477053779622100, guid: da2b8b7b47fd4aa46aae6a7ac4e200db, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.525
       objectReference: {fileID: 0}
     - target: {fileID: 8600131773308271407, guid: da2b8b7b47fd4aa46aae6a7ac4e200db, type: 3}
       propertyPath: m_Size.x

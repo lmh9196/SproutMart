@@ -428,6 +428,14 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 8280477053779622100, guid: da2b8b7b47fd4aa46aae6a7ac4e200db, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.009
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280477053779622100, guid: da2b8b7b47fd4aa46aae6a7ac4e200db, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.18
+      objectReference: {fileID: 0}
     - target: {fileID: 8722301461364273912, guid: da2b8b7b47fd4aa46aae6a7ac4e200db, type: 3}
       propertyPath: data.ID
       value: PeachCreateTable

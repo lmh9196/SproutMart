@@ -201,6 +201,8 @@ public class GameManager : MonoBehaviour
         Screen.orientation = ScreenOrientation.AutoRotation; 
     }
 
+
+
     bool isCheckStart;
     bool isCheckDone;
     IEnumerator CheckTouch() //테스트용 튜토리얼 스킵

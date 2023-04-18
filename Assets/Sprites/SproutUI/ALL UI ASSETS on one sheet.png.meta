@@ -5219,7 +5219,7 @@ TextureImporter:
         width: 34
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 3, y: 4, z: 3, w: 3}
       outline: []
       physicsShape: []
@@ -5240,7 +5240,7 @@ TextureImporter:
         width: 34
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 3, y: 4, z: 3, w: 3}
       outline: []
       physicsShape: []
@@ -5248,6 +5248,48 @@ TextureImporter:
       bones: []
       spriteID: f4dda068fd2e35c47b987d6df9ce67d8
       internalID: -2123952320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_89
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 334
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8c3de748dc5314ab6b256d9a8a8f58
+      internalID: 1795139503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Icon
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 336
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac8f8d43ce85e8e438e2e026d4af1ad4
+      internalID: 612418972
       vertices: []
       indices: 
       edges: []
@@ -5289,6 +5331,7 @@ TextureImporter:
       DirSign_Left: -1174468343
       ALL UI ASSETS on one sheet_150: 533388830
       FloatDir: 1956673797
+      ALL UI ASSETS on one sheet_89: 1795139503
       BurrowSign_Idle_Left: -1798878426
       ALL UI ASSETS on one sheet_87: -1553341139
       ALL UI ASSETS on one sheet_23: 1321507240
@@ -5440,6 +5483,7 @@ TextureImporter:
       ALL UI ASSETS on one sheet_116: -1302612478
       ALL UI ASSETS on one sheet_81: -492495696
       ALL UI ASSETS on one sheet_112: 803534177
+      Customer_Icon: 612418972
       BurrowSign_Press_Right: -1428217197
       ALL UI ASSETS on one sheet_49: -1503833327
       ALL UI ASSETS on one sheet_94: -1101858699

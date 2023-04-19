@@ -109,6 +109,8 @@ public class MenuManager : MonoBehaviour
     }
     public MainInputMenu mainInputMenu;
 
+    public GameObject buyCheckObj;
+    public Button buyOkBtn;
     private void Awake()
     {
         if (null == instance) instance = this;
@@ -225,6 +227,26 @@ public class MenuManager : MonoBehaviour
             mainInputMenu.openBtn.image.sprite = mainInputMenu.menuListArrowSprite;
             mainInputMenu.menuListParent.DOLocalMoveY(mainInputMenu.openBtn.transform.localPosition.y, 1f).SetEase(Ease.OutBack);
         }
+    }
+
+    public void BuyFailAct(GameManager.GoldType goldType)
+    {
+        SoundManager.instance.PlaySfx("Fail");
+        GameManager.instance.ClickVib();
+
+        ColorManager.instance.GoldFail(goldType);
+    }
+    public void BuyCheck(Action btnAct)
+    {
+        GameManager.instance.ClickVib();
+        SoundManager.instance.PlaySfx("Pop");
+
+        buyCheckObj.SetActive(true);
+        buyOkBtn.onClick.RemoveAllListeners();
+
+        buyOkBtn.onClick.AddListener(() => { buyCheckObj.SetActive(false); });
+
+        buyOkBtn.onClick.AddListener(() => { btnAct();});
     }
 }
 
@@ -394,22 +416,24 @@ public class Upgrade
     public Transform staffPage;
     public Transform machinePage;
 
+ 
     public void UpgradeStat(int price, Action levelUp)
     {
-        if (GameManager.instance.CompareGold(price,GameManager.instance.SelectGold(GameManager.GoldType.GOLD), true))
+        if (GameManager.instance.CompareGold(price, GameManager.instance.SelectGold(GameManager.GoldType.GOLD), true))
         {
-            levelUp?.Invoke();
-            GameManager.instance.CalGold(GameManager.GoldType.GOLD, -price);
-            SoundManager.instance.PlaySfx("Buy");
-            GameManager.instance.ClickVib();
+            MenuManager.instance.BuyCheck(() =>
+            {
+                if (GameManager.instance.CompareGold(price, GameManager.instance.SelectGold(GameManager.GoldType.GOLD), true))
+                {
+                    levelUp?.Invoke();
+                    GameManager.instance.CalGold(GameManager.GoldType.GOLD, -price);
+                    SoundManager.instance.PlaySfx("Buy");
+                    GameManager.instance.ClickVib();
+                }
+                else { MenuManager.instance.BuyFailAct(GameManager.GoldType.GOLD); }
+            });
         }
-        else
-        {
-            SoundManager.instance.PlaySfx("Fail");
-            GameManager.instance.ClickVib();
-
-            ColorManager.instance.GoldFail(GameManager.GoldType.GOLD);
-        }
+        else { MenuManager.instance.BuyFailAct(GameManager.GoldType.GOLD); }
     }
 }
 [Serializable]
@@ -481,8 +505,6 @@ public class Statues
             statueCategories[i].defalutPos =  statueCategories[i].categoryBtn.transform.localPosition;
         }
 
-
-
         moveBtn.onClick.AddListener(MoveStatue);
         destroyBtn.onClick.AddListener(DestroyStatue);
         activeBtn.onClick.AddListener(ActiveStatue);
@@ -519,8 +541,25 @@ public class Statues
     {
         GameManager.instance.ClickVib();
 
-        if (statueManager.EnableCheck(statueManager.buildMode, statueManager.selectStatue)) { statueManager.FinishAct(); }
+        if (statueManager.EnableCheck(statueManager.buildMode, statueManager.selectStatue)) 
+        { 
+            if (statueManager.buildMode == StatueManager.BuildMode.BUILD)
+            {
+                MenuManager.instance.BuyCheck(() =>
+                {
+                    if (statueManager.EnableCheck(statueManager.buildMode, statueManager.selectStatue)) { statueManager.FinishAct(); }
+                    else { SoundManager.instance.PlaySfx("Fail"); }
+                });
+            }
+            else
+            {
+                statueManager.FinishAct();
+            }
+        }
         else { SoundManager.instance.PlaySfx("Fail"); }
+
+      
+    
     }
 
 
@@ -560,21 +599,23 @@ public class Hats
     {
         if (GameManager.instance.CompareGold(hatData.HatPrice(), GameManager.instance.SelectGold(hatData.goldType), true))
         {
-            SoundManager.instance.PlaySfx("Buy");
-            GameManager.instance.ClickVib();
+            MenuManager.instance.BuyCheck(() =>
+            {
+                if (GameManager.instance.CompareGold(hatData.HatPrice(), GameManager.instance.SelectGold(hatData.goldType), true))
+                {
+                    SoundManager.instance.PlaySfx("Buy");
+                    GameManager.instance.ClickVib();
 
-            GameManager.instance.CalGold(hatData.goldType, - hatData.HatPrice());
+                    GameManager.instance.CalGold(hatData.goldType, -hatData.HatPrice());
 
-            hatData.RegistHatData(playerHat);
-            hatData.isBought = true;
+                    hatData.RegistHatData(playerHat);
+                    hatData.isBought = true;
+                }
+                else { MenuManager.instance.BuyFailAct(hatData.goldType); }
+            });
         }
-        else
-        {
-            SoundManager.instance.PlaySfx("Fail");
-            GameManager.instance.ClickVib();
-
-            ColorManager.instance.GoldFail(hatData.goldType);
-        }
+        else { MenuManager.instance.BuyFailAct(hatData.goldType); }
+    
     }
     void ActiveHat(HatData hatData)
     {

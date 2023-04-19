@@ -29,7 +29,11 @@ public class StatueBtn : MonoBehaviour
             case GameManager.GoldType.GEM: coinImage.sprite = GameManager.instance.gemSprite; break;
         }
     }
-    void Update() { priceText.text = GameManager.instance.PriceText(statue.data.price, 2); }
+    void Update() 
+    { 
+        priceText.text = GameManager.instance.PriceText(statue.data.price, 2);
+        GameManager.instance.TextColorInGameGold(priceText, statue.goldType, statue.data.price);
+    }
 
 
     void InitProfileImage()

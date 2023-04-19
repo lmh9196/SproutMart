@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     FloatingText gemFloatingText = new();
     TimerImageAct boostTimerAct = new();
     TimerImageAct trashTimerAct = new();
+    DialogueTerm term = new();
 
     public CharData charData;
     [Space(10f)]
@@ -68,6 +69,7 @@ public class Player : MonoBehaviour
         boxData.UpdateFullSign(fullSign, itemBox, charData.maxHandsCount);
     }
 
+    bool isTutorial;
     void Update()
     {
       
@@ -89,9 +91,16 @@ public class Player : MonoBehaviour
 
         GameManager.instance.checkList.BuffEvent(GameManager.instance.checkList.isCharSpeedBuff, buffeffect);
 
-        if (GameManager.instance.checkList.IsTutorialEnd &&  !GameManager.instance.checkList.IsTutorial_Full && itemBox.childCount == charData.maxHandsCount) 
+        if (GameManager.instance.checkList.IsTutorialEnd &&  !GameManager.instance.checkList.IsTutorial_Full && itemBox.childCount == charData.maxHandsCount && !isTutorial) 
         {
+            isTutorial = true;
+            DialogueManager.instance.EnableDialouge(term.termFull_GuideTrash, true, false);
             MenuManager.instance.CallNotice(MenuManager.instance.trash.trashBtn.gameObject);
+        }
+        if(isTutorial && itemBox.childCount == 0)
+        {
+            isTutorial = false;
+            DialogueManager.instance.DisableDialogue();
         }
 
     }

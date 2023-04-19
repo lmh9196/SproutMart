@@ -50,7 +50,7 @@ public class CraftData : ScriptableObject
         return SetMakeSpeed() - buffSpeed;
     }
     public float SetMakeSpeed() { return defalutMakingTime - (defalutMakingTime * (SetMenuType(MenuType.SPEED).Level * 0.16f)); }
-    public int SetPrice(Stat stat) 
+    public int GetPrice(Stat stat) 
     {
         return stat.needPrice[stat.Level];
     }

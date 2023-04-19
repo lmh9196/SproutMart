@@ -33,7 +33,15 @@ public class UpgradeCraft : MonoBehaviour
     private void Update()
     {
         if (lockCover != null) { lockCover.SetActive(!craftData.IsAchiveTrigger); }
+
+        for (int i = 0; i < craftData.stat.Length; i++)
+        {
+            GameManager.instance.TextColorInGameGold(menu[i].priceText, GameManager.GoldType.GOLD, craftData.GetPrice(craftData.stat[i]));
+        }
     }
+
+
+      
 
 
     void RenewalInfo()
@@ -49,7 +57,7 @@ public class UpgradeCraft : MonoBehaviour
 
             if (craftData.stat[i].Level < craftData.stat[i].needPrice.Length)
             {
-                menu[i].priceText.text = GameManager.instance.PriceText(craftData.SetPrice(craftData.stat[i]), 2);
+                menu[i].priceText.text = GameManager.instance.PriceText(craftData.GetPrice(craftData.stat[i]), 2);
             }
         }
     }
@@ -67,7 +75,7 @@ public class UpgradeCraft : MonoBehaviour
         Upgrade();
     }
 
-    void Upgrade() { MenuManager.instance.upgrade.UpgradeStat(craftData.SetPrice(currentStat), levelUp); }
+    void Upgrade() { MenuManager.instance.upgrade.UpgradeStat(craftData.GetPrice(currentStat), levelUp); }
     void levelUp() { currentStat.Level++; RenewalInfo(); }
    
 }

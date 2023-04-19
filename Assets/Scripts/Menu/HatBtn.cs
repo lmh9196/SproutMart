@@ -32,6 +32,7 @@ public class HatBtn : MonoBehaviour
     void Update()
     {
         priceText.text = GameManager.instance.PriceText(hatData.HatPrice(),2);
+        GameManager.instance.TextColorInGameGold(priceText, hatData.goldType, hatData.HatPrice());
 
         if (hatData.isBought)
         {

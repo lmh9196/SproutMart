@@ -87,11 +87,6 @@ public class CraftSalesTable : Table
     public override void LateUpdate()
     {
         base.LateUpdate();
-
-        if (!craftData.IsAchiveTrigger)
-        {
-            if (transform.parent.gameObject.activeSelf && data.IsUnlock) { craftData.IsAchiveTrigger = true; }
-        }
     }
 
 

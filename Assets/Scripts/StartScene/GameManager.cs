@@ -1,9 +1,7 @@
-using DG.Tweening;
 using RDG;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -89,6 +87,7 @@ public class CanvasList
     public Canvas videoCanvas;
     public Canvas blockCanvas;
     public Canvas loadingCanvas;
+    public Canvas popUpCanavs;
 
     public List<CanvasScaler> matchCanvasScalerList = new();
     public void Init() 
@@ -101,6 +100,7 @@ public class CanvasList
         burrowCanvas.enabled = true;
         menuCanvas.enabled = true;
         videoCanvas.enabled = true;
+        popUpCanavs.enabled = true;
     }
 
     public bool UpdateMenuOpenCheck()
@@ -317,8 +317,11 @@ public class GameManager : MonoBehaviour
         return 0;
     }
 
-  
- 
+    public void TextColorInGameGold(Text targetText, GoldType targetGoldType, int compCount)
+    {
+        if (SelectGold(targetGoldType) < compCount) { targetText.color = ColorManager.instance.textFailColor; }
+        else { targetText.color = new Color(255, 255, 255); }
+    }
 
     
 

@@ -21,6 +21,8 @@ public class DialogueTerm
 
     public string termDrunken_GuideRightWay = "Guide_DrunkenWay";
     public string termDrunken_FirstNotice = "Guide_FirstNotice";
+
+    public string termFull_GuideTrash = "Guide_Trash";
 }
 public class DialogueManager : MonoBehaviour
 {

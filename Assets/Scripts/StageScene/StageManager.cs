@@ -127,6 +127,12 @@ public class StageManager : MonoBehaviour
                 if (areaParentList[i].gameObject.activeSelf) { areaParentList[i].gameObject.SetActive(false); }
             }
         }
+
+        for (int i = 0; i < allTable.Count; i++)
+        {
+            if (allTable[i] is CraftGetTable craftGet) { UpdateCheckCraftLock(craftGet, craftGet.craftData); }
+            else if (allTable[i] is CraftSalesTable craftSales) { UpdateCheckCraftLock(craftSales, craftSales.craftData); }
+        }
     }
 
     public void RegistAllTable()
@@ -168,6 +174,12 @@ public class StageManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
 
         Destroy(camPoint.transform.GetChild(0).gameObject);
+    }
+
+    public void UpdateCheckCraftLock(Table table, CraftData craftData)
+    {
+        if (transform.parent.gameObject.activeSelf && table.data.IsUnlock) { craftData.IsAchiveTrigger = true; }
+        else { craftData.IsAchiveTrigger = false; }
     }
 }
 

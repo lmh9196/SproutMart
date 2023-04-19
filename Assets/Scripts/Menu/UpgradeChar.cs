@@ -13,6 +13,7 @@ public class UpgradeChar : MonoBehaviour
     {
         public CharData.MenuType menuType;
         public GameObject upBtn;
+        [HideInInspector] public Button upButton;
         public GameObject maxImage;
         public Text lvText;
         public Text priceText;
@@ -25,6 +26,13 @@ public class UpgradeChar : MonoBehaviour
     public GameObject buyCover;
     public Text buyPriceText;
 
+    private void Awake()
+    {
+        for (int i = 0; i < menu.Length; i++)
+        {
+            menu[i].upButton = menu[i].upBtn.GetComponent<Button>();
+        }
+    }
 
     private void OnEnable() 
     {
@@ -38,12 +46,23 @@ public class UpgradeChar : MonoBehaviour
         {
             buyCover.SetActive(!(charData.SetMenuType(CharData.MenuType.COUNT).Level > 0));
             buyPriceText.text = GameManager.instance.PriceText(charData.buyPrice,2);
+            GameManager.instance.TextColorInGameGold(buyPriceText, GameManager.GoldType.GOLD, charData.buyPrice);
+        }
+
+        for (int i = 0; i < charData.stat.Length; i++)
+        {
+            for (int j = 0; j < menu.Length; j++)
+            {
+                if (charData.stat[i].menuType.Equals(menu[j].menuType))
+                {
+                    GameManager.instance.TextColorInGameGold(menu[j].priceText, GameManager.GoldType.GOLD, charData.GetPrice(charData.stat[i]));
+                }
+            }
         }
     }
 
     void RenewalInfo()
     {
-
         for (int i = 0; i < charData.stat.Length; i++)
         {
             for (int j = 0; j < menu.Length; j++)
@@ -69,7 +88,7 @@ public class UpgradeChar : MonoBehaviour
 
                     if (charData.stat[i].Level < charData.stat[i].price.Length)
                     {
-                        menu[j].priceText.text = GameManager.instance.PriceText(charData.SetPrice(charData.stat[i]), 2);
+                        menu[j].priceText.text = GameManager.instance.PriceText(charData.GetPrice(charData.stat[i]), 2);
                     }
                 }
             }
@@ -82,19 +101,19 @@ public class UpgradeChar : MonoBehaviour
     public void Stack() 
     {
         currentStat = charData.SetMenuType(CharData.MenuType.STACK);
-        Upgrade(); 
+        Upgrade();
     } 
     public void Count() 
     {
         currentStat = charData.SetMenuType(CharData.MenuType.COUNT);
-        Upgrade(); 
+        Upgrade();
     } 
     public void Speed() 
     {
         currentStat = charData.SetMenuType(CharData.MenuType.COOLTIME);
         Upgrade();
     }
-    void Upgrade() { MenuManager.instance.upgrade.UpgradeStat(charData.SetPrice(currentStat), levelUp); }
+    void Upgrade() { MenuManager.instance.upgrade.UpgradeStat(charData.GetPrice(currentStat), levelUp); }
     void levelUp() { currentStat.Level++; RenewalInfo(); }
 
 }

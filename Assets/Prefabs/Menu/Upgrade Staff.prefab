@@ -1034,7 +1034,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charData: {fileID: 0}
-  staffController: {fileID: 0}
   menu:
   - menuType: 1
     upBtn: {fileID: 2269607933171280183}
@@ -1049,7 +1048,6 @@ MonoBehaviour:
   lockCover: {fileID: 8690852826845161932}
   buyCover: {fileID: 2269607933019616517}
   buyPriceText: {fileID: 2269607932153617971}
-  achievemnetList: []
 --- !u!1 &2269607932498759424
 GameObject:
   m_ObjectHideFlags: 0

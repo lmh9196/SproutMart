@@ -57,16 +57,12 @@ public class StaffController : MonoBehaviour
 
     void UpdateAchiveCheck()
     {
-        if (charData.IsAchiveTrigger) { return; }
-
         if (achiveTableList.Count > 0)
         {
             for (int i = 0; i < achiveTableList.Count; i++)
             {
-                if (!charData.IsAchiveTrigger)
-                {
-                    if (achiveTableList[i].data.IsUnlock && achiveTableList[i].transform.parent.gameObject.activeSelf) { charData.IsAchiveTrigger = true; break; }
-                }
+                if (achiveTableList[i].data.IsUnlock && achiveTableList[i].transform.parent.gameObject.activeSelf) { charData.IsAchiveTrigger = true; break; }
+                else { charData.IsAchiveTrigger = false; }
             }
         }
         else { charData.IsAchiveTrigger = true; }

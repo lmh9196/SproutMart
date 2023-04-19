@@ -41,7 +41,7 @@ public class StatueManager : MonoBehaviour
     Action runningAct;
 
     Player player;
-    [HideInInspector] public Statue[] statuePrefabs;
+    public Statue[] statuePrefabs;
 
     int destroyCount;
 
@@ -62,8 +62,6 @@ public class StatueManager : MonoBehaviour
         if (instance == null) { instance = this; }
 
         player = GameObject.FindObjectOfType<Player>();
-        statuePrefabs = Resources.LoadAll<Statue>("R_Prefabs_Statue");
-
     }
 
     private void Start()
@@ -300,7 +298,7 @@ public class StatueManager : MonoBehaviour
     void SpawnStatue()
     {
         selectParent.position
-       = new Vector3Int(Mathf.RoundToInt(player.transform.position.x), Mathf.RoundToInt(player.transform.position.y), 0);
+       = new Vector3Int(Mathf.RoundToInt(Player.instance.transform.position.x), Mathf.RoundToInt(Player.instance.transform.position.y), 0);
 
         selectStatue = Instantiate(selectStatue.gameObject).GetComponent<Statue>();
         selectStatue.transform.SetParent(selectParent);
@@ -311,6 +309,8 @@ public class StatueManager : MonoBehaviour
             {
                 selectStatue.InitStatue(selectParent.position + statuePrefabs[i].defalutPos); break;
             }
+
+            if (i == statuePrefabs.Length - 1) { Debug.Log("Error : Statue Prefab is Null"); }
         }
 
         selectStatue.detectParent.gameObject.SetActive(true);

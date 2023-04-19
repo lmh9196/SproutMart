@@ -95,7 +95,7 @@ public class CharData : ScriptableObject
     public void SetHandsCount() { maxHandsCount = defalutMaxHandsCount + SetMenuType(MenuType.STACK).Level; }
     public void SetCoolTime() { coolTime = defalutCoolTime - SetMenuType(MenuType.COOLTIME).Level - buffCoolTime; } 
     public float SetMoveSpeed() { return defalutMoveSpeed + buffMoveSpeed; }
-    public int SetPrice(Stat stat) { return stat.price[stat.Level]; }
+    public int GetPrice(Stat stat) { return stat.price[stat.Level]; }
 
     public Sprite SetTimerImage(int coolTimeLevel) { return timerImageArray[coolTimeLevel]; }
 

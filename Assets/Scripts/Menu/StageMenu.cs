@@ -27,7 +27,11 @@ public class StageMenu : MonoBehaviour
 
 
         if (isMaxCheck) { priceText.text = "Max "; }
-        else { priceText.text = GameManager.instance.PriceText(stageData.price[stageData.Level], 2); }
+        else 
+        { 
+            priceText.text = GameManager.instance.PriceText(stageData.price[stageData.Level], 2);
+            GameManager.instance.TextColorInGameGold(priceText, GameManager.GoldType.GOLD, stageData.price[stageData.Level]);
+        }
 
         levelText.text = (stageData.Level + 1).ToString();
 
@@ -42,23 +46,23 @@ public class StageMenu : MonoBehaviour
 
     public void Upgrade()
     {
-        if (GameManager.instance.SelectGold(GameManager.GoldType.GOLD) >= stageData.price[stageData.Level])
+        if (GameManager.instance.CompareGold(stageData.price[stageData.Level], GameManager.instance.SelectGold(GameManager.GoldType.GOLD), true))  
         {
-            if (stageData.Level < 5)
+            MenuManager.instance.BuyCheck(() =>
             {
-                StartCoroutine(StageManager.instance.MartEvent());
-                GameManager.instance.CalGold(GameManager.GoldType.GOLD, -stageData.price[stageData.Level]);
+                if(stageData.Level < 5 && GameManager.instance.CompareGold(stageData.price[stageData.Level], GameManager.instance.SelectGold(GameManager.GoldType.GOLD), true))
+                {
+                    StartCoroutine(StageManager.instance.MartEvent());
+                    GameManager.instance.CalGold(GameManager.GoldType.GOLD, -stageData.price[stageData.Level]);
 
-                SoundManager.instance.PlaySfx("Buy");
-                GameManager.instance.ClickVib();
-            }
+                    SoundManager.instance.PlaySfx("Buy");
+                    GameManager.instance.ClickVib();
+                }
+                else { MenuManager.instance.BuyFailAct(GameManager.GoldType.GOLD); }
+            });
+         
         }
-        else
-        {
-            SoundManager.instance.PlaySfx("Fail");
-            GameManager.instance.ClickVib();
-            ColorManager.instance.GoldFail(GameManager.GoldType.GOLD);
-        }
+        else { MenuManager.instance.BuyFailAct(GameManager.GoldType.GOLD); }
     }
     public void Move()
     {

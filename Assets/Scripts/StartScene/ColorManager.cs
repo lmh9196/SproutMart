@@ -16,7 +16,6 @@ public class ColorManager : MonoBehaviour
     bool isTriggerColoring;
 
 
-
     private void Awake() 
     { 
         if (instance == null) instance = this; 
@@ -58,6 +57,4 @@ public class ColorManager : MonoBehaviour
         isTriggerColoring = false;
         GameManager.instance.canvasList.blockCanvas.enabled = false;
     }
-
-
 }

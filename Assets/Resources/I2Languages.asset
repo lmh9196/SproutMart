@@ -457,6 +457,23 @@ MonoBehaviour:
       - There's a lost customer!
       Flags: 0000
       Languages_Touch: []
+    - Term: BuyCheck
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC815\uB9D0 \uAD6C\uB9E4\uD558\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?"
+      - sure you want to buy?
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Guide_Trash
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC0C1\uC790\uAC00 \uAC00\uB4DD\uCC3C\uC5B4\uC694! \uBC84\uD2BC\uC744 \uAE38\uAC8C
+        \uB20C\uB7EC \uC0C1\uC790\uB97C \uBE44\uC6B0\uC138\uC694!"
+      - The box is full! Press and hold the button to empty the box!
+      Flags: 0000
+      Languages_Touch: []
     CaseInsensitiveTerms: 0
     OnMissingTranslation: 1
     mTerm_AppName: 

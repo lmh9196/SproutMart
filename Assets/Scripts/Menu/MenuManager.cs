@@ -191,7 +191,7 @@ public class MenuManager : MonoBehaviour
     public void ChangeLang(string _LanguageName) { setting.ChangeLang(_LanguageName); }
 
     //Other
-
+ 
     public void StatueChangeCategory() { statues.ChangeCategory(); }
     public void menuOnOff(GameObject menu)
     {
@@ -413,8 +413,10 @@ public class Setting
 [Serializable]
 public class Upgrade
 {
+    public GameObject menu;
     public Transform staffPage;
     public Transform machinePage;
+    public Transform expandPage;
 
  
     public void UpgradeStat(int price, Action levelUp)
@@ -651,4 +653,6 @@ public class Expand
     {
         npcLvText.text = npcData.level.ToString();
     }
+
+   
 }

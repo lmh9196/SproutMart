@@ -51,4 +51,5 @@ public class StageData : ScriptableObject
         }
     }
 
+    public int GetUpgradePrice() { return price[Level]; }
 }

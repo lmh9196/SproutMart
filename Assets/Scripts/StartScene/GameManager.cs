@@ -158,6 +158,7 @@ public class CanvasList
       
         loadingCanvas.enabled = true;
     }
+
 }
 
 [Serializable]
@@ -280,6 +281,18 @@ public class GameManager : MonoBehaviour
         }
         else return num.ToString();
     }
+
+
+
+    public Vector2 TextBackgroundSize(RectTransform backGround ,Text inputText)
+    {
+        int count = inputText.text.Length;
+
+        return  new Vector2(95 + (count * 5), backGround.sizeDelta.y);
+    }
+
+
+
 
     public void AstarScanDelay() { StartCoroutine(AstarScan()); }
     IEnumerator AstarScan() 

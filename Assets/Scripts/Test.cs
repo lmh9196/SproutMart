@@ -2,35 +2,56 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Unity.VisualScripting;
+using System.Xml.XPath;
+using UnityEngine.Rendering;
 
-
-/*
- * [[1, 4], [9, 2], [3, 8], [11, 6]]
- */
 public class Solution
 {
-
     public int solution(int[,] dots)
     {
         int answer = 0;
-        int result = 0;
-        for (int i = 0; i < dots.GetLength(0); i++)
-        {
-            int xValue = 0;
-            int yValue = 0;
+        List<int> intList = new();
 
-            for (int j = 0; j < dots.GetLength(1); j++)
+        float[] compareArray = new float[2];
+
+        float[] axy = new float[2];
+        float[] bxy = new float[2];
+
+        int startIdx = 0;
+
+        for (int i = 0; i < dots.GetLength(0) - 1; i++)
+        {
+            for (int a = 0; a < axy.Length; a++)
             {
-                if(i > 0 )
+                if(!intList.Contains(i) && startIdx <= i)
                 {
-                    if (j < dots.GetLength(1)) { xValue = Math.Abs(dots[i, j]) - Math.Abs(dots[i - 1, j]); }
-                    else { yValue = Math.Abs(dots[i, j - 1]) - Math.Abs(dots[i - 1, j - 1]);}
+                    intList.Add(i);
+                    axy[a] = Math.Abs(dots[i, a]);
+
+                    if (intList.Count == 0) { startIdx = i; }
                 }
             }
 
-            if(result== 0) { result = yValue / xValue; }
-            else if (result == yValue / xValue) { answer = 1; break; }
+            for (int a = 0; a < bxy.Length; a++)
+            {
+                if (!intList.Contains(i))
+                {
+                    intList.Add(i);
+                    bxy[a] = Math.Abs(dots[i, a]);
+                }
+            }
+
+            for (int a = 0; a < compareArray.Length; a++)
+            {
+                float xValue = Math.Abs(axy[a] - bxy[a]);
+                float yValue = Math.Abs(axy[a] - bxy[a]);
+
+                if (xValue != 0 && yValue != 0) { compareArray[a] = yValue / xValue; }
+                else { compareArray[a] = 0; }
+            }
+
+            if (compareArray[0] == compareArray[1]) { return 1; }
+            else { intList.Clear();  }
         }
 
         return answer;

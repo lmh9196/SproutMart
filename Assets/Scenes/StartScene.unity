@@ -10291,8 +10291,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 681336932}
   upgrade:
+    menu: {fileID: 1831121463}
     staffPage: {fileID: 31058820}
     machinePage: {fileID: 1468725130}
+    expandPage: {fileID: 709115032}
   setting:
     BGMTitle: {fileID: 268609472}
     BGMSlider: {fileID: 1774730860}

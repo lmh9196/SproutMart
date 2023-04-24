@@ -5282,7 +5282,7 @@ TextureImporter:
         width: 14
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5290,6 +5290,27 @@ TextureImporter:
       bones: []
       spriteID: ac8f8d43ce85e8e438e2e026d4af1ad4
       internalID: 612418972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALL UI ASSETS on one sheet_111
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 585
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6b4425cf288fb4f8a78d0d0c33abd9
+      internalID: 1724375068
       vertices: []
       indices: 
       edges: []
@@ -5364,6 +5385,7 @@ TextureImporter:
       Counter: -1507895318
       ALL UI ASSETS on one sheet_61: 630683687
       ALL UI ASSETS on one sheet_22: 278349750
+      ALL UI ASSETS on one sheet_111: 1724375068
       Emote5: -410278669
       ALL UI ASSETS on one sheet_192: 1431157972
       ALL UI ASSETS on one sheet_193: 773535660

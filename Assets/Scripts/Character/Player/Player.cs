@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -37,6 +38,7 @@ public class Player : MonoBehaviour
     [Space(10f)]
 
     bool isTrashTimerOn;
+    bool isTrashTrigger;
 
     [HideInInspector] public CapsuleCollider2D capsuleCollider;
     [HideInInspector] public Rigidbody2D rigid;
@@ -59,7 +61,7 @@ public class Player : MonoBehaviour
     {
         burrow.Init(this);
         playerMove.Init(this);
-        boost.Init(this);
+        //boost.Init(this);
         attack.Init(this);
     }
 
@@ -72,11 +74,10 @@ public class Player : MonoBehaviour
     bool isTutorial;
     void Update()
     {
-      
         charData.SetHandsCount();
 
         trashTimerAct.FillTimerImage(playerUI.trashTimerImage.transform.parent.gameObject, playerUI.trashTimerImage, isTrashTimerOn, Time.deltaTime, ItemBoxClear);
-        boostTimerAct.FillTimerImage(playerUI.boostTimerImage.transform.parent.gameObject, playerUI.boostTimerImage, true, Time.deltaTime * boost.boostCooltime, null);
+        //boostTimerAct.FillTimerImage(playerUI.boostTimerImage.transform.parent.gameObject, playerUI.boostTimerImage, true, Time.deltaTime * boost.boostCooltime, null);
         
 
         hat.UpdateHat(animDir);
@@ -89,7 +90,6 @@ public class Player : MonoBehaviour
         boxData.UpdateBoxSprite(animDir.lookDir, boxSpriteRenderer, coverSpriteRenderer);
         boxData.UpdateCropsPos(itemBox);
 
-        GameManager.instance.checkList.BuffEvent(GameManager.instance.checkList.isCharSpeedBuff, buffeffect);
 
         if (GameManager.instance.checkList.IsTutorialEnd &&  !GameManager.instance.checkList.IsTutorial_Full && itemBox.childCount == charData.maxHandsCount && !isTutorial) 
         {
@@ -103,6 +103,9 @@ public class Player : MonoBehaviour
             DialogueManager.instance.DisableDialogue();
         }
 
+        GameManager.instance.checkList.BuffEvent(GameManager.instance.checkList.isCharSpeedBuff, buffeffect);
+        if (buffeffect.isPlaying) { charData.buffMoveSpeed = charData.defalutMoveSpeed * 0.5f; }
+        else { charData.buffMoveSpeed = 0; }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -118,14 +121,29 @@ public class Player : MonoBehaviour
             StartCoroutine(moveCrop.MoveCrops(area.tag, area, itemBox, charData.maxHandsCount, MoveCropsFeedBack));
         }
     }
-
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.TryGetComponent(out TableArea area)) { moveCrop.isTouch = false; }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name.Contains("Trash")) 
+        {
+            TrashOn();
+            isTrashTrigger = true;
+        }
+    }
+ 
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.name.Contains("Trash")) 
+        {
+            isTrashTrigger = false;
+            TrashOff(); }
+    }
     void SetAnim()
     {
-
         animDir.SetDir(playerMove.joyDir, playerMove.joyDir.Equals(Vector3.zero));
 
         if (itemBox.childCount > 0) { animDir.CheckHaveItem(true); }
@@ -148,13 +166,13 @@ public class Player : MonoBehaviour
 
     public void Booster()
     {
-        if (playerUI.boostTimerImage.fillAmount >= 1)
+       /* if (playerUI.boostTimerImage.fillAmount >= 1)
         {
             boost.StartBooster(boost.SetDir(), boost.boosterPower, BoosterAct);
             playerUI.boostTimerImage.fillAmount = 0;
-        }
+        }*/
     }
-    void BoosterAct() { StartCoroutine(boost.BoosterDelay()); }
+   // void BoosterAct() { StartCoroutine(boost.BoosterDelay()); }
     public void EndAttackAnim() { attack.EndAttack(); }
     public void AttackAct() { attack.AttackAct(); }
     
@@ -175,13 +193,15 @@ public class Player : MonoBehaviour
     // Trash
     public void TrashOn() 
     { 
-        if (itemBox.childCount > 0) 
+        if (itemBox.childCount > 0 && !isTrashTrigger) 
         {
             if (playerMove.joyDir == Vector3.zero) { animDir.lookDir = Vector3.down; }
             isTrashTimerOn = true;
         }
     }
-    public void TrashOff() { isTrashTimerOn = false; }
+    public void TrashOff() {
+        if (!isTrashTrigger) { isTrashTimerOn = false; }
+       }
     void ItemBoxClear()
     {
         SoundManager.instance.PlaySfx("Trash");

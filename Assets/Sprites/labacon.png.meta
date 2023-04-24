@@ -195,10 +195,10 @@ TextureImporter:
       name: labacon_3
       rect:
         serializedVersion: 2
-        x: 6
-        y: 78
-        width: 25
-        height: 8
+        x: 106
+        y: 76
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,10 +216,10 @@ TextureImporter:
       name: labacon_4
       rect:
         serializedVersion: 2
-        x: 9
-        y: 47
-        width: 38
-        height: 17
+        x: 106
+        y: 58
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,13 +234,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: labacon_6
+      name: labacon_5
       rect:
         serializedVersion: 2
-        x: 47
-        y: 47
-        width: 10
-        height: 17
+        x: 106
+        y: 94
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,20 +248,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2061aafbf853fd840bc9a5ba6a81cbab
-      internalID: -843998197
+      spriteID: 8020e63d4d887db4a86344717023ac4b
+      internalID: 965091982
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: labacon_7
+      name: labacon_10
       rect:
         serializedVersion: 2
-        x: 19
-        y: 47
-        width: 38
-        height: 17
+        x: 6
+        y: 24
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,8 +269,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de2531bad65256e4ea670671594ed262
-      internalID: 1915444327
+      spriteID: c13bc64f57e10084d9ce2d4746ebc7b8
+      internalID: -1644457956
       vertices: []
       indices: 
       edges: []
@@ -279,10 +279,10 @@ TextureImporter:
       name: labacon_8
       rect:
         serializedVersion: 2
-        x: 21
-        y: 23
-        width: 38
-        height: 17
+        x: 25
+        y: 24
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,20 +290,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0740f93156b7def4687356b019ae34dc
+      spriteID: b3549dbc7112f0246a819b394e617320
       internalID: 2122520314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: labacon_9
+      name: labacon_11
       rect:
         serializedVersion: 2
-        x: 74
-        y: 57
-        width: 10
-        height: 44
+        x: 45
+        y: 24
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,29 +311,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9f23ba3520040f4498ef39ce4e2ee3d
-      internalID: 456016672
+      spriteID: 2f529e5da6645874b8bc9eece4c8a7a7
+      internalID: -1946713375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: labacon_5
+      name: labacon_12
       rect:
         serializedVersion: 2
-        x: 96
-        y: 94
-        width: 10
-        height: 17
+        x: 23
+        y: 7
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8020e63d4d887db4a86344717023ac4b
-      internalID: 965091982
+      spriteID: f37ce472497ba4141975cf5ee98102ed
+      internalID: 1878953596
       vertices: []
       indices: 
       edges: []
@@ -352,11 +352,14 @@ TextureImporter:
       labacon_8: 2122520314
       labacon_3: 1009583221
       labacon_9: 456016672
+      labacon_12: 1878953596
       labacon_5: 965091982
       labacon_2: 1220298223
       labacon_4: -145294659
       labacon_6: -843998197
       labacon_7: 1915444327
+      labacon_10: -1644457956
+      labacon_11: -1946713375
       labacon_0: 1753104783
       labacon_1: -1824552407
   spritePackingTag: 

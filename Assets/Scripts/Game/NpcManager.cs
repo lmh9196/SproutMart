@@ -8,6 +8,7 @@ public class NpcManager : MonoBehaviour
 {
     public static NpcManager instance = null;
     public StageData stageData;
+    public NpcData npcData;
 
     public float setTimer;
 
@@ -16,12 +17,14 @@ public class NpcManager : MonoBehaviour
     [Space(10f)]
 
     [SerializeField] StageManager stageManager;
+    Customer[] customerList;
 
     private void Awake()
     {
         if (instance == null) { instance = this; }
 
         for (int i = 0; i < transform.childCount; i++) { transform.GetChild(i).gameObject.SetActive(false); }
+        customerList = GetComponentsInChildren<Customer>();
     }
 
     private void Start() 

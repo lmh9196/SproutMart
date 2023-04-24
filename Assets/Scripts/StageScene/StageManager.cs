@@ -110,6 +110,7 @@ public class StageManager : MonoBehaviour
 
     private void Update()
     {
+
         for (int i = 0; i < stageList.Count; i++)
         {
             if (saveData.stageData.Level == i) { stageList[saveData.stageData.Level].SetActive(true); }

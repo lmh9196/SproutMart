@@ -76,6 +76,8 @@ public class Customer : MonoBehaviour
         packingBox.transform.position = itemBox.transform.position;
 
         GameManager.instance.checkList.BuffEvent(GameManager.instance.checkList.isCharSpeedBuff, buffeffect);
+        if (buffeffect.isPlaying) { npcData.buffSpeed = npcData.defalutMoveSpeed * 0.5f; }
+        else { npcData.buffSpeed = 0; }
     }
 
     public void OnDisable() { DisableCustomer(); }

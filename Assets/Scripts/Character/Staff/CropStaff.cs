@@ -71,6 +71,13 @@ public class CropStaff : Staff
         boxData.UpdateCropsPos(itemBox);
 
         GameManager.instance.checkList.BuffEvent(GameManager.instance.checkList.isCharSpeedBuff, buffeffect);
+        if (buffeffect.isPlaying)
+        {
+            charData.buffMoveSpeed = charData.defalutMoveSpeed * 0.5f;
+
+            if (charData.SetMenuType(CharData.MenuType.COOLTIME) != null) { charData.buffCoolTime = (charData.defalutCoolTime - charData.SetMenuType(CharData.MenuType.COOLTIME).Level) * 0.5f; }
+        }
+        else { charData.buffMoveSpeed = 0; }
     }
 
     private void LateUpdate()

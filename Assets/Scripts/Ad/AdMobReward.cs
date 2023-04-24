@@ -38,7 +38,7 @@ public class AdMobReward : MonoBehaviour
 
     public void Show() 
     {
-        if (adMobManager.isDeleteAd)
+        if (GameManager.instance.checkList.IsBuyRemoveAD)
         {
             adMobManager.adMobRewardAct?.Invoke();
             AdMobManager.instance.AudioPlay();
@@ -48,6 +48,7 @@ public class AdMobReward : MonoBehaviour
         {
             StartCoroutine(ShowRewardAd());
             AdMobManager.instance.AdInit();
+            AdMobManager.instance.popUpContents.askRemoveAD.SetActive(true);
         }
 
         for (int i = 0; i < adMobManager.adStruct.Length; i++)

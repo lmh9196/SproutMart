@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using static AdMobManager;
 
 public class AdMobManager : MonoBehaviour
 {
@@ -13,10 +14,17 @@ public class AdMobManager : MonoBehaviour
 
     public Action adMobRewardAct;
 
-    public bool isDeleteAd;
-
-
     public enum Buff { NONE,CRAFT, CHAR }
+
+
+    [Serializable]
+    public struct ADPopUpContents
+    {
+        public GameObject askRemoveAD;
+        public GameObject askSpeedWeek;
+    }
+    public ADPopUpContents popUpContents;
+
 
     [Serializable]
     public struct ADStruct
@@ -24,6 +32,7 @@ public class AdMobManager : MonoBehaviour
         public Buff buff;
 
         public bool isActiving;
+        public bool isHiding;
 
         public float currentSapwnTimer;
         public float defaultSpawnTime;
@@ -33,6 +42,13 @@ public class AdMobManager : MonoBehaviour
         public Button button;
     }
     public ADStruct[] adStruct;
+
+    public struct ADCharSpeedWeek
+    {
+        public DateTime startTime;
+        public TimeSpan timeDif;
+    }
+    public ADCharSpeedWeek speedWeek;
 
     [Space (10f)]
     [Header ("Interstitial")]
@@ -52,12 +68,41 @@ public class AdMobManager : MonoBehaviour
         Init();
     }
 
+    private void Start()
+    {
+        GameManager.instance.checkList.speedOn = () => { };
+        GameManager.instance.checkList.speedOff = () => { };
+        if (ES3.KeyExists("BuyCharSpeedWeek")) 
+        { 
+            GameManager.instance.checkList.IsBuyCharSpeedWeek = ES3.Load<bool>("BuyCharSpeedWeek");
+            speedWeek.startTime = ES3.Load<DateTime>("SpeedWeekStartTime");
+        }
+    }
+
     void Update()
     {
-        if(GameManager.instance.checkList.IsTutorialEnd)
+        if (GameManager.instance.checkList.IsBuyCharSpeedWeek)
+        {
+            speedWeek.timeDif = GameManager.instance.data.currentTime - speedWeek.startTime;
+
+            HidingStructBtn(Buff.CHAR, true);
+            Debug.Log(speedWeek.timeDif);
+            if (speedWeek.timeDif.Seconds > 58) 
+            {
+                HidingStructBtn(Buff.CHAR, false);
+                GameManager.instance.checkList.IsBuyCharSpeedWeek = false; }
+        }
+
+
+        if (GameManager.instance.checkList.IsTutorialEnd)
         {
             AdMobInterstitialActive();
             UpdateADBtn();
+        }
+
+        if(Input.GetKeyDown(KeyCode.V))
+        {
+            BuySpeedAD();
         }
     }
     void Init()
@@ -84,10 +129,7 @@ public class AdMobManager : MonoBehaviour
 
     void AdMobInterstitialActive()
     {
-        if (adMobInterstitialTimer < InsterSpawnTimer)
-        {
-            adMobInterstitialTimer += Time.deltaTime;
-        }
+        if (adMobInterstitialTimer < InsterSpawnTimer) { adMobInterstitialTimer += Time.deltaTime; }
         else
         {
             adMobInterstitial.AdStart();
@@ -114,13 +156,15 @@ public class AdMobManager : MonoBehaviour
     {
         for (int i = 0; i < adStruct.Length; i++)
         {
+            if (adStruct[i].isHiding) { continue; }
+
             if (!adStruct[i].button.gameObject.activeSelf) 
             { 
                 adStruct[i].currentSapwnTimer = CurrentTimerReset(adStruct[i], adStruct[i].currentSapwnTimer, adStruct[i].defaultSpawnTime);
                 adStruct[i].currentDurationTimer = 0;
             }
-            else 
-            { 
+            else
+            {
                 adStruct[i].currentDurationTimer = CurrentTimerReset(adStruct[i], adStruct[i].currentDurationTimer, adStruct[i].defaultDurationTime);
                 adStruct[i].currentSapwnTimer = 0;
             }
@@ -130,7 +174,6 @@ public class AdMobManager : MonoBehaviour
                 adStruct[i].currentSapwnTimer = 0;
                 adStruct[i].currentDurationTimer = 0;
             }
-
         }
     }
     float CurrentTimerReset(ADStruct _adStruct, float currentTimer, float maxTimer)
@@ -138,7 +181,8 @@ public class AdMobManager : MonoBehaviour
         if (currentTimer > maxTimer) 
         {
             _adStruct.defaultSpawnTime = TimerReset(_adStruct);
-            _adStruct.button.gameObject.SetActive(!_adStruct.button.gameObject.activeSelf); return 0;
+            _adStruct.button.gameObject.SetActive(!_adStruct.button.gameObject.activeSelf); 
+            return 0;
         }
         else { return currentTimer += Time.deltaTime; }
     }
@@ -147,7 +191,7 @@ public class AdMobManager : MonoBehaviour
         _adStruct.currentSapwnTimer = 0;
         _adStruct.currentDurationTimer = 0;
 
-        return UnityEngine.Random.Range(15, 25f);
+        return UnityEngine.Random.Range(180, 300f);
     }
 
     public void AddGoldAct() { adMobRewardAct = () => RewardGold(); }
@@ -163,9 +207,16 @@ public class AdMobManager : MonoBehaviour
         }
     }
 
+    void HidingStructBtn(Buff buff, bool isState)
+    {
+        for (int i = 0; i < adStruct.Length; i++)
+        {
+            if (adStruct[i].buff == buff) { adStruct[i].isHiding = isState; }
+        }
+    }
+
     void RewardGold()
     {
-
         Vector3 cameraPos = Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 1, 0));
         Vector3 landPos = new Vector3(cameraPos.x, cameraPos.y, 0);
 
@@ -174,7 +225,6 @@ public class AdMobManager : MonoBehaviour
 
     void RewardGem()
     {
-
         Vector3 cameraPos = Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 1, 0));
         Vector3 landPos = new Vector3(cameraPos.x, cameraPos.y, 0);
 
@@ -195,7 +245,6 @@ public class AdMobManager : MonoBehaviour
     }
     IEnumerator CraftBuffDelay(CraftData[] craftDatas)
     {
-
         yield return new WaitForSeconds(craftBuffTime);
         CompareRewardActiving(Buff.CRAFT, false);
 
@@ -206,38 +255,35 @@ public class AdMobManager : MonoBehaviour
 
     public float moveSpeedBuffTime;
     public NpcData npcData;
+
     void RewardMoveSpeed()
     {
         CompareRewardActiving(Buff.CHAR, true);
-
-        npcData.buffSpeed = npcData.defalutMoveSpeed * 0.5f;
-
-        CharData[] charDatas = Resources.LoadAll<CharData>("R_SO_CharData");
-
-        for (int i = 0; i < charDatas.Length; i++) 
-        { 
-            charDatas[i].buffMoveSpeed = charDatas[i].defalutMoveSpeed * 0.5f; 
-            if(charDatas[i].SetMenuType(CharData.MenuType.COOLTIME) != null)
-            {
-                charDatas[i].buffCoolTime = (charDatas[i].defalutCoolTime - charDatas[i].SetMenuType(CharData.MenuType.COOLTIME).Level) * 0.5f;
-            }
-        }
-
-        StartCoroutine(CharBuffDelay(charDatas));
+    
+        StartCoroutine(CharBuffDelay());
 
         GameManager.instance.checkList.isCharSpeedBuff = true;
     }
-    IEnumerator CharBuffDelay(CharData[] charDatas)
+    IEnumerator CharBuffDelay()
     {
         yield return new WaitForSeconds(craftBuffTime);
-
-        for (int i = 0; i < charDatas.Length; i++) 
-        {
-            charDatas[i].buffMoveSpeed = 0;
-            charDatas[i].buffCoolTime = 0;
-        }
-        npcData.buffSpeed = 0;
+        
         CompareRewardActiving(Buff.CHAR, false);
         GameManager.instance.checkList.isCharSpeedBuff = false;
+        popUpContents.askSpeedWeek.SetActive(true);
+    }
+
+    public void BuyRemoveAD()
+    {
+        GameManager.instance.ClickVib();
+        SoundManager.instance.PlaySfx("Pop");
+        GameManager.instance.checkList.IsBuyRemoveAD = true;
+    }
+
+    public void BuySpeedAD()
+    {
+        GameManager.instance.checkList.IsBuyCharSpeedWeek = true;
+        speedWeek.startTime = DateTime.Now;
+        ES3.Save("SpeedWeekStartTime", speedWeek.startTime);
     }
 }

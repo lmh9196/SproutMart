@@ -12,6 +12,7 @@ public class Game_Data
     public int gold;
     public int gem;
     public int boxGold;
+    public DateTime currentTime;
 
     public string saveSceneName;
 }
@@ -50,6 +51,35 @@ public class CheckList
             ES3.Save("Tutorial_Full", isTutorial_Full);
         }
     }
+
+    bool isBuyRemoveAD;
+    public bool IsBuyRemoveAD
+    {
+        get { return isBuyRemoveAD;}
+        set
+        {
+            isBuyRemoveAD = value;
+            ES3.Save("BuyRemoveAD", value);
+        }
+    }
+    bool isBuyCharSpeedWeek;
+    public bool IsBuyCharSpeedWeek
+    {
+        get { return isBuyCharSpeedWeek; }
+        set
+        {
+            if (isBuyCharSpeedWeek) 
+            {
+                isCharSpeedBuff = true;
+                if (!value) { isCharSpeedBuff = false; }
+            }
+            isBuyCharSpeedWeek = value;
+            ES3.Save("BuyCharSpeedWeek", value);
+        }
+    }
+
+    public Action speedOn;
+    public Action speedOff;
 
     public bool isBuildMode;
     public bool isCamEvent;
@@ -236,6 +266,8 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
+        data.currentTime = DateTime.Now;
+
         //테스트용
         if (Input.GetKeyDown(KeyCode.Z)) { Player.instance.Booster(); } 
         if (!isCheckStart && !isCheckDone 
@@ -248,6 +280,8 @@ public class GameManager : MonoBehaviour
         goldTxt.text = PriceText(data.gold,2);
         gemTxt.text = PriceText(data.gem,2);
         boxGoldTxt.text = PriceText(data.boxGold,2);
+
+        if (checkList.IsBuyCharSpeedWeek) { checkList.isCharSpeedBuff = true; }
     }
 
     public void ClickVib(int time = 50, int strong= 1) 
@@ -291,6 +325,15 @@ public class GameManager : MonoBehaviour
         return  new Vector2(95 + (count * 5), backGround.sizeDelta.y);
     }
 
+
+    public string Clocktext(float time)
+    {
+        int minute = (int)time % 3600 / 60;
+        int second = (int)time % 3600 % 60;
+
+
+        return minute.ToString("D5") + " : " + second.ToString("D5");
+    }
 
 
 

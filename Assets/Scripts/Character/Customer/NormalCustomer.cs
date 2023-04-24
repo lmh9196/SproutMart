@@ -13,6 +13,7 @@ public class NormalCustomer : Customer
     {
         if (!isActive && StageManager.instance.salesUnLockTableList.Count > 0) EnableCustomer();
 
+
         base.Update();
     }
 

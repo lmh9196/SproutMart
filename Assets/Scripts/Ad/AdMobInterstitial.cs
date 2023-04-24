@@ -38,6 +38,7 @@ public class AdMobInterstitial : MonoBehaviour
         {
             this.interstitial.Show();
             AdMobManager.instance.AdInit();
+            RequestInterstitial();
         }
     }
 

@@ -72,6 +72,9 @@ public class SaveManager : MonoBehaviour
         if (ES3.KeyExists("Tutorial_Full")) { GameManager.instance.checkList.IsTutorial_Full = ES3.Load<bool>("Tutorial_Full"); }
         else { GameManager.instance.checkList.IsTutorial_Full = false; }
 
+        if (ES3.KeyExists("BuyRemoveAD")) { GameManager.instance.checkList.IsBuyRemoveAD = ES3.Load<bool>("BuyRemoveAD"); }
+        else { GameManager.instance.checkList.IsBuyRemoveAD = false; }
+
 
         if (ES3.KeyExists("GameGold")) { GameManager.instance.data.gold = ES3.Load<int>("GameGold"); }
         else { GameManager.instance.data.gold = 0; }

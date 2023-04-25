@@ -33,12 +33,11 @@ public class TableArea : MonoBehaviour
     }
 
 
-    public virtual void Start()
+    public void Start()
     {
         tableItem.StartPreSet();
         if (tableItem.itemPosList.Count < maxCount) { maxCount = tableItem.itemPosList.Count; }
     }
-
     
     public void LoadCrops()
     {
@@ -61,7 +60,6 @@ public class TableArea : MonoBehaviour
     }
 
     public int SetNeedCount() { return maxCount - itemBox.childCount; }
-   
 }
 
 

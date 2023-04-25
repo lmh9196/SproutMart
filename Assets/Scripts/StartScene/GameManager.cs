@@ -62,6 +62,7 @@ public class CheckList
             ES3.Save("BuyRemoveAD", value);
         }
     }
+
     bool isBuyCharSpeedWeek;
     public bool IsBuyCharSpeedWeek
     {
@@ -132,7 +133,6 @@ public class CanvasList
         videoCanvas.enabled = true;
         popUpCanavs.enabled = true;
     }
-
     public bool UpdateMenuOpenCheck()
     {
         for (int i = 0; i < menuCanvas.transform.childCount; i++)
@@ -188,7 +188,6 @@ public class CanvasList
       
         loadingCanvas.enabled = true;
     }
-
 }
 
 [Serializable]
@@ -323,17 +322,6 @@ public class GameManager : MonoBehaviour
 
         return  new Vector2(95 + (count * 5), backGround.sizeDelta.y);
     }
-
-
-    public string Clocktext(float time)
-    {
-        int minute = (int)time % 3600 / 60;
-        int second = (int)time % 3600 % 60;
-
-
-        return minute.ToString("D5") + " : " + second.ToString("D5");
-    }
-
 
 
     public void AstarScanDelay() { StartCoroutine(AstarScan()); }

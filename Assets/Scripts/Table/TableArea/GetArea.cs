@@ -5,11 +5,6 @@ using UnityEngine;
 
 public class GetArea : TableArea, IMoveCrop
 {
-    public override void Start()
-    {
-        base.Start();
-    }
-
     public void Move(Transform charItemBox, int charMaxCount, Action FeedBackAct = null)
     {
         if (itemBox.transform.childCount > 0 && charItemBox.childCount < charMaxCount)

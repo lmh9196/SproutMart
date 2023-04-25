@@ -71,8 +71,6 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-     
-
         burrow.Init(this);
         playerMove.Init(this);
         //boost.Init(this);
@@ -111,6 +109,8 @@ public class Player : MonoBehaviour
             DialogueManager.instance.EnableDialouge(term.termFull_GuideTrash, true, false);
             MenuManager.instance.CallNotice(MenuManager.instance.trash.trashBtn.gameObject);
         }
+
+
         if(isTutorial && itemBox.childCount == 0)
         {
             isTutorial = false;
@@ -157,7 +157,8 @@ public class Player : MonoBehaviour
         if (collision.gameObject.name.Contains("Trash")) 
         {
             isTrashTrigger = false;
-            TrashOff(); }
+            TrashOff(); 
+        }
     }
     void SetAnim()
     {

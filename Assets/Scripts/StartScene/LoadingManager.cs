@@ -52,8 +52,6 @@ public class LoadingManager : MonoBehaviour
         MainCamera.instance.transform.position = new Vector3(0, 0, -10);
         player.transform.position = Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.2f,10));
 
-
-
         float timer = 0.0f;
 
         while (!op.isDone)

@@ -19,6 +19,7 @@ public class TableArea : MonoBehaviour
     public int currentCount; 
 
     public int maxCount;
+    public bool isEnter;
 
     [Space(20f)]
     public ArrangementTableItem tableItem;
@@ -44,7 +45,7 @@ public class TableArea : MonoBehaviour
         for (int i = 0; i < currentCount; i++)
         {
             Crops crop = Instantiate(cropsPre, itemBox.transform).GetComponent<Crops>();
-            crop.InitCrops(cropsData);
+            crop.CropsTableInit(itemBox , cropsData);
         }
     }
 

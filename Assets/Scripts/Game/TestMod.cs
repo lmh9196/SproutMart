@@ -136,7 +136,7 @@ public class TestMod : MonoBehaviour
                             if (StageManager.instance.allTable[i].data.tableAreaList[j].itemBox != null)
                             {
                                 Crops crop = Instantiate(StageManager.instance.allTable[i].data.tableAreaList[j].cropsPre, StageManager.instance.allTable[i].data.tableAreaList[j].itemBox.transform).GetComponent<Crops>();
-                                crop.InitCrops(StageManager.instance.allTable[i].data.tableAreaList[j].cropsData);
+                                crop.CropsTableInit(StageManager.instance.allTable[i].data.tableAreaList[j].itemBox, StageManager.instance.allTable[i].data.tableAreaList[j].cropsData);
                             }
                             else
                                 break;

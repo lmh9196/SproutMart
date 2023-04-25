@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Player : MonoBehaviour
@@ -10,7 +11,6 @@ public class Player : MonoBehaviour
     public static Player instance = null;
 
     public CharacterAnimDir animDir = new();
-    MoveCrop moveCrop = new();
     FloatingText goldFloatingText = new();
     FloatingText gemFloatingText = new();
     TimerImageAct boostTimerAct = new();
@@ -57,8 +57,22 @@ public class Player : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    void OnSceneLoaded( Scene scene, LoadSceneMode mode)
+    {
+    }
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
     private void Start()
     {
+     
+
         burrow.Init(this);
         playerMove.Init(this);
         //boost.Init(this);
@@ -106,25 +120,28 @@ public class Player : MonoBehaviour
         GameManager.instance.checkList.BuffEvent(GameManager.instance.checkList.isCharSpeedBuff, buffeffect);
         if (buffeffect.isPlaying) { charData.buffMoveSpeed = charData.defalutMoveSpeed * 0.5f; }
         else { charData.buffMoveSpeed = 0; }
+
+
+        cropMove.CropsMoveLimit(cropStatList, itemBox, charData.maxHandsCount, () => {
+            SoundManager.instance.PlaySfx("Harvest");
+            GameManager.instance.ClickVib(25);
+        });
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.name.Contains("Drop"))
-        {
-            if (itemBox.childCount < charData.maxHandsCount) { collision.transform.SetParent(transform.GetChild(0).transform); }
-        }
 
-        if (collision.TryGetComponent(out TableArea area))
-        {
-            moveCrop.isTouch = true;
-            StartCoroutine(moveCrop.MoveCrops(area.tag, area, itemBox, charData.maxHandsCount, MoveCropsFeedBack));
-        }
+    CropMove cropMove = new();
+    public List<CropMoveStat> cropStatList = new();
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.TryGetComponent(out IMoveCrop area)) { cropMove.Init(cropStatList, area); }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.TryGetComponent(out TableArea area)) { moveCrop.isTouch = false; }
+        if (collision.TryGetComponent(out IMoveCrop area)) { cropMove.Remove(cropStatList, area); }
     }
+
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -218,13 +235,6 @@ public class Player : MonoBehaviour
             }
         }
         isTrashTimerOn = false;
-    }
-
-    //MoveCrop
-    void MoveCropsFeedBack()
-    {
-        SoundManager.instance.PlaySfx("Harvest");
-        GameManager.instance.ClickVib(25);
     }
 }
 

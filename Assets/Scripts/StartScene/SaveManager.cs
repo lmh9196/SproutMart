@@ -117,8 +117,6 @@ public class SaveManager : MonoBehaviour
         else { Player.instance.hat._HatData = Player.instance.hat.unwearHat; }
 
         LoadingManager.instance.StartLoading(GameManager.instance.data.saveSceneName);
-
-        GameManager.instance.checkList.IsTutorial_Full = false;
     }
  
     public void StageLoad()

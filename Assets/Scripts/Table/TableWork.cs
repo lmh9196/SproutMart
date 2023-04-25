@@ -93,7 +93,7 @@ public class CraftWork : TableWork
         yield return new WaitForSeconds(craftData.ResultMakeSpeed());
 
         Crops crops = UnityEngine.Object.Instantiate(finishAreas.cropsPre, finishAreas.itemBox).GetComponent<Crops>();
-        crops.InitCrops(finishAreas.cropsData);
+        crops.CropsTableInit(finishAreas.itemBox.transform, finishAreas.cropsData);
 
         yield return null;
         exitEffect.transform.position = crops.gameObject.transform.position;
@@ -141,7 +141,7 @@ public class CreateWork : TableWork
             if (getArea.itemBox.transform.childCount <= i)
             {
                 Crops crops = UnityEngine.Object.Instantiate(getArea.cropsPre, getArea.itemBox.transform).GetComponent<Crops>();
-                crops.InitCrops(getArea.cropsData);
+                crops.CropsTableInit(getArea.itemBox ,getArea.cropsData);
                 //getArea.cropsData.CreateItem(cropObj.GetComponent<Crops>());
             }
 
@@ -160,8 +160,6 @@ public class SalesWork : TableWork
 {
     TableArea salesArea;
     public Sprite hopeSprite;
-
-    MoveCrop moveCrop = new();
 
     float checkTimer = 0.33f;
     float checkTimerCount = 0;
@@ -199,7 +197,15 @@ public class SalesWork : TableWork
         else { FinishCustomer(); }
     }
 
-    void FillCustomerHands() { moveCrop.SalesCrop(salesArea, table.customerList[0]); }
+    void FillCustomerHands() 
+    {
+        if (salesArea.itemBox.childCount > 0)
+        {
+            salesArea.itemBox.GetChild(salesArea.itemBox.transform.childCount - 1).TryGetComponent(out Crops crops);
+            crops.CropsCharInit(table.customerList[0].itemBox, crops.cropsData);
+            table.customerList[0].currentHandsCount++;
+        }
+    }
     void FinishCustomer()
     {
         table.customerList[0].TargetChagne(table.customerList);
@@ -322,7 +328,7 @@ public class CountWork : TableWork
         Crops crops = table.customerList[0].itemBox.GetChild(table.customerList[0].itemBox.childCount - 1).GetComponent<Crops>();
         cropList.Add(crops);
 
-        crops.ChangeParent(crops.cropsData, packingBoxPoint.GetChild(0), Crops.ParentsType.TABLE);
+        crops.CropsTableInit(packingBoxPoint.GetChild(0), crops.cropsData);
         crops.sort.enabled = true;
 
         crops.transform.DOJump(packingBoxPoint.position, 1f,1, 0.6f).SetEase(Ease.Linear);

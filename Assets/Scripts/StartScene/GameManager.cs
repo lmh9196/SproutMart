@@ -317,7 +317,6 @@ public class GameManager : MonoBehaviour
     }
 
 
-
     public Vector2 TextBackgroundSize(RectTransform backGround ,Text inputText)
     {
         int count = inputText.text.Length;

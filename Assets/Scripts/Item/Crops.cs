@@ -3,16 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 
+
+
 public class Crops : MonoBehaviour
 {
     public CropsData cropsData;
 
     public GameObject destroyEffect;
-    public enum ParentsType
-    {
-        TABLE, CHAR
-    }
-    public ParentsType parentsType;
+   
 
     [HideInInspector] public SpriteRenderer spriteRenderer;
     [HideInInspector] public SpriteRenderer parentRenderer;
@@ -38,35 +36,27 @@ public class Crops : MonoBehaviour
 
     private void Update()
     {
-        if (parentsType == ParentsType.CHAR) { spriteRenderer.sortingOrder = parentRenderer.sortingOrder - 1; }
+        if (parentRenderer != null) { spriteRenderer.sortingOrder = parentRenderer.sortingOrder - 1; }
     }
 
-    public void InitCrops(CropsData cropsData)
-    {
-        this.cropsData = cropsData;
 
-        spriteRenderer.sprite = cropsData.frontSprite;
-
-        spriteRenderer.sortingOrder = -10;
-
-        anim.SetTrigger("ChangeParent");
-    }
-
-    public void ChangeParent(CropsData cropsData, Transform parent, ParentsType type)
+    void CropsInit(Transform parent, CropsData cropsData)
     {
         transform.SetParent(parent);
-        parentsType = type;
         this.cropsData = cropsData;
-
-        switch (type)
-        {
-            case ParentsType.CHAR:
-                parentRenderer = transform.parent.GetComponent<SpriteRenderer>(); break;
-            case ParentsType.TABLE:
-                spriteRenderer.sprite = cropsData.frontSprite;
-                spriteRenderer.sortingOrder = -10;
-                break;
-        }
         anim.SetTrigger("ChangeParent");
     }
+    public void CropsTableInit(Transform parent, CropsData cropsData)
+    {
+        CropsInit(parent, cropsData);
+        spriteRenderer.sprite = cropsData.frontSprite;
+        spriteRenderer.sortingOrder = -10;
+        parentRenderer = null;
+    }
+    public void CropsCharInit(Transform parent, CropsData cropsData)
+    {
+        CropsInit(parent, cropsData);
+        parentRenderer = transform.parent.GetComponent<SpriteRenderer>();
+    }
+    
 }

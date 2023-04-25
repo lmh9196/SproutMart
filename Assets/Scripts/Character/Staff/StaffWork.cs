@@ -127,7 +127,9 @@ public class StaffWork
 
         for (int i = 0; i < setList.Count; i++)
         {
-            if (setList[i].SetNeedCount() > 0 && setList[i].parentTable.data.IsUnlock && setList[i].parentTable.transform.parent.gameObject.activeSelf) { ableTableAreaList.Add(setList[i]); }
+            if (setList[i].parentTable == null) { continue; }
+           
+            if (setList[i].SetNeedCount() > 0 && setList[i].parentTable.data.IsUnlock ) { ableTableAreaList.Add(setList[i]); }
 
             if (setList.Count - 1 == i)
             {
@@ -152,6 +154,7 @@ public class StaffWork
                 }
             }
         }
+        if (actArea == null) { StateReset(); return; }
     }
     void FindCloseGetArea(Vector3 staffPos)
     {

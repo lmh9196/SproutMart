@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class CropStaff : Staff
 {
-    MoveCrop moveCrop = new();
     StaffWork staffWork = new();
     StaffController staffController;
 
@@ -41,7 +40,6 @@ public class CropStaff : Staff
         staffController = GetComponentInParent<StaffController>();
         aILerp = GetComponent<AILerp>();
         aIDestinationSetter = GetComponent<AIDestinationSetter>();
-
         boxSpriteRenderer = itemBox.GetComponent<SpriteRenderer>();
         coverSpriteRenderer = itemBoxCover.GetComponent<SpriteRenderer>();
     }
@@ -74,10 +72,11 @@ public class CropStaff : Staff
         if (buffeffect.isPlaying)
         {
             charData.buffMoveSpeed = charData.defalutMoveSpeed * 0.5f;
-
             if (charData.SetMenuType(CharData.MenuType.COOLTIME) != null) { charData.buffCoolTime = (charData.defalutCoolTime - charData.SetMenuType(CharData.MenuType.COOLTIME).Level) * 0.5f; }
         }
         else { charData.buffMoveSpeed = 0; }
+
+        cropMove.CropsMoveLimit(cropStatList, itemBox, charData.maxHandsCount);
     }
 
     private void LateUpdate()
@@ -86,24 +85,29 @@ public class CropStaff : Staff
         SetAnimation();
     }
 
+
+    CropMove cropMove = new();
+    public List<CropMoveStat> cropStatList = new();
+
+  
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.TryGetComponent(out TableArea area))
         {
-            if (area.transform.Equals(staffWork.target) && !moveCrop.isMoveRunning) 
+            if (area.transform.Equals(staffWork.target))
             {
-                moveCrop.isTouch = true;
-                moveCrop.isMoveRunning = true;
-                StartCoroutine(moveCrop.MoveCrops(area.tag, area, itemBox, charData.maxHandsCount, null)); 
+                if (collision.TryGetComponent(out IMoveCrop move)) { cropMove.Init(cropStatList, move); }
             }
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+
+    void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.TryGetComponent(out TableArea area)) { moveCrop.isTouch = false; }
+        if (collision.TryGetComponent(out IMoveCrop move)) { cropMove.Remove(cropStatList, move); }
     }
-  
+
     public override void SetCharState()
     {
         charData.SetHandsCount();

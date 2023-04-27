@@ -474,6 +474,24 @@ MonoBehaviour:
       - The box is full! Press and hold the button to empty the box!
       Flags: 0000
       Languages_Touch: []
+    - Term: Waring_Buy_RemoveADS
+      TermType: 0
+      Description: 
+      Languages:
+      - "* \uD574\uB2F9 \uC0C1\uD488\uC740 \uAC8C\uC784\uC81C\uAC70 \uC804\uAE4C\uC9C0
+        \uC601\uAD6C\uD788 \uC9C0\uC18D\uB429\uB2C8\uB2E4."
+      - '* The goods lasts forever until the game is uninstalled.'
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Waring_Buy_SpeedWeek
+      TermType: 0
+      Description: 
+      Languages:
+      - "* \uD574\uB2F9 \uC0C1\uD488\uC740 \uAD6C\uB9E4\uC2DC \uC77C\uC8FC\uC77C
+        \uB3D9\uC548 \uC9C0\uC18D\uB429\uB2C8\uB2E4."
+      - '* This godds lasts for one week upon purchase.'
+      Flags: 0000
+      Languages_Touch: []
     CaseInsensitiveTerms: 0
     OnMissingTranslation: 1
     mTerm_AppName: 

@@ -42,6 +42,7 @@ public class Player : MonoBehaviour
 
     [HideInInspector] public CapsuleCollider2D capsuleCollider;
     [HideInInspector] public Rigidbody2D rigid;
+
     void Awake()
     {
         if (instance == null) { instance = this; }

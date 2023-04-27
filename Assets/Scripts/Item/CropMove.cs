@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class CropMove
 {
+
     public void Init(List<CropMoveStat> cropStatList, IMoveCrop area)
     {
         if (cropStatList.Count == 0)
@@ -12,6 +13,8 @@ public class CropMove
             CropMoveStat newCropArea = new CropMoveStat();
             cropStatList.Add(newCropArea);
             newCropArea.Init(area);
+
+
         }
         else
         {

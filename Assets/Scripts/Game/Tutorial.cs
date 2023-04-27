@@ -2,6 +2,7 @@ using Pathfinding;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Video;
 
 public class Tutorial : MonoBehaviour
@@ -164,9 +165,9 @@ public class Tutorial : MonoBehaviour
 
         for (int i = 0; i < stage1Table.Length; i++) stage1Table[i].SetActive(true);
         yield return new WaitForSeconds(2f);
-        MenuManager.instance.CallNotice(MenuManager.instance.noticeArrow.registNoticeBtnList[1]);
-        GameManager.instance.canvasList.ActiveTutorialCanvas(false);
 
+
+        GameManager.instance.canvasList.ActiveTutorialCanvas(false);
         GameManager.instance.checkList.IsTutorialEnd = true;
 
         Screen.orientation = ScreenOrientation.AutoRotation;
@@ -181,7 +182,6 @@ public class Tutorial : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         chaseDir.gameObject.SetActive(true);
     }
-
 
 
     Vector3 targetPos;

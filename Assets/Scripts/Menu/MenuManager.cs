@@ -6,7 +6,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using UnityEngine.EventSystems;
-using System.Reflection;
 
 public class MenuManager : MonoBehaviour
 {
@@ -20,94 +19,8 @@ public class MenuManager : MonoBehaviour
     public Hats hats;
     public Trash trash;
     public Expand expand;
+    public MainListMenu mainInputMenu;
 
-
-    [Serializable]
-    public class NoticeArrow
-    {
-        public float spacing;
-        public Transform noticeArrowParent;
-        Transform parentMenu;
-
-        public List<GameObject> registNoticeBtnList;
-        [HideInInspector] public List<string> noticeBtnNameList;
-        public List<GameObject> tempNoticeWaitiongList;
-
-        public void Init(Transform _parentMenu)
-        {
-            parentMenu = _parentMenu;
-            noticeArrowParent.gameObject.SetActive(false);
-
-            if (tempNoticeWaitiongList == null) { tempNoticeWaitiongList = new(); }
-            if (noticeBtnNameList == null) { noticeBtnNameList = new(); }
-
-            for (int i = 0; i < noticeBtnNameList.Count; i++)
-            {
-                for (int j = 0; j < registNoticeBtnList.Count; j++)
-                {
-                    if (registNoticeBtnList[j].gameObject.name == noticeBtnNameList[i]) 
-                    { tempNoticeWaitiongList.Add(registNoticeBtnList[j]); break; }
-                }
-            }
-        }
-        public void UpdateNoticeCheck()
-        {
-            if (tempNoticeWaitiongList.Count > 0)
-            {
-                noticeArrowParent.gameObject.SetActive(true);
-
-                if (tempNoticeWaitiongList[0].gameObject.activeSelf) 
-                {
-                    noticeArrowParent.position 
-                        = new Vector2(tempNoticeWaitiongList[0].transform.position.x + spacing, tempNoticeWaitiongList[0].transform.position.y); 
-                }
-                else { noticeArrowParent.position = new Vector2(parentMenu.position.x + spacing, parentMenu.position.y); }
-            }
-            else { noticeArrowParent.gameObject.SetActive(false); }
-        }
-        public void ActiveNotice(GameObject targetNoticeObj) 
-        {
-            if(!tempNoticeWaitiongList.Contains(targetNoticeObj))
-            {
-                tempNoticeWaitiongList.Add(targetNoticeObj);
-                noticeBtnNameList.Add(targetNoticeObj.name);
-            }
-        }
-        public void NoticeFinishClick(GameObject eventObj)
-        {
-            if (tempNoticeWaitiongList.Count > 0)
-            {
-                for (int i = 0; i < tempNoticeWaitiongList.Count; i++)
-                {
-                    if (eventObj == tempNoticeWaitiongList[i]) 
-                    {
-                        noticeBtnNameList.Remove(eventObj.name);
-                        tempNoticeWaitiongList.Remove(eventObj); return;
-                    }
-                }
-            }
-        }
-    }
-    public NoticeArrow noticeArrow;
-
-    [Serializable]
-    public class MainInputMenu
-    {
-        public Button openBtn;
-        public Transform menuListParent;
-
-        public Transform menuListCloseTarget;
-        public bool isMenuListEnable;
-        public Sprite menuListLineSprite;
-        public Sprite menuListArrowSprite;
-
-        public void Init()
-        {
-            menuListCloseTarget.transform.position = menuListParent.transform.position;
-            for (int i = 0; i < menuListParent.childCount; i++) { menuListParent.GetChild(i).gameObject.SetActive(false); }
-        }
-    }
-    public MainInputMenu mainInputMenu;
 
     public GameObject buyCheckObj;
     public Button buyOkBtn;
@@ -121,7 +34,6 @@ public class MenuManager : MonoBehaviour
     private void Start()
     {
         mainInputMenu.Init();
-        noticeArrow.Init(mainInputMenu.openBtn.transform);
         hats.HatInit(player.hat);
         statues.StatuesInit(player);
     }
@@ -130,7 +42,7 @@ public class MenuManager : MonoBehaviour
     {
         setting.UpdateVibe();
         setting.UpdateSound();
-        noticeArrow.UpdateNoticeCheck();
+        mainInputMenu.UpdateNoticeCheck();
         expand.UpdateNpcLvText();
         UpdateMenuList();
     }
@@ -140,7 +52,7 @@ public class MenuManager : MonoBehaviour
     {
         for (int i = 0; i < mainInputMenu.menuListParent.childCount; i++)
         {
-            if (mainInputMenu.isMenuListEnable) 
+            if (mainInputMenu.IsMenuListEnable)
             {
                 if (mainInputMenu.menuListParent.GetChild(i).position.y >= mainInputMenu.openBtn.transform.position.y + 0.5f) { mainInputMenu.menuListParent.GetChild(i).gameObject.SetActive(true); }
             }
@@ -150,8 +62,7 @@ public class MenuManager : MonoBehaviour
             }
         }
     }
-    public void CallNotice(GameObject targetObj) { noticeArrow.ActiveNotice(targetObj); }
-    public void FinishNotice() { noticeArrow.NoticeFinishClick(EventSystem.current.currentSelectedGameObject); }
+  
     public void LoockAroundMenu(LookAroundCamera cam) 
     {
         if (!cam.gameObject.activeSelf) 
@@ -202,33 +113,13 @@ public class MenuManager : MonoBehaviour
         else 
         { 
             menu.SetActive(true);
-
-            mainInputMenu.isMenuListEnable = false;
-            mainInputMenu.openBtn.image.sprite = mainInputMenu.menuListLineSprite;
-            mainInputMenu.menuListParent.DOLocalMoveY(mainInputMenu.menuListCloseTarget.localPosition.y, 1f).SetEase(Ease.Unset);
+            MenuListOnOff(false);
         }
     }
     public void JustEnable(GameObject obj) { obj.SetActive(true); }
     public void JustDisable(GameObject obj) { obj.SetActive(false); }
-    public void MenuListOpen()
-    {
-        GameManager.instance.ClickVib();
-        SoundManager.instance.PlaySfx("Pop");
-
-        if (mainInputMenu.isMenuListEnable)
-        {
-            mainInputMenu.isMenuListEnable = false;
-            mainInputMenu.openBtn.image.sprite = mainInputMenu.menuListLineSprite;
-            mainInputMenu.menuListParent.DOLocalMoveY(mainInputMenu.menuListCloseTarget.localPosition.y, 1f).SetEase(Ease.Unset);
-        }
-        else
-        {
-            mainInputMenu.isMenuListEnable = true;
-            mainInputMenu.openBtn.image.sprite = mainInputMenu.menuListArrowSprite;
-            mainInputMenu.menuListParent.DOLocalMoveY(mainInputMenu.openBtn.transform.localPosition.y, 1f).SetEase(Ease.OutBack);
-        }
-    }
-
+    public void MenuListOnOff(bool isState) { mainInputMenu.IsMenuListEnable = isState; }
+   
     public void BuyFailAct(GameManager.GoldType goldType)
     {
         SoundManager.instance.PlaySfx("Fail");
@@ -253,6 +144,9 @@ public class MenuManager : MonoBehaviour
 [Serializable]
 public class Setting
 {
+    public RectTransform menu;
+    [Space(10f)]
+
     [Header("BGM")]
     [SerializeField] Text BGMTitle;
     [Space(10f)]
@@ -413,7 +307,9 @@ public class Setting
 [Serializable]
 public class Upgrade
 {
-    public GameObject menu;
+    public RectTransform menu;
+    [Space(10f)]
+
     public Transform staffPage;
     public Transform machinePage;
     public Transform expandPage;
@@ -441,6 +337,8 @@ public class Upgrade
 [Serializable]
 public class Statues
 {
+    public RectTransform menu;
+
     Player player;
     [HideInInspector] public StatueManager statueManager;
 
@@ -575,6 +473,8 @@ public class Statues
 [Serializable]
 public class Hats
 {
+    public RectTransform menu;
+
     Hat playerHat;
 
     public Sprite goldCoinImage;

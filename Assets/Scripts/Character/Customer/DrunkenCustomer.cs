@@ -21,7 +21,7 @@ public class DrunkenCustomer : Customer
             {
                 if(!GameManager.instance.checkList.IsTutorial_Drunken)
                 {
-                    DialogueManager.instance.DisableDialogue();
+                    DialogueManager.instance.DisableDialogue(term.termDrunken_GuideRightWay);
                     TutorialManger.instance.DiableTargetNoticeArrow();
                     GameManager.instance.checkList.IsTutorial_Drunken = true;
                 }
@@ -39,13 +39,13 @@ public class DrunkenCustomer : Customer
             {
                 if (!isTouch && value)
                 {
-                    DialogueManager.instance.DisableDialogue();
+                    DialogueManager.instance.DisableDialogue(term.termDrunken_FirstNotice);
                     DialogueManager.instance.EnableDialouge(term.termDrunken_GuideRightWay, true, false);
                     TutorialManger.instance.playerGuideArrow.InitArrow(true, shoppingList[1].transform, 0, 0.5f);
                 }
                 else if (isTouch && !value)
                 {
-                    DialogueManager.instance.DisableDialogue();
+                    DialogueManager.instance.DisableDialogue(term.termDrunken_GuideRightWay);
                     DialogueManager.instance.EnableDialouge(term.termDrunken_FirstNotice, true, true);
                     TutorialManger.instance.playerGuideArrow.InitArrow(true, transform, 0, 2f);
                 }

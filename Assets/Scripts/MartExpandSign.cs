@@ -14,7 +14,7 @@ public class MartExpandSign : MonoBehaviour
     {
         button.onClick.AddListener(() =>
         {
-            MenuManager.instance.menuOnOff(MenuManager.instance.upgrade.menu);
+            MenuManager.instance.menuOnOff(MenuManager.instance.upgrade.menu.gameObject);
             MenuManager.instance.UISortDown(MenuManager.instance.upgrade.expandPage.gameObject);
         });
     }

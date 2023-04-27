@@ -72,6 +72,10 @@ public class SaveManager : MonoBehaviour
         if (ES3.KeyExists("Tutorial_Full")) { GameManager.instance.checkList.IsTutorial_Full = ES3.Load<bool>("Tutorial_Full"); }
         else { GameManager.instance.checkList.IsTutorial_Full = false; }
 
+
+        if (ES3.KeyExists("Tutorial_UpgradeMenu")) { GameManager.instance.checkList.IsTutorial_UpgradeMenu = ES3.Load<bool>("Tutorial_UpgradeMenu"); }
+        else { GameManager.instance.checkList.IsTutorial_UpgradeMenu = false; }
+
         if (ES3.KeyExists("BuyRemoveAD")) { GameManager.instance.checkList.IsBuyRemoveAD = ES3.Load<bool>("BuyRemoveAD"); }
         else { GameManager.instance.checkList.IsBuyRemoveAD = false; }
 
@@ -91,9 +95,9 @@ public class SaveManager : MonoBehaviour
 
         MenuManager.instance.setting.LoadData();
 
-        if (ES3.KeyExists("NoticeTargetList"))
+     /*   if (ES3.KeyExists("NoticeTargetList"))
         { MenuManager.instance.noticeArrow.noticeBtnNameList = ES3.Load("NoticeTargetList", MenuManager.instance.noticeArrow.noticeBtnNameList); }
-        else { MenuManager.instance.noticeArrow.noticeBtnNameList.Clear(); }
+        else { MenuManager.instance.noticeArrow.noticeBtnNameList.Clear(); }*/
 
 
         for (int i = 0; i < Player.instance.charData.stat.Length; i++)
@@ -165,7 +169,8 @@ public class SaveManager : MonoBehaviour
 
         MenuManager.instance.setting.SaveData();
 
-        ES3.Save("NoticeTargetList", MenuManager.instance.noticeArrow.noticeBtnNameList);
+        //ES3.Save("NoticeTargetList", MenuManager.instance.noticeArrow.noticeBtnNameList);
+
 
         ES3.Save("MainCamera", MainCamera.instance.data.camSize);
 

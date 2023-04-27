@@ -50,7 +50,7 @@ public class DrunkenEvent : MonoBehaviour
     {
         CustomerState = customer.gameObject.activeSelf;
 
-        if (GameManager.instance.checkList.IsTutorialEnd && !CustomerState && GameManager.instance.checkList.IsTutorial_Full)
+        if (GameManager.instance.checkList.IsTutorialEnd && !CustomerState)
         {
             timer -= Time.deltaTime;
 

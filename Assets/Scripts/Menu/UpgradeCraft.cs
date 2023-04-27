@@ -32,7 +32,7 @@ public class UpgradeCraft : MonoBehaviour
 
     private void Update()
     {
-        if (lockCover != null) { lockCover.SetActive(!craftData.IsAchiveTrigger); }
+        if (lockCover != null ) { lockCover.SetActive(!craftData.IsAchiveTrigger); }
 
         for (int i = 0; i < craftData.stat.Length; i++)
         {
@@ -40,8 +40,6 @@ public class UpgradeCraft : MonoBehaviour
         }
     }
 
-
-      
 
 
     void RenewalInfo()

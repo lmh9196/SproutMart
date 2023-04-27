@@ -84,7 +84,7 @@ public class Player : MonoBehaviour
         boxData.UpdateFullSign(fullSign, itemBox, charData.maxHandsCount);
     }
 
-    bool isTutorial;
+   // bool isTutorial;
     void Update()
     {
         charData.SetHandsCount();
@@ -103,20 +103,20 @@ public class Player : MonoBehaviour
         boxData.UpdateBoxSprite(animDir.lookDir, boxSpriteRenderer, coverSpriteRenderer);
         boxData.UpdateCropsPos(itemBox);
 
-
-        if (GameManager.instance.checkList.IsTutorialEnd &&  !GameManager.instance.checkList.IsTutorial_Full && itemBox.childCount == charData.maxHandsCount && !isTutorial) 
+        // 아이템 박스 튜토리얼
+        /*if (GameManager.instance.checkList.IsTutorialEnd &&  !GameManager.instance.checkList.IsTutorial_Full && itemBox.childCount == charData.maxHandsCount && !isTutorial) 
         {
             isTutorial = true;
             DialogueManager.instance.EnableDialouge(term.termFull_GuideTrash, true, false);
             MenuManager.instance.CallNotice(MenuManager.instance.trash.trashBtn.gameObject);
-        }
+        } 
 
 
         if(isTutorial && itemBox.childCount == 0)
         {
             isTutorial = false;
             DialogueManager.instance.DisableDialogue();
-        }
+        }*/
 
         GameManager.instance.checkList.BuffEvent(GameManager.instance.checkList.isCharSpeedBuff, buffeffect);
         if (buffeffect.isPlaying) { charData.buffMoveSpeed = charData.defalutMoveSpeed * 0.5f; }
@@ -226,7 +226,7 @@ public class Player : MonoBehaviour
         SoundManager.instance.PlaySfx("Trash");
         GameManager.instance.ClickVib();
 
-        for (int i = 0; i < itemBox.childCount; i++) 
+        /*for (int i = 0; i < itemBox.childCount; i++) 
         { 
             Destroy(itemBox.GetChild(i).gameObject);
 
@@ -235,7 +235,7 @@ public class Player : MonoBehaviour
                 MenuManager.instance.FinishNotice();
                 GameManager.instance.checkList.IsTutorial_Full = true;
             }
-        }
+        }*/ //박스 튜토리얼
         isTrashTimerOn = false;
     }
 }

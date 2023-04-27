@@ -51,10 +51,10 @@ public class StatueManager : MonoBehaviour
         get {  return destroyCount; }
         set
         {
-            destroyCount = value;
-            DialogueManager.instance.DisableDialogue();
+            DialogueManager.instance.DisableDialogue(term.termDestroy_Select, " (" + destroyCount + "/" + statueList.Count + ")");
+            DialogueManager.instance.EnableDialouge(term.termDestroy_Select, false, false, " (" + value + "/" + statueList.Count + ")");
 
-            DialogueManager.instance.EnableDialouge(term.termDestroy_Select, false, false, " (" + destroyCount + "/" + statueList.Count + ")");
+            destroyCount = value;
         }
     }
     private void Awake() 
@@ -124,20 +124,18 @@ public class StatueManager : MonoBehaviour
         GameManager.instance.checkList.isBuildMode = true;
         GameManager.instance.canvasList.BuildModeCanvas(true);
         buildGrid.SetActive(true);
-        DialogueManager.instance.EnableDialouge(null, false, false);
+        //DialogueManager.instance.EnableDialouge(null, false, false);
 
         switch (buildMode)
         {
             case BuildMode.BUILD:
                 SpawnStatue();
-                DialogueManager.instance.DisableDialogue();
                 DialogueManager.instance.EnableDialouge(term.termBuild_ChoicePos, true, false);
 
                 preAct = NoneExistPre;
                 runningAct += StatueMouseChasing;
                 break;
             case BuildMode.MOVE:
-                DialogueManager.instance.DisableDialogue();
                 DialogueManager.instance.EnableDialouge(term.termMove_ChoiceObj, true, false);
                 preAct = MoveModeFindStatue;
                 runningAct = StatueMouseChasing;
@@ -146,7 +144,6 @@ public class StatueManager : MonoBehaviour
             case BuildMode.DESTROY:
 
                 DestroyModOn(true);
-                DialogueManager.instance.DisableDialogue();
                 DialogueManager.instance.EnableDialouge(term.termDestroy_Select, true, false, " (" + destroyCount + "/" + statueList.Count + ")");
 
                 preAct = NoneExistPre;
@@ -160,7 +157,7 @@ public class StatueManager : MonoBehaviour
         GameManager.instance.checkList.isBuildMode = false;
         GameManager.instance.canvasList.BuildModeCanvas(false);
         MainCamera.instance.ChangeCamTarget(false);
-        DialogueManager.instance.DisableDialogue();
+        DialogueManager.instance.DisableDialogue(null);
 
 
         buildGrid.SetActive(false);
@@ -192,8 +189,9 @@ public class StatueManager : MonoBehaviour
         switch(buildMode)
         {
             case BuildMode.MOVE:
-                DialogueManager.instance.DisableDialogue();
-                DialogueManager.instance.EnableDialouge(term.termBuild_ChoicePos, true, false); break;
+                DialogueManager.instance.DisableDialogue(term.termMove_ChoiceObj);
+                DialogueManager.instance.EnableDialouge(term.termBuild_ChoicePos, true, false); 
+                break;
         }
         isPreTrigger = false;
     }
@@ -401,7 +399,7 @@ public class StatueManager : MonoBehaviour
     }
     void FinishMove()
     {
-        DialogueManager.instance.DisableDialogue();
+        DialogueManager.instance.DisableDialogue(term.termBuild_ChoicePos);
         DialogueManager.instance.EnableDialouge(term.termMove_ChoiceObj, true, false);
 
         GameObject effect = Instantiate(selectStatue.smokeEffect, selectStatue.transform.position, Quaternion.identity);
@@ -420,6 +418,7 @@ public class StatueManager : MonoBehaviour
     void FInishDestroy()
     {
         SoundManager.instance.PlaySfx("Pop");
+        DialogueManager.instance.DisableDialogue(term.termDestroy_Select, " (" + destroyCount + "/" + statueList.Count + ")");
 
         for (int i = destroyList.Count -1; i >= 0; i--)
         {

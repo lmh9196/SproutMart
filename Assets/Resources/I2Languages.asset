@@ -492,6 +492,15 @@ MonoBehaviour:
       - '* This godds lasts for one week upon purchase.'
       Flags: 0000
       Languages_Touch: []
+    - Term: Guide_UpgradeMenu
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC9C1\uC6D0\uC744 \uACE0\uC6A9\uD558\uACE0 \uC0C1\uC810 \uD655\uC7A5\uC744
+        \uBAA9\uD45C\uB85C \uD574\uBD10\uC694!"
+      - Hire staff and aim to expand your store!
+      Flags: 0000
+      Languages_Touch: []
     CaseInsensitiveTerms: 0
     OnMissingTranslation: 1
     mTerm_AppName: 

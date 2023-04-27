@@ -2,6 +2,7 @@ using RDG;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -49,6 +50,25 @@ public class CheckList
         {
             isTutorial_Full = value;
             ES3.Save("Tutorial_Full", isTutorial_Full);
+        }
+    }
+    bool isTutorial_UpgradeMenu;
+    public bool IsTutorial_UpgradeMenu
+    {
+        get { return isTutorial_UpgradeMenu; }
+        set
+        {
+            if (!isTutorial_UpgradeMenu && !value) 
+            {
+                MainListMenu mainListMenu = MenuManager.instance.mainInputMenu;
+                mainListMenu.EnableNotice(mainListMenu.FindBtn(mainListMenu.upgradeBtn));
+                DialogueTerm term = new();
+                DialogueManager.instance.EnableDialouge(term.termUpgrade_GuideUpgradeMenu, true, false);
+            }
+
+            isTutorial_UpgradeMenu = value;
+
+            ES3.Save("Tutorial_UpgradeMenu", isTutorial_UpgradeMenu);
         }
     }
 

@@ -23,6 +23,8 @@ public class DialogueTerm
     public string termDrunken_FirstNotice = "Guide_FirstNotice";
 
     public string termFull_GuideTrash = "Guide_Trash";
+
+    public string termUpgrade_GuideUpgradeMenu = "Guide_UpgradeMenu";
 }
 public class DialogueManager : MonoBehaviour
 {
@@ -36,6 +38,7 @@ public class DialogueManager : MonoBehaviour
     bool isTriggerRunning;
 
     [SerializeField] List<string> termList = new();
+    LocalizedString customString = "Term3";
 
     private void Awake()
     {
@@ -56,29 +59,25 @@ public class DialogueManager : MonoBehaviour
         if (termList.Count > 0) { profileText.text = termList[termList.Count - 1]; }
     }
 
-    public void EnableDialouge(string term, bool isPop, bool isInsert, string addStr = null)
+    public void EnableDialouge(LocalizedString term, bool isPop, bool isInsert, string addStr = null)
     {
         if (termList.Count == 0) { profileTextParent.gameObject.SetActive(true); }
 
         if (isPop) { textPop.ResetPop(); }
 
-        loc.SetTerm(term);
+        Action action = isInsert ? ()=> { termList.Add(term + addStr); } : () => { termList.Insert(0, term + addStr); };
 
-        if (!isInsert) { termList.Add(profileText.text + addStr); }
-        else { termList.Insert(0, profileText.text + addStr); }
+        action?.Invoke();
     }
 
 
-    public void DisableDialogue()
+    public void DisableDialogue(LocalizedString term,  string addStr = null)
     {
         loc.Term = null;
 
-        if (termList.Count != 0) 
-        {
-            termList.Remove(termList.Last());
-            textPop.ResetPop();
-        }
-    
+        termList.Remove(term != null && termList.Contains(term + addStr) ? term + addStr : termList.Last());
+        textPop.ResetPop();
+
         if (termList.Count == 0) { profileTextParent.gameObject.SetActive(false); }
     }
 
@@ -92,7 +91,6 @@ public class DialogueManager : MonoBehaviour
 
         EnableDialouge(triggerTerm, true, false);
 
-
         profileText.DOKill(true);
         profileText.DOColor(ColorManager.instance.textFailColor, 1.0f).SetEase(Ease.Flash, 8, 0);
 
@@ -104,7 +102,7 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
        
-        DisableDialogue();
+        DisableDialogue(triggerTerm);
         isTriggerRunning = false;
     }
 }

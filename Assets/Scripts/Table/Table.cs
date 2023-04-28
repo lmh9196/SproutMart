@@ -55,8 +55,8 @@ public class Table : MonoBehaviour
 
     public CharData[] staffDatas;
 
-    public struct PreTable { public List<Table> preTableList; }
-    public PreTable[] preTable;
+    public List<List<Table>> preTableList = new();
+
     public Table[] parentTable;
     public Image lockCoinImage;
     public Transform decoParent;
@@ -77,16 +77,6 @@ public class Table : MonoBehaviour
         data.areaCountDic = new();
 
         data.saveID = gameObject.name;
-
-        if(data.preTableKindCount>0)
-        {
-            preTable = new PreTable[data.preTableKindCount];
-
-            for (int i = 0; i < preTable.Length; i++)
-            {
-                preTable[i].preTableList = new();
-            }
-        }
     }
 
     public void UnlockInit()
@@ -111,14 +101,14 @@ public class Table : MonoBehaviour
 
         if (!StageManager.instance.salesUnLockTableList.Contains(this))
         {
-            for (int i = 0; i < preTable.Length; i++)
+            for (int i = 0; i < preTableList.Count; i++)
             {
-                for (int j = 0; j < preTable[i].preTableList.Count; j++)
+                for (int j = 0; j < preTableList[i].Count; j++)
                 {
-                    if (preTable[i].preTableList[j].data.IsUnlock) { checkCount++; break; }
+                    if (preTableList[i][j].data.IsUnlock) { checkCount++; break; }
                 }
 
-                if (checkCount == preTable.Length) 
+                if (checkCount == preTableList.Count)
                 {
                     StageManager.instance.salesUnLockTableList.Add(this);
                 }
@@ -131,15 +121,23 @@ public class Table : MonoBehaviour
     {
         for (int i = 0; i < parentTable.Length; i++)
         {
-            for (int j = 0; j < parentTable[i].preTable.Length; j++)
+            if (parentTable[i].preTableList.Count == 0) 
             {
-                if (parentTable[i].preTable[j].preTableList == null) { parentTable[i].preTable[j].preTableList = new(); }
+                parentTable[i].preTableList.Add(new());
+                parentTable[i].preTableList[0].Add(inputTable);
+            }
+            else
+            {
+                for (int j = 0; j < parentTable[i].preTableList.Count; j++)
+                {
+                    if (parentTable[i].preTableList[j][0].data.ID == inputTable.data.ID) { parentTable[i].preTableList[j].Add(inputTable); break; }
 
-                List<Table> preTableList = parentTable[i].preTable[j].preTableList;
-
-                if (preTableList.Count == 0) { parentTable[i].preTable[j].preTableList.Add(inputTable); break; }
-
-                else if(preTableList[0].data.ID == inputTable.data.ID) { preTableList.Add(inputTable); break; }
+                    if(j == parentTable[i].preTableList.Count -1)
+                    {
+                        parentTable[i].preTableList.Add(new());
+                        parentTable[i].preTableList[j + 1].Add(inputTable);
+                    }
+                }
             }
         }
     }

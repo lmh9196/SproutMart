@@ -2460,9 +2460,9 @@ RectTransform:
   m_Father: {fileID: 8978861596357984037}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 501.1, y: -916.925}
   m_SizeDelta: {x: 1002.2, y: 238.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2945453496860177878
@@ -4163,9 +4163,9 @@ RectTransform:
   m_Father: {fileID: 8978861596357984037}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 501.1, y: -2209.675}
   m_SizeDelta: {x: 1002.2, y: 238.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2945453497175406370
@@ -4483,9 +4483,9 @@ RectTransform:
   m_Father: {fileID: 8978861596357984037}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 501.1, y: -1434.025}
   m_SizeDelta: {x: 1002.2, y: 238.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2945453497211537423
@@ -5788,9 +5788,9 @@ RectTransform:
   m_Father: {fileID: 8978861596357984037}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 501.1, y: -1692.5751}
   m_SizeDelta: {x: 1002.2, y: 238.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2945453497424321545
@@ -6028,9 +6028,9 @@ RectTransform:
   m_Father: {fileID: 8978861596357984037}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 501.1, y: -141.275}
   m_SizeDelta: {x: 1002.2, y: 238.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2945453497459431081
@@ -6230,9 +6230,9 @@ RectTransform:
   m_Father: {fileID: 8978861596357984037}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 501.1, y: -658.375}
   m_SizeDelta: {x: 1002.2, y: 238.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2945453497489041294
@@ -8703,9 +8703,9 @@ RectTransform:
   m_Father: {fileID: 8978861596357984037}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 501.1, y: -399.82498}
   m_SizeDelta: {x: 1002.2, y: 238.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2945453497803367909
@@ -9117,9 +9117,9 @@ RectTransform:
   m_Father: {fileID: 8978861596357984037}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 501.1, y: -2985.3252}
   m_SizeDelta: {x: 1002.2, y: 238.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2945453497873533452
@@ -9223,9 +9223,9 @@ RectTransform:
   m_Father: {fileID: 8978861596357984037}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 501.1, y: -2726.7751}
   m_SizeDelta: {x: 1002.2, y: 238.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2945453497876299181
@@ -11367,9 +11367,9 @@ RectTransform:
   m_Father: {fileID: 8978861596357984037}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 501.1, y: -1175.475}
   m_SizeDelta: {x: 1002.2, y: 238.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2945453498213374305
@@ -12612,9 +12612,9 @@ RectTransform:
   m_Father: {fileID: 8978861596357984037}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 501.1, y: -1951.1251}
   m_SizeDelta: {x: 1002.2, y: 238.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2945453498428194602
@@ -12718,9 +12718,9 @@ RectTransform:
   m_Father: {fileID: 8978861596357984037}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 501.1, y: -2468.225}
   m_SizeDelta: {x: 1002.2, y: 238.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2945453498437870548
@@ -19428,7 +19428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6156863, g: 0.43137258, b: 0.30588236, a: 0.9764706}
+  m_Color: {r: 0.6156863, g: 0.43137258, b: 0.30588236, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -19505,7 +19505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6156863, g: 0.43137258, b: 0.30588236, a: 0.9764706}
+  m_Color: {r: 0.6156863, g: 0.43137258, b: 0.30588236, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -19582,7 +19582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6156863, g: 0.43137258, b: 0.30588236, a: 0.9764706}
+  m_Color: {r: 0.6156863, g: 0.43137258, b: 0.30588236, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -19680,7 +19680,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC900\uBE44\uC911. . ."
+  m_Text: "\uCD94\uAC00 \uD655\uC7A5\uC774 \uD544\uC694\uD569\uB2C8\uB2E4!"
 --- !u!114 &5693397255586136318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19816,7 +19816,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC900\uBE44\uC911. . ."
+  m_Text: "\uCD94\uAC00 \uD655\uC7A5\uC774 \uD544\uC694\uD569\uB2C8\uB2E4!"
 --- !u!114 &5693397255588486144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19931,7 +19931,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6156863, g: 0.43137258, b: 0.30588236, a: 0.9764706}
+  m_Color: {r: 0.6156863, g: 0.43137258, b: 0.30588236, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -20008,7 +20008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6156863, g: 0.43137258, b: 0.30588236, a: 0.9764706}
+  m_Color: {r: 0.6156863, g: 0.43137258, b: 0.30588236, a: 0.9882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -20085,7 +20085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6156863, g: 0.43137258, b: 0.30588236, a: 0.9764706}
+  m_Color: {r: 0.6156863, g: 0.43137258, b: 0.30588236, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -20183,7 +20183,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC900\uBE44\uC911. . ."
+  m_Text: "\uCD94\uAC00 \uD655\uC7A5\uC774 \uD544\uC694\uD569\uB2C8\uB2E4!"
 --- !u!114 &5693397255901128373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20298,7 +20298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6156863, g: 0.43137258, b: 0.30588236, a: 0.9764706}
+  m_Color: {r: 0.6156863, g: 0.43137258, b: 0.30588236, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -20396,7 +20396,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC900\uBE44\uC911. . ."
+  m_Text: "\uCD94\uAC00 \uD655\uC7A5\uC774 \uD544\uC694\uD569\uB2C8\uB2E4!"
 --- !u!114 &5693397256233943673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20532,7 +20532,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC900\uBE44\uC911. . ."
+  m_Text: "\uCD94\uAC00 \uD655\uC7A5\uC774 \uD544\uC694\uD569\uB2C8\uB2E4!"
 --- !u!114 &5693397256241427928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20668,7 +20668,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC900\uBE44\uC911. . ."
+  m_Text: "\uCD94\uAC00 \uD655\uC7A5\uC774 \uD544\uC694\uD569\uB2C8\uB2E4!"
 --- !u!114 &5693397256306907697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20783,7 +20783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6156863, g: 0.43137258, b: 0.30588236, a: 0.9764706}
+  m_Color: {r: 0.6156863, g: 0.43137258, b: 0.30588236, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -20860,7 +20860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6156863, g: 0.43137258, b: 0.30588236, a: 0.9764706}
+  m_Color: {r: 0.6156863, g: 0.43137258, b: 0.30588236, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -20958,7 +20958,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC900\uBE44\uC911. . ."
+  m_Text: "\uCD94\uAC00 \uD655\uC7A5\uC774 \uD544\uC694\uD569\uB2C8\uB2E4!"
 --- !u!114 &5693397256521062490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21094,7 +21094,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC900\uBE44\uC911. . ."
+  m_Text: "\uCD94\uAC00 \uD655\uC7A5\uC774 \uD544\uC694\uD569\uB2C8\uB2E4!"
 --- !u!114 &5693397256589517789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21345,7 +21345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6156863, g: 0.43137258, b: 0.30588236, a: 0.9764706}
+  m_Color: {r: 0.6156863, g: 0.43137258, b: 0.30588236, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -21443,7 +21443,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC900\uBE44\uC911. . ."
+  m_Text: "\uCD94\uAC00 \uD655\uC7A5\uC774 \uD544\uC694\uD569\uB2C8\uB2E4!"
 --- !u!114 &5693397256884537590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21579,7 +21579,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC900\uBE44\uC911. . ."
+  m_Text: "\uCD94\uAC00 \uD655\uC7A5\uC774 \uD544\uC694\uD569\uB2C8\uB2E4!"
 --- !u!114 &5693397256919775195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21694,7 +21694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6156863, g: 0.43137258, b: 0.30588236, a: 0.9764706}
+  m_Color: {r: 0.6156863, g: 0.43137258, b: 0.30588236, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -21771,7 +21771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6156863, g: 0.43137258, b: 0.30588236, a: 0.9764706}
+  m_Color: {r: 0.6156863, g: 0.43137258, b: 0.30588236, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -21869,7 +21869,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC900\uBE44\uC911. . ."
+  m_Text: "\uCD94\uAC00 \uD655\uC7A5\uC774 \uD544\uC694\uD569\uB2C8\uB2E4!"
 --- !u!114 &5693397257233320450
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -37,6 +37,7 @@ public class UpgradeCraft : MonoBehaviour
         for (int i = 0; i < craftData.stat.Length; i++)
         {
             GameManager.instance.TextColorInGameGold(menu[i].priceText, GameManager.GoldType.GOLD, craftData.GetPrice(craftData.stat[i]));
+            menu[i].priceText.text = GameManager.instance.PriceText(craftData.GetPrice(craftData.stat[i]), 2);
         }
     }
 
@@ -52,11 +53,6 @@ public class UpgradeCraft : MonoBehaviour
             menu[i].upBtn.SetActive(!state);
 
             menu[i].lvText.text = craftData.SetMakeSpeed().ToString();
-
-            if (craftData.stat[i].Level < craftData.stat[i].needPrice.Length)
-            {
-                menu[i].priceText.text = GameManager.instance.PriceText(craftData.GetPrice(craftData.stat[i]), 2);
-            }
         }
     }
 

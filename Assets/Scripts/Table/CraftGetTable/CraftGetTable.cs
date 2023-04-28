@@ -53,7 +53,7 @@ public class CraftGetTable : Table
 
         craftData.InitNeedPrice(data.unlockNeedCount);
 
-        RegistNeedTable(this);
+        //RegistNeedTable(this);
     }
 
     void Update()

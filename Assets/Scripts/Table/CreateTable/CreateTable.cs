@@ -27,7 +27,7 @@ public class CreateTable : Table
     {
         base.Start();
 
-        RegistNeedTable(this);
+        //RegistNeedTable(this);
     }
     public virtual void Update() 
     {

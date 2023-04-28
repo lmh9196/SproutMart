@@ -8,16 +8,19 @@ public class UnlockManager : MonoBehaviour
 
     bool isGem;
     public bool IsGem
-    { 
+    {
         get { return isGem; }
-        set {
+        set
+        {
 
             if (value) { unlockCheckGemBtn.SetActive(true); }
             else { unlockCheckGemBtn.SetActive(false); }
 
-            isGem = value; 
+            isGem = value;
         }
     }
+
+
     bool isAct;
     public bool IsAct
     {
@@ -43,26 +46,25 @@ public class UnlockManager : MonoBehaviour
 
     private void Update()
     {
-        if(isAct)
-        {
-            if (actTable != null) { Unlocking(); }
-        }
+        if(IsAct && actTable != null) { Unlocking(); }
+     
+        unlockCheckGemBtn.SetActive(IsAct && IsGem);
     }
 
     public void UnlockBtnCheck() 
-    { 
-        isAct = true;
+    {
+        IsAct = true;
         IsGem = false;
     }
 
     public void CheckUnlockType(Table table)
     {
-        if(GameManager.instance.SelectGold(table.data.goldType) > 0)
+        if (GameManager.instance.SelectGold(table.data.goldType) > 0)
         {
             switch (table.data.goldType)
             {
-                case GameManager.GoldType.GEM: IsGem = true; break;
-                default: isAct = true; break;
+                case GameManager.GoldType.GEM: IsGem = true;  break;
+                default: IsAct = true; break;
             }
             actTable = table;
         }

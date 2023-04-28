@@ -165,9 +165,11 @@ public class MainListMenu
         }
         else { noticeArrowParent.gameObject.SetActive(false); }
     }
-    public void EnableNotice(Button targetBtn)
+    public void EnableNotice(Button targetBtn) 
     {
-        tempNoticeWaitiongList.Add(targetBtn);
+        if (tempNoticeWaitiongList.Contains(targetBtn)) { return; }
+
+        tempNoticeWaitiongList.Add(targetBtn); 
     }
     public void DisableNotice(Action act = null)
     {

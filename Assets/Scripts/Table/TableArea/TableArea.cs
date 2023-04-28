@@ -56,7 +56,7 @@ public class TableArea : MonoBehaviour
     {
         currentCount = itemBox.childCount;
 
-        parentTable.data.areaCountDic[gameObject.name] = currentCount;
+        //parentTable.data.areaCountDic[gameObject.name] = currentCount;
     }
 
     public int SetNeedCount() { return maxCount - itemBox.childCount; }

@@ -31,16 +31,12 @@ public class NpcManager : MonoBehaviour
     { spawnTimer = setTimer; }
     private void Update()
     {
-        UpdateNpcLevel();
-
+        stageData.NpcLevel = UpdateNpcLevel();
         if (GameManager.instance.checkList.IsTutorialEnd && StageManager.instance.salesUnLockTableList.Count > 0 && spawnTimer <= 0) Spawn();
         else if(spawnTimer > 0) spawnTimer -= Time.deltaTime;
     }
 
-    void UpdateNpcLevel()
-    {
-        stageData.NpcLevel = StageManager.instance.salesUnLockTableList.Count * 2;
-    }
+    int UpdateNpcLevel() { return StageManager.instance.salesUnLockTableList.Count * 2; }
 
     float spawnTimer;
     public void Spawn(int count = 0)

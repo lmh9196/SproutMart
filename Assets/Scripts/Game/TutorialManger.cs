@@ -7,7 +7,8 @@ public class TutorialManger : MonoBehaviour
 {
     public static TutorialManger instance = null;
     public WorldGuideArrow playerGuideArrow;
-
+    DialogueTerm term = new();
+    MainListMenu mainListMenu; 
     private void Awake()
     {
         if (instance == null) { instance = this; }
@@ -15,7 +16,16 @@ public class TutorialManger : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-  
+    private void Start()
+    {
+        mainListMenu = MenuManager.instance.mainInputMenu;
+    }
+
+    private void Update()
+    {
+        if (!GameManager.instance.checkList.IsTutorial_UpgradeMenu) { TutorialUpgradeMenu(); }
+    }
+
     public void ActiveTargetNoticeArrow() { playerGuideArrow.gameObject.SetActive(true); }
     public void DiableTargetNoticeArrow() 
     {
@@ -43,5 +53,14 @@ public class TutorialManger : MonoBehaviour
     {
         if (!isIf) { return; }
         else if (MainCamera.instance.TargetCamInCheck(target, weight)) { act?.Invoke(); }
+    }
+
+    public void TutorialUpgradeMenu()
+    {
+        if (GameManager.instance.data.gold > 30 && GameManager.instance.checkList.IsTutorialEnd)
+        {
+            mainListMenu.EnableNotice(mainListMenu.FindBtn(mainListMenu.upgradeBtn));
+            DialogueManager.instance.EnableDialouge(term.termUpgrade_GuideUpgradeMenu, true, false);
+        }
     }
 }

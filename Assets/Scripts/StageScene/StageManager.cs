@@ -56,6 +56,7 @@ public class StageManager : MonoBehaviour
         if (instance == null) { instance = this; }
 
         RegistAllTable();
+        //RegistNeedTable();
 
         Instantiate(staffUpgradeMenu, MenuManager.instance.upgrade.staffPage);
         Instantiate(craftUpgradeMenu, MenuManager.instance.upgrade.machinePage);
@@ -111,11 +112,7 @@ public class StageManager : MonoBehaviour
     private void Update()
     {
 
-        for (int i = 0; i < stageList.Count; i++)
-        {
-            if (saveData.stageData.Level == i) { stageList[saveData.stageData.Level].SetActive(true); }
-            else { stageList[i].SetActive(false); }
-        }
+        for (int i = 0; i < stageList.Count; i++) { stageList[i].SetActive(saveData.stageData.Level == i); }
 
         for (int i = 0; i < areaParentList.Count; i++)
         {
@@ -148,9 +145,19 @@ public class StageManager : MonoBehaviour
                 allTable.Add(tableArry[j]);
                 
                 tableArry[j].TableInit();
+                RegistNeedTable();
             }
 
             areaParentList[i].AssignDefalutUnlockCount();
+        }
+    }
+
+    public void RegistNeedTable()
+    {
+        for (int i = 0; i < allTable.Count; i++)
+        {
+            if (allTable[i] is CraftGetTable craftGet) { craftGet.RegistNeedTable(craftGet); }
+            else if (allTable[i] is CreateTable create) { create.RegistNeedTable(create); }
         }
     }
   
@@ -179,8 +186,7 @@ public class StageManager : MonoBehaviour
 
     public void UpdateCheckCraftLock(Table table, CraftData craftData)
     {
-        if (transform.parent.gameObject.activeSelf && table.data.IsUnlock) { craftData.IsAchiveTrigger = true; }
-        else { craftData.IsAchiveTrigger = false; }
+        craftData.IsAchiveTrigger = table.transform.parent.gameObject.activeSelf && table.data.IsUnlock ? true : false;
     }
 }
 

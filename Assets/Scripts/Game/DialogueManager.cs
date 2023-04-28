@@ -61,6 +61,8 @@ public class DialogueManager : MonoBehaviour
 
     public void EnableDialouge(LocalizedString term, bool isPop, bool isInsert, string addStr = null)
     {
+        if (termList.Contains(term + addStr)) { return; }
+
         if (termList.Count == 0) { profileTextParent.gameObject.SetActive(true); }
 
         if (isPop) { textPop.ResetPop(); }

@@ -58,14 +58,6 @@ public class CheckList
         get { return isTutorial_UpgradeMenu; }
         set
         {
-            if (!isTutorial_UpgradeMenu && !value) 
-            {
-                MainListMenu mainListMenu = MenuManager.instance.mainInputMenu;
-                mainListMenu.EnableNotice(mainListMenu.FindBtn(mainListMenu.upgradeBtn));
-                DialogueTerm term = new();
-                DialogueManager.instance.EnableDialouge(term.termUpgrade_GuideUpgradeMenu, true, false);
-            }
-
             isTutorial_UpgradeMenu = value;
 
             ES3.Save("Tutorial_UpgradeMenu", isTutorial_UpgradeMenu);

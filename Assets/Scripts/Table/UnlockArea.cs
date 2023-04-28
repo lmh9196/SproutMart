@@ -17,7 +17,15 @@ public class UnlockArea : MonoBehaviour
     public ParticleSystem unlockedEffect;
     public CreatePopUp create;
 
-    [HideInInspector] public bool isTouch;
+    bool isTouch;
+    public bool IsTouch
+    {
+        get { return isTouch; }
+        set
+        {
+            isTouch = value;
+        }
+    }
 
     float touchTimer = 0;
     [Space(10f)]
@@ -34,7 +42,7 @@ public class UnlockArea : MonoBehaviour
     {
         goldText.text = GameManager.instance.PriceText(parentTable.data.unlockNeedCount, 0);
 
-        if (isTouch)
+        if (IsTouch)
         {
             touchTimer += Time.deltaTime;
             if (touchTimer >= 0.5f && !UnlockManager.instance.IsAct) 
@@ -61,13 +69,13 @@ public class UnlockArea : MonoBehaviour
     void CollisionEnterPlayer()
     {
         GameManager.instance.ClickVib();
-        isTouch = true;
+        IsTouch = true;
         anim.SetBool("isEnter", true);
     }
     void CollisionExitPlayer()
     {
         touchTimer = 0;
-        isTouch = false;
+        IsTouch = false;
         UnlockManager.instance.IsAct = false;
         anim.SetBool("isEnter", false);
     }

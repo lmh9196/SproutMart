@@ -2622,7 +2622,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC900\uBE44\uC911. . ."
+  m_Text: "\uCD94\uAC00 \uD655\uC7A5\uC774 \uD544\uC694\uD569\uB2C8\uB2E4!"
 --- !u!114 &2714110256653158032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2758,7 +2758,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC900\uBE44\uC911. . ."
+  m_Text: "\uCD94\uAC00 \uD655\uC7A5\uC774 \uD544\uC694\uD569\uB2C8\uB2E4!"
 --- !u!114 &2714110256728248997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2894,7 +2894,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC900\uBE44\uC911. . ."
+  m_Text: "\uCD94\uAC00 \uD655\uC7A5\uC774 \uD544\uC694\uD569\uB2C8\uB2E4!"
 --- !u!114 &2714110256729466869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3030,7 +3030,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC900\uBE44\uC911. . ."
+  m_Text: "\uCD94\uAC00 \uD655\uC7A5\uC774 \uD544\uC694\uD569\uB2C8\uB2E4!"
 --- !u!114 &2714110256870859449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3166,7 +3166,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC900\uBE44\uC911. . ."
+  m_Text: "\uCD94\uAC00 \uD655\uC7A5\uC774 \uD544\uC694\uD569\uB2C8\uB2E4!"
 --- !u!114 &2714110256987254496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3302,7 +3302,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC900\uBE44\uC911. . ."
+  m_Text: "\uCD94\uAC00 \uD655\uC7A5\uC774 \uD544\uC694\uD569\uB2C8\uB2E4!"
 --- !u!114 &2714110257191914789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3438,7 +3438,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC900\uBE44\uC911. . ."
+  m_Text: "\uCD94\uAC00 \uD655\uC7A5\uC774 \uD544\uC694\uD569\uB2C8\uB2E4!"
 --- !u!114 &2714110257308331091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3574,7 +3574,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC900\uBE44\uC911. . ."
+  m_Text: "\uCD94\uAC00 \uD655\uC7A5\uC774 \uD544\uC694\uD569\uB2C8\uB2E4!"
 --- !u!114 &2714110257500219788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3710,7 +3710,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC900\uBE44\uC911. . ."
+  m_Text: "\uCD94\uAC00 \uD655\uC7A5\uC774 \uD544\uC694\uD569\uB2C8\uB2E4!"
 --- !u!114 &2714110257535853317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3961,7 +3961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5647059, g: 0.38431376, b: 0.3647059, a: 0.9764706}
+  m_Color: {r: 0.5647059, g: 0.38431376, b: 0.3647059, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4038,7 +4038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5647059, g: 0.38431376, b: 0.3647059, a: 0.9764706}
+  m_Color: {r: 0.5647059, g: 0.38431376, b: 0.3647059, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4149,7 +4149,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2714110257824478335
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4192,7 +4192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5647059, g: 0.38431376, b: 0.3647059, a: 0.9764706}
+  m_Color: {r: 0.5647059, g: 0.38431376, b: 0.3647059, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4290,7 +4290,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC900\uBE44\uC911. . ."
+  m_Text: "\uCD94\uAC00 \uD655\uC7A5\uC774 \uD544\uC694\uD569\uB2C8\uB2E4!"
 --- !u!114 &2714110257913020045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4405,7 +4405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5647059, g: 0.38431376, b: 0.3647059, a: 0.9764706}
+  m_Color: {r: 0.5647059, g: 0.38431376, b: 0.3647059, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4482,7 +4482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5647059, g: 0.38431376, b: 0.3647059, a: 0.9764706}
+  m_Color: {r: 0.5647059, g: 0.38431376, b: 0.3647059, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4559,7 +4559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5647059, g: 0.38431376, b: 0.3647059, a: 0.9764706}
+  m_Color: {r: 0.5647059, g: 0.38431376, b: 0.3647059, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4636,7 +4636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5647059, g: 0.38431376, b: 0.3647059, a: 0.9764706}
+  m_Color: {r: 0.5647059, g: 0.38431376, b: 0.3647059, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4713,7 +4713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5647059, g: 0.38431376, b: 0.3647059, a: 0.9764706}
+  m_Color: {r: 0.5647059, g: 0.38431376, b: 0.3647059, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4790,7 +4790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5647059, g: 0.38431376, b: 0.3647059, a: 0.9764706}
+  m_Color: {r: 0.5647059, g: 0.38431376, b: 0.3647059, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4824,7 +4824,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2714110258705104714
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4867,7 +4867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5647059, g: 0.38431376, b: 0.3647059, a: 0.9764706}
+  m_Color: {r: 0.5647059, g: 0.38431376, b: 0.3647059, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10893,9 +10893,9 @@ RectTransform:
   m_Father: {fileID: 6716670792672070461}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 501.1, y: -2726.7751}
   m_SizeDelta: {x: 1002.2, y: 238.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4776397378954118658
@@ -10952,11 +10952,13 @@ MonoBehaviour:
   menu:
   - menuType: 1
     upBtn: {fileID: 4776397379750945665}
+    upButton: {fileID: 0}
     maxImage: {fileID: 642708784651440841}
     lvText: {fileID: 4776397378659387192}
     priceText: {fileID: 4776397379365924255}
   - menuType: 2
     upBtn: {fileID: 4776397378885898862}
+    upButton: {fileID: 0}
     maxImage: {fileID: 4776397379203854543}
     lvText: {fileID: 4776397378659387192}
     priceText: {fileID: 4776397379731774267}
@@ -20746,9 +20748,9 @@ RectTransform:
   m_Father: {fileID: 6716670792672070461}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 501.1, y: -1692.5751}
   m_SizeDelta: {x: 1002.2, y: 238.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4776397379890108015
@@ -20805,11 +20807,13 @@ MonoBehaviour:
   menu:
   - menuType: 1
     upBtn: {fileID: 4776397379093361644}
+    upButton: {fileID: 0}
     maxImage: {fileID: 642708786140807844}
     lvText: {fileID: 4776397380147189589}
     priceText: {fileID: 4776397380585553394}
   - menuType: 2
     upBtn: {fileID: 4776397379820044803}
+    upButton: {fileID: 0}
     maxImage: {fileID: 4776397380676444322}
     lvText: {fileID: 4776397380013617268}
     priceText: {fileID: 4776397379074706262}
@@ -21374,9 +21378,9 @@ RectTransform:
   m_Father: {fileID: 6716670792672070461}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 501.1, y: -658.375}
   m_SizeDelta: {x: 1002.2, y: 238.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4776397379991820854
@@ -21433,11 +21437,13 @@ MonoBehaviour:
   menu:
   - menuType: 1
     upBtn: {fileID: 4776397378641428405}
+    upButton: {fileID: 0}
     maxImage: {fileID: 642708785688874749}
     lvText: {fileID: 4776397379768654604}
     priceText: {fileID: 4776397380404146603}
   - menuType: 2
     upBtn: {fileID: 4776397379928051290}
+    upButton: {fileID: 0}
     maxImage: {fileID: 4776397380312591611}
     lvText: {fileID: 4776397379901422637}
     priceText: {fileID: 4776397378694072079}
@@ -22635,9 +22641,9 @@ RectTransform:
   m_Father: {fileID: 6716670792672070461}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 501.1, y: -1951.1251}
   m_SizeDelta: {x: 1002.2, y: 238.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4776397380109123103
@@ -22694,11 +22700,13 @@ MonoBehaviour:
   menu:
   - menuType: 1
     upBtn: {fileID: 4776397378758450076}
+    upButton: {fileID: 0}
     maxImage: {fileID: 642708785907133140}
     lvText: {fileID: 4776397379785064229}
     priceText: {fileID: 4776397380219966850}
   - menuType: 2
     upBtn: {fileID: 4776397380179307123}
+    upButton: {fileID: 0}
     maxImage: {fileID: 4776397380329474258}
     lvText: {fileID: 4776397379650131972}
     priceText: {fileID: 4776397378710971174}
@@ -23164,9 +23172,9 @@ RectTransform:
   m_Father: {fileID: 6716670792672070461}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 501.09998, y: -2209.675}
   m_SizeDelta: {x: 1002.19995, y: 238.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4776397380167985706
@@ -23223,11 +23231,13 @@ MonoBehaviour:
   menu:
   - menuType: 1
     upBtn: {fileID: 4776397378834354089}
+    upButton: {fileID: 0}
     maxImage: {fileID: 642708785848270561}
     lvText: {fileID: 4776397379860933392}
     priceText: {fileID: 4776397380295082423}
   - menuType: 2
     upBtn: {fileID: 4776397380104224326}
+    upButton: {fileID: 0}
     maxImage: {fileID: 4776397380388084967}
     lvText: {fileID: 4776397379725249585}
     priceText: {fileID: 4776397378786359059}
@@ -23349,9 +23359,9 @@ RectTransform:
   m_Father: {fileID: 6716670792672070461}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 501.1, y: -1434.025}
   m_SizeDelta: {x: 1002.2, y: 238.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4776397380169129850
@@ -23408,11 +23418,13 @@ MonoBehaviour:
   menu:
   - menuType: 1
     upBtn: {fileID: 4776397378835315449}
+    upButton: {fileID: 0}
     maxImage: {fileID: 642708785849207729}
     lvText: {fileID: 4776397379859717696}
     priceText: {fileID: 4776397380294210791}
   - menuType: 2
     upBtn: {fileID: 4776397380102998806}
+    upButton: {fileID: 0}
     maxImage: {fileID: 4776397380389038519}
     lvText: {fileID: 4776397379726473569}
     priceText: {fileID: 4776397378787230275}
@@ -25269,9 +25281,9 @@ RectTransform:
   m_Father: {fileID: 6716670792672070461}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 501.1, y: -916.925}
   m_SizeDelta: {x: 1002.2, y: 238.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4776397380335931651
@@ -25328,11 +25340,13 @@ MonoBehaviour:
   menu:
   - menuType: 1
     upBtn: {fileID: 4776397379538793600}
+    upButton: {fileID: 0}
     maxImage: {fileID: 642708786687067592}
     lvText: {fileID: 4776397380632498233}
     priceText: {fileID: 4776397379926178462}
   - menuType: 2
     upBtn: {fileID: 4776397380405986671}
+    upButton: {fileID: 0}
     maxImage: {fileID: 4776397380085884878}
     lvText: {fileID: 4776397380497061656}
     priceText: {fileID: 4776397379558018106}
@@ -25972,9 +25986,9 @@ RectTransform:
   m_Father: {fileID: 6716670792672070461}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 501.1, y: -399.82498}
   m_SizeDelta: {x: 1002.2, y: 238.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4776397380388429191
@@ -26031,6 +26045,7 @@ MonoBehaviour:
   menu:
   - menuType: 0
     upBtn: {fileID: 4776397379591682052}
+    upButton: {fileID: 0}
     maxImage: {fileID: 642708786639685964}
     lvText: {fileID: 4776397380714749117}
     priceText: {fileID: 4776397380011701786}
@@ -26423,9 +26438,9 @@ RectTransform:
   m_Father: {fileID: 6716670792672070461}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 501.1, y: -2985.3252}
   m_SizeDelta: {x: 1002.2, y: 238.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4776397380438711178
@@ -26482,11 +26497,13 @@ MonoBehaviour:
   menu:
   - menuType: 1
     upBtn: {fileID: 4776397379641572873}
+    upButton: {fileID: 0}
     maxImage: {fileID: 642708786655596353}
     lvText: {fileID: 4776397380663941808}
     priceText: {fileID: 4776397380028952599}
   - menuType: 2
     upBtn: {fileID: 4776397380370354150}
+    upButton: {fileID: 0}
     maxImage: {fileID: 4776397380117359943}
     lvText: {fileID: 4776397380528536977}
     priceText: {fileID: 4776397379589490355}
@@ -26684,9 +26701,9 @@ RectTransform:
   m_Father: {fileID: 6716670792672070461}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 501.1, y: -1175.475}
   m_SizeDelta: {x: 1002.2, y: 238.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4776397380496364764
@@ -26743,11 +26760,13 @@ MonoBehaviour:
   menu:
   - menuType: 1
     upBtn: {fileID: 4776397379145576799}
+    upButton: {fileID: 0}
     maxImage: {fileID: 642708786327404567}
     lvText: {fileID: 4776397380203632102}
     priceText: {fileID: 4776397379832856385}
   - menuType: 2
     upBtn: {fileID: 4776397380564320432}
+    upButton: {fileID: 0}
     maxImage: {fileID: 4776397379675890193}
     lvText: {fileID: 4776397380338725575}
     priceText: {fileID: 4776397379131247077}
@@ -27735,9 +27754,9 @@ RectTransform:
   m_Father: {fileID: 6716670792672070461}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 501.1, y: -2468.225}
   m_SizeDelta: {x: 1002.2, y: 238.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4776397380648433066
@@ -27794,11 +27813,13 @@ MonoBehaviour:
   menu:
   - menuType: 1
     upBtn: {fileID: 4776397379297628201}
+    upButton: {fileID: 0}
     maxImage: {fileID: 642708786445885793}
     lvText: {fileID: 4776397380320015504}
     priceText: {fileID: 4776397379685015095}
   - menuType: 2
     upBtn: {fileID: 4776397380714291654}
+    upButton: {fileID: 0}
     maxImage: {fileID: 4776397379790193511}
     lvText: {fileID: 4776397380184593329}
     priceText: {fileID: 4776397379245566099}
@@ -30489,9 +30510,9 @@ RectTransform:
   m_Father: {fileID: 6716670792672070461}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 501.1, y: -141.275}
   m_SizeDelta: {x: 1002.2, y: 238.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6716670791487434165
@@ -30548,6 +30569,7 @@ MonoBehaviour:
   menu:
   - menuType: 1
     upBtn: {fileID: 6716670791319413866}
+    upButton: {fileID: 0}
     maxImage: {fileID: 6716670792332106539}
     lvText: {fileID: 6716670792179478631}
     priceText: {fileID: 6716670791333286644}

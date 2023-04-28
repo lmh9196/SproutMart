@@ -44,17 +44,10 @@ public class CraftData : ScriptableObject
     public Stat[] stat;
 
     public void StatReset() { for (int i = 0; i < stat.Length; i++) { stat[i].Level = 0; } }
-  
-    public float ResultMakeSpeed() 
-    {
-        return SetMakeSpeed() - buffSpeed;
-    }
-    public float SetMakeSpeed() { return defalutMakingTime - (defalutMakingTime * (SetMenuType(MenuType.SPEED).Level * 0.16f)); }
-    public int GetPrice(Stat stat) 
-    {
-        return stat.needPrice[stat.Level];
-    }
 
+    public float ResultMakeSpeed() { return SetMakeSpeed() - buffSpeed; }
+    public float SetMakeSpeed() { return defalutMakingTime - (defalutMakingTime * (SetMenuType(MenuType.SPEED).Level * 0.16f)); }
+    public int GetPrice(Stat stat) { return stat.needPrice[stat.Level]; }
     public void Init()
     {
         buffSpeed = 0;
@@ -73,6 +66,11 @@ public class CraftData : ScriptableObject
                 stat[i].needPrice[j] = (int)((j + 1) * 0.5f * unlockDefaultPrice);
             }
         }
+    }
+
+    public void AchvieCheck()
+    {
+
     }
 
     public Stat SetMenuType(MenuType menuType) 

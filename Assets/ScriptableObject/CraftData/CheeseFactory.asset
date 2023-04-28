@@ -16,12 +16,12 @@ MonoBehaviour:
   buffSpeed: 0
   stat:
   - menuType: 0
-    saveID: 
+    saveID: CheeseFactory
     maxLevel: 3
     isMax: 0
-    needPrice: 000000000000000000000000
+    needPrice: 60090000c0120000201c0000
   - menuType: 1
-    saveID: 
+    saveID: CheeseFactory
     maxLevel: 3
     isMax: 0
-    needPrice: 000000000000000000000000
+    needPrice: 60090000c0120000201c0000

@@ -49,7 +49,6 @@ public class TestMod : MonoBehaviour
         for (int i = 0; i < npcManager.transform.childCount; i++) npcManager.transform.GetChild(i).gameObject.SetActive(false);
 
         stageData.Level = 0;
-        npcData.level = 0;
     }
 
     void Unlock(Transform parent, int stageNum)

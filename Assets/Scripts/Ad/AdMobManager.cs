@@ -60,6 +60,10 @@ public class AdMobManager : MonoBehaviour
 
     [HideInInspector] public float tempBGMValue;
     [HideInInspector] public float tempSFXValue;
+
+    public Text textTex1;
+    public Text textTex2;
+    public Text textTex3;
     private void Awake()
     {
         if (null == instance) instance = this;
@@ -81,13 +85,18 @@ public class AdMobManager : MonoBehaviour
 
     void Update()
     {
+       /* if (!textTex1.transform.parent.GetComponent<Canvas>().enabled) { textTex1.transform.parent.GetComponent<Canvas>().enabled = true; }
+
+        textTex1.text = adMobInterstitialTimer.ToString();
+        textTex2.text = adStruct[0].currentDurationTimer.ToString();
+        textTex3.text  = adStruct[0].currentSapwnTimer.ToString();
+*/ //광고시간 테스트 텍스트
         if (GameManager.instance.checkList.IsBuyCharSpeedWeek)
         {
             speedWeek.timeDif = GameManager.instance.data.currentTime - speedWeek.startTime;
 
             HidingStructBtn(Buff.CHAR, true);
-            Debug.Log(speedWeek.timeDif);
-            if (speedWeek.timeDif.Seconds > 58) 
+            if (speedWeek.timeDif.Seconds > 58) // << 테스트용 , 실제 지속될 시간 = speedWeek.timeDif.Hour > 시간(날짜 > 시간으로)
             {
                 HidingStructBtn(Buff.CHAR, false);
                 GameManager.instance.checkList.IsBuyCharSpeedWeek = false; }
@@ -98,11 +107,6 @@ public class AdMobManager : MonoBehaviour
         {
             AdMobInterstitialActive();
             UpdateADBtn();
-        }
-
-        if(Input.GetKeyDown(KeyCode.V))
-        {
-            BuySpeedAD();
         }
     }
     void Init()

@@ -73,6 +73,7 @@ public class MainListMenu
             {
                 GameManager.instance.checkList.IsTutorial_UpgradeMenu = true;
                 DialogueManager.instance.DisableDialogue(term.termUpgrade_GuideUpgradeMenu);
+                GameManager.instance.canvasList.joyCanvas.enabled = true;
                 DisableNotice();
             }
         });

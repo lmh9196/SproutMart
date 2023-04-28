@@ -47,6 +47,7 @@ public class StageManager : MonoBehaviour
     public VideoClip burrowGuideVideo;
 
     public Transform startingPoint;
+    public Transform area1TrasCan;
 
     public GameObject staffUpgradeMenu;
     public GameObject craftUpgradeMenu;
@@ -111,6 +112,7 @@ public class StageManager : MonoBehaviour
 
     private void Update()
     {
+        if (area1TrasCan != null) { TutorialManger.instance.TutorialTrashCan(Player.instance, area1TrasCan); }
 
         for (int i = 0; i < stageList.Count; i++) { stageList[i].SetActive(saveData.stageData.Level == i); }
 
@@ -131,6 +133,8 @@ public class StageManager : MonoBehaviour
             if (allTable[i] is CraftGetTable craftGet) { UpdateCheckCraftLock(craftGet, craftGet.craftData); }
             else if (allTable[i] is CraftSalesTable craftSales) { UpdateCheckCraftLock(craftSales, craftSales.craftData); }
         }
+
+        MenuManager.instance.expand.UpdateNpcLvText(saveData.stageData);
     }
 
     public void RegistAllTable()

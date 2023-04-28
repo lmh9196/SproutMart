@@ -22,11 +22,10 @@ public class DrunkenCustomer : Customer
                 if(!GameManager.instance.checkList.IsTutorial_Drunken)
                 {
                     DialogueManager.instance.DisableDialogue(term.termDrunken_GuideRightWay);
-                    TutorialManger.instance.DiableTargetNoticeArrow();
+                    TutorialManger.instance.DiableTargetNoticeArrow(shoppingList[0].transform);
                     GameManager.instance.checkList.IsTutorial_Drunken = true;
                 }
             }
-
             isRight = value;
         }
     }
@@ -41,13 +40,15 @@ public class DrunkenCustomer : Customer
                 {
                     DialogueManager.instance.DisableDialogue(term.termDrunken_FirstNotice);
                     DialogueManager.instance.EnableDialouge(term.termDrunken_GuideRightWay, true, false);
-                    TutorialManger.instance.playerGuideArrow.InitArrow(true, shoppingList[1].transform, 0, 0.5f);
+                    TutorialManger.instance.DiableTargetNoticeArrow(transform);
+                    TutorialManger.instance.ActiveTargetNoticeArrow(shoppingList[1].transform, new Vector3(0, 0.5f, 0));
                 }
                 else if (isTouch && !value)
                 {
                     DialogueManager.instance.DisableDialogue(term.termDrunken_GuideRightWay);
                     DialogueManager.instance.EnableDialouge(term.termDrunken_FirstNotice, true, true);
-                    TutorialManger.instance.playerGuideArrow.InitArrow(true, transform, 0, 2f);
+                    TutorialManger.instance.DiableTargetNoticeArrow(shoppingList[1].transform);
+                    TutorialManger.instance.ActiveTargetNoticeArrow(transform, new Vector3(0, 2f, 0));
                 }
             }
 
@@ -73,18 +74,7 @@ public class DrunkenCustomer : Customer
         drunkenEvent = GetComponentInParent<DrunkenEvent>();
     }
 
-    private void OnEnable() 
-    { 
-        ResetDrunkenCustomer();
-
-        if (!GameManager.instance.checkList.IsTutorial_Drunken)
-        {
-            TutorialManger.instance.ActiveTargetNoticeArrow();
-            TutorialManger.instance.playerGuideArrow.InitArrow(true, transform, 0, 2f);
-        }
-    }
-
-
+    private void OnEnable() { ResetDrunkenCustomer(); }
     private void FixedUpdate()
     {
         if (IsTouch)

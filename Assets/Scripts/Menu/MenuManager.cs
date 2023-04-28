@@ -43,7 +43,6 @@ public class MenuManager : MonoBehaviour
         setting.UpdateVibe();
         setting.UpdateSound();
         mainInputMenu.UpdateNoticeCheck();
-        expand.UpdateNpcLvText();
         UpdateMenuList();
     }
 
@@ -549,9 +548,9 @@ public class Expand
     public NpcData npcData;
     public Text npcLvText;
 
-    public void UpdateNpcLvText()
+    public void UpdateNpcLvText(StageData stageData)
     {
-        npcLvText.text = npcData.level.ToString();
+        npcLvText.text = stageData.NpcLevel.ToString();
     }
 
    

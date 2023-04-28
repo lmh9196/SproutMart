@@ -50,7 +50,7 @@ public class DrunkenEvent : MonoBehaviour
     {
         CustomerState = customer.gameObject.activeSelf;
 
-        if (GameManager.instance.checkList.IsTutorialEnd && !CustomerState && StageManager.instance.salesUnLockTableList.Count > 1)
+        if (GameManager.instance.checkList.IsTutorialEnd && !CustomerState && StageManager.instance.salesUnLockTableList.Count > 1 && GameManager.instance.checkList.IsTutorial_UpgradeMenu)
         {
             timer -= Time.deltaTime;
 
@@ -74,7 +74,11 @@ public class DrunkenEvent : MonoBehaviour
 
         drunkenEventBtn.timerFinishAct = customer.ReturnWorngTarget;
 
-        if (!GameManager.instance.checkList.IsTutorial_Drunken) { DialogueManager.instance.EnableDialouge(term.termDrunken_FirstNotice, false, true); }
+        if (!GameManager.instance.checkList.IsTutorial_Drunken) 
+        {
+            DialogueManager.instance.EnableDialouge(term.termDrunken_FirstNotice, false, true);
+            TutorialManger.instance.ActiveTargetNoticeArrow(customer.transform, new Vector3(0, 2f, 0));
+        }
 
 
         int rand = Random.Range(timerMinRange, timerMaxRange);

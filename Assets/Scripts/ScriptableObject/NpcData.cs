@@ -10,8 +10,6 @@ public class NpcData : ScriptableObject
     public float defalutMoveSpeed;
     public float buffSpeed;
 
-    public int level;
-
     public UnityEngine.U2D.Animation.SpriteLibraryAsset[] npcTypeArry;
 
     public Sprite counterSprite;

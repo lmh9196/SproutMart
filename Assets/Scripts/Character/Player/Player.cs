@@ -103,21 +103,6 @@ public class Player : MonoBehaviour
         boxData.UpdateBoxSprite(animDir.lookDir, boxSpriteRenderer, coverSpriteRenderer);
         boxData.UpdateCropsPos(itemBox);
 
-        // 아이템 박스 튜토리얼
-        /*if (GameManager.instance.checkList.IsTutorialEnd &&  !GameManager.instance.checkList.IsTutorial_Full && itemBox.childCount == charData.maxHandsCount && !isTutorial) 
-        {
-            isTutorial = true;
-            DialogueManager.instance.EnableDialouge(term.termFull_GuideTrash, true, false);
-            MenuManager.instance.CallNotice(MenuManager.instance.trash.trashBtn.gameObject);
-        } 
-
-
-        if(isTutorial && itemBox.childCount == 0)
-        {
-            isTutorial = false;
-            DialogueManager.instance.DisableDialogue();
-        }*/
-
         GameManager.instance.checkList.BuffEvent(GameManager.instance.checkList.isCharSpeedBuff, buffeffect);
         if (buffeffect.isPlaying) { charData.buffMoveSpeed = charData.defalutMoveSpeed * 0.5f; }
         else { charData.buffMoveSpeed = 0; }
@@ -226,16 +211,17 @@ public class Player : MonoBehaviour
         SoundManager.instance.PlaySfx("Trash");
         GameManager.instance.ClickVib();
 
-        /*for (int i = 0; i < itemBox.childCount; i++) 
-        { 
+        for (int i = 0; i < itemBox.childCount; i++)
+        {
             Destroy(itemBox.GetChild(i).gameObject);
 
-            if (!GameManager.instance.checkList.IsTutorial_Full)
-            {
-                MenuManager.instance.FinishNotice();
+            if (!GameManager.instance.checkList.IsTutorial_Full) 
+            { 
                 GameManager.instance.checkList.IsTutorial_Full = true;
+                TutorialManger.instance.DiableTargetNoticeArrow(null);
+                DialogueManager.instance.DisableDialogue(term.termFull_GuideTrash);
             }
-        }*/ //박스 튜토리얼
+        }
         isTrashTimerOn = false;
     }
 }

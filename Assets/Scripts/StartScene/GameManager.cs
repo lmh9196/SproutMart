@@ -269,10 +269,12 @@ public class GameManager : MonoBehaviour
             }
             if (touchCount > 4) {
                 StartCoroutine(Tutorial.instance.End()); 
-                isCheckDone = true; break; }
+                isCheckDone = true;
+                data.gold = 0; break; }
             yield return null;
         }
 
+     
         isCheckStart = false;
     }
     private void Update()

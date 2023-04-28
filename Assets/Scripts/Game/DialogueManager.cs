@@ -65,9 +65,16 @@ public class DialogueManager : MonoBehaviour
 
         if (termList.Count == 0) { profileTextParent.gameObject.SetActive(true); }
 
-        if (isPop) { textPop.ResetPop(); }
 
-        Action action = isInsert ? ()=> { termList.Add(term + addStr); } : () => { termList.Insert(0, term + addStr); };
+        Action action = isInsert ? () => 
+        { 
+            termList.Insert(0, term + addStr);
+        }
+        : () => 
+        { 
+            termList.Add(term + addStr);
+            if (isPop) { textPop.ResetPop(); }
+        };
 
         action?.Invoke();
     }

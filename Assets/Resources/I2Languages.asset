@@ -469,9 +469,9 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\uC0C1\uC790\uAC00 \uAC00\uB4DD\uCC3C\uC5B4\uC694! \uBC84\uD2BC\uC744 \uAE38\uAC8C
-        \uB20C\uB7EC \uC0C1\uC790\uB97C \uBE44\uC6B0\uC138\uC694!"
-      - The box is full! Press and hold the button to empty the box!
+      - "\uC0C1\uC790\uAC00 \uAC00\uB4DD\uCC3C\uC5B4\uC694! \uC4F0\uB808\uAE30\uD1B5\uC5D0\uC11C
+        \uC0C1\uC790\uB97C \uBE44\uC6B0\uC138\uC694!"
+      - "\rThe box is full! Empty the box from the trash can!"
       Flags: 0000
       Languages_Touch: []
     - Term: Waring_Buy_RemoveADS
